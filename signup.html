@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Beserva</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <div class="row me-0">
+        <div class="col-5 d-none d-md-block">
+          <img src="/assets/images/slide-1.jpg" class="w-100"/>
+        </div>
+        <div class="col-12 col-md-7">
+          <div class="form-container px-lg-7 py-5">
+            <div class="w-100 px-2 px-md-2 px-lg-7 position-relative text-center">
+              <button class="btn position-absolute top-0 start-0 ms-lg-6" id="back-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                </svg>
+              </button>
+              <img class="mb-5" src="/assets/images/brand.png" alt="logo"/>
+            </div>
+            <div class="w-100 px-2 px-md-2 px-lg-7 position-relative">
+              <h4>Crear el perfil de tu negocio</h4>
+              <div class="form-progress-indicators my-3">
+                <span class="progress-step active" id="step1" data-title="profile"></span>
+                <span class="progress-step" id="setp2" data-title="center"></span>
+                <span class="progress-step" id="setp3" data-title="services"></span>
+                <span class="progress-step" id="step4" data-title="team"></span>
+                <span class="progress-step" id="step5" data-title="summary"></span>
+              </div>
+              <div class="form-step active">
+                <h5 class="my-4">Perfil público</h5>
+                <div class="py-2">
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="centerName">Nombre del centro</label>
+                    <input type="text" placeholder="Ingresa el nombre del centro" class="form-control" id="centerName">
+                  </div>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="centerDescription">Descripción</label>
+                    <input type="text" placeholder="Ingresa descripción del centro" class="form-control" id="centerDescription">
+                  </div>
+                  <h5 class="my-4">Tus imágenes</h5>
+                  <div class="my-3">
+                    <div class="profile-image"></div>                    
+                    <button type="file" class="btn btn-outline-primary mt-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                        <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                        <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                      </svg>
+                      Agregar imagen
+                    </button>
+                  </div>
+                  <div class="my-3">
+                    <div class="cover-image"></div>
+                    <button type="button" class="btn btn-outline-primary mt-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                        <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                        <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                      </svg>
+                      Agregar portada
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-step">
+                <div class="py-2">
+                  <h5 class="my-4">Tu centro</h5>
+                  <p class="text-primary">Si tu negocio está conectado a Google, puedes buscarlo para que se completen los datos automáticamente.</p>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="centerAddress">Buscar negocio</label>
+                    <input type="text" placeholder="Ingresa dirección o nombre del negocio" class="form-control" id="centerAddress">
+                  </div>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="centerStreet" >Calle</label>
+                    <input type="text" placeholder="Ingresar calle del centro" class="form-control" id="centerStreet" required>
+                  </div>
+                  <div class="p-1 d-flex justify-content-between">
+                    <div>
+                      <label class="form-label fw-semibold" for="outdoorNUmber" >Numero exterior</label>
+                      <input type="number" class="form-control" id="outdoorNUmber">
+                    </div>
+                    <div>
+                      <label class="form-label fw-semibold" for="interiorNumber" >Calle</label>
+                      <input type="number" class="form-control" id="interiorNumber">
+                    </div>
+                  </div>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="colonia" >Colonia</label>
+                    <input type="text" class="form-control" id="colonia">
+                  </div>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="city" >Ciudad</label>
+                    <input type="text" class="form-control" id="city">
+                  </div>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="state" >Estado</label>
+                    <input type="text" class="form-control" id="state">
+                  </div>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="postalCode" >Código postal</label>
+                    <input type="number" class="form-control" id="postalCode">
+                  </div>
+                </div>
+                <div class="py-2">
+                  <h5 class="my-4">Horarios</h5>
+                  <div class="pb-2">
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check form-switch">
+                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Lunes</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="monday">
+                      </div>
+                      <button class="btn btn-link">+ Agregar horario</button>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Apertura</label>
+                        <input type="time" class="form-control">
+                      </div>
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Cierre</label>
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pb-2">
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check form-switch">
+                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Martes</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="monday">
+                      </div>
+                      <button class="btn btn-link">+ Agregar horario</button>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Apertura</label>
+                        <input type="time" class="form-control">
+                      </div>
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Cierre</label>
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pb-2">
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check form-switch">
+                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Miércoles</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="monday">
+                      </div>
+                      <button class="btn btn-link">+ Agregar horario</button>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Apertura</label>
+                        <input type="time" class="form-control">
+                      </div>
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Cierre</label>
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pb-2">
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check form-switch">
+                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Jueves</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="monday">
+                      </div>
+                      <button class="btn btn-link">+ Agregar horario</button>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Apertura</label>
+                        <input type="time" class="form-control">
+                      </div>
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Cierre</label>
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pb-2">
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check form-switch">
+                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Viernes</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="monday">
+                      </div>
+                      <button class="btn btn-link">+ Agregar horario</button>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Apertura</label>
+                        <input type="time" class="form-control">
+                      </div>
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Cierre</label>
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pb-2">
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check form-switch">
+                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Sábado</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="monday">
+                      </div>
+                      <button class="btn btn-link">+ Agregar horario</button>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Apertura</label>
+                        <input type="time" class="form-control">
+                      </div>
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Cierre</label>
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pb-2">
+                    <div class="d-flex justify-content-between">
+                      <div class="form-check form-switch">
+                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Domingo</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="monday">
+                      </div>
+                      <button class="btn btn-link">+ Agregar horario</button>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Apertura</label>
+                        <input type="time" class="form-control">
+                      </div>
+                      <div class="w-50 p-1">
+                        <label class="form-label fw-semibold">Cierre</label>
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-step">
+                <div class="py-2">
+                  <h5 class="my-4">Servicios (Opcional)</h5>
+                  <button class="btn btn-outline-primary w-100" id="new-service-btn">Agregar servicio</button>
+                  <div class="service-form d-none" id="service-form">
+                    <div class="p-1">
+                      <label class="form-label fw-semibold">Categoría</label>
+                      <select class="form-select" aria-label="Categorías">
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                      </select>
+                    </div>
+                    <div class="p-1">
+                      <label class="form-label fw-semibold" for="serviceName" >Nombre del servicio</label>
+                      <input type="text" class="form-control" id="serviceName">
+                    </div>
+                    <div class="p-1">
+                      <label class="form-label fw-semibold">Ubicación del servicio</label>
+                      <select class="form-select" aria-label="Ubicación">
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                      </select>
+                    </div>
+                    <div class="p-1">
+                      <label class="form-label fw-semibold">Duración del servicio</label>
+                      <select class="form-select" aria-label="Duración">
+                        <option value="1">Opción 1</option>
+                        <option value="2">Opción 2</option>
+                        <option value="3">Opción 3</option>
+                      </select>
+                    </div>
+                    <div class="input-group p-1">
+                      <label class="form-label fw-semibold w-100">Costo</label>
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">USD</button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Currency</a></li>
+                        <li><a class="dropdown-item" href="#">Currency</a></li>
+                        <li><a class="dropdown-item" href="#">Currency</a></li>
+                      </ul>
+                      <input type="text" class="form-control" aria-label="Tipo de cambio">
+                    </div>
+                    <div class="p-1">
+                      <label for="customRange1" class="form-label fw-semibold">Porcentaje</label>
+                      <input type="range" class="form-range" id="customRange1">
+                      <p class="fs-6 fw-light">Decide cuánto tendrán que pagar los clientes por adelantado.</p>
+                    </div>
+                    <div class="p-1">
+                      <label for="customRange1" class="form-label fw-semibold w-100">Antelación (en minutos)</label>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">0 mins</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">5 mins</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">10 mins</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">15 mins</label>
+                      </div>
+                      <p class="fs-6 fw-light">Establece el período de tiempo necesario para que el cliente esté presente antes del inicio del servicio.</p>
+                    </div>
+                    <div class="p-1">
+                      <label class="form-label fw-semibold" for="rescheduleCost" >Reagendar sin costo (en horas)</label>
+                      <input type="text" class="form-control" id="rescheduleCost" placeholder="0">
+                      <p class="fs-6 fw-light">Deja este campo vacío para no otorgar esta tolerancia.</p>
+                    </div>
+                    <div class="p-1">
+                      <label class="form-label fw-semibold" for="instructions" >Reglas o instrucciones</label>
+                      <input type="text" class="form-control" id="instructions">
+                    </div>
+                    <button class="btn btn-outline-primary mx-auto mt-3" id="save-service">Agregar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-step py-2">
+                <h5 class="my-4">Administra tu equipo (Opcional)</h5>
+                <p class="fs-6 fw-light">Cada miembro del equipo tendrá su propio calendario de citas y disponibilidad dentro del calendario principal del negocio.</p>
+                <div class="card p-3 my-5 text-bg-light border-secondary">
+                  <div class="row">
+                    <div class="col">
+                      <span class="d-block">Owner</span>
+                      <span class="d-block">Maria Roman</span>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                      <div class="form-check form-switch">
+                        <label class="form-check-label fs-6" for="flexSwitchCheckChecked">Yo realizo servicios</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-outline-secondary text-black w-100" id="new-team-member-btn">Agregar equipo</button>
+                <div class="team-member-form d-none" id="team-member-form">
+                  <h5 class="my-4">Datos del miembro</h5>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="email" >Email</label>
+                    <input type="text" class="form-control" id="email">
+                  </div>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="name" >Name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="my-3">
+                    <div class="profile-image"></div>                    
+                    <button type="file" class="btn btn-outline-primary mt-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                        <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                        <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                      </svg>
+                      Agregar imagen
+                    </button>
+                  </div>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold">Categoría</label>
+                    <select class="form-select" aria-label="Categorías">
+                      <option value="1">Opción 1</option>
+                      <option value="2">Opción 2</option>
+                      <option value="3">Opción 3</option>
+                    </select>
+                  </div>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="salary" >Salario Mensual</label>
+                    <input type="text" class="form-control" id="salary" placeholder="0">
+                  </div>
+                  <p class="fs-6 fw-light">Se utiliza para fines estadísticos de tu negocio.</p>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="comision" >Comisión</label>
+                    <input type="text" class="form-control" id="comision" placeholder="0 a 100%">
+                  </div>
+                  <p class="fs-6 fw-light">Se utiliza para fines estadísticos de tu negocio.</p>
+                  <div class="p-1">
+                    <label class="form-label fw-semibold" for="start-date" >Fecha de inicio</label>
+                    <input type="date" class="form-control" id="start-date" placeholder="0 a 100%">
+                  </div>
+                  <button class="btn btn-outline-primary mx-auto mt-3" id="save-team-member-btn">Agregar</button>
+                </div>
+              </div>
+              <div class="form-step py-2">
+                <h5 class="my-4">Resumen</h5>
+                <div class="card text-bg-light border-secondary mb-3">                
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h6 class="card-title fw-bold">Perfil</h6>
+                      </div>
+                      <div class="col">
+                        <i class="bi bi-pen"></i>
+                      </div>
+                    </div> 
+                    <div class="d-flex align-items-center mt-2">
+                      <img class="me-2" src="assets/images/logo-pink.png"/>
+                      <h6>Estética Beserva</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-bg-light border-secondary mb-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h6 class="card-title fw-bold">Tu centro</h6>
+                      </div>
+                      <div class="col">
+                        <i class="bi bi-pen"></i>
+                      </div>
+                    </div>
+                    <div class="py-1">
+                      <span class="d-block">Calle 123</span>
+                      <span class="d-block">Ciudad de Mexico - CP 1234</span>
+                    </div> 
+                    <div class="my-2">
+                      <h6 class="fw-semibold mb-2">Horarios</h6>
+                      <div class="row">
+                        <div class="col">Martes</div>
+                        <div class="col">10:00 a 17:00</div>
+                      </div>
+                      <div class="row">
+                        <div class="col">Miércoles</div>
+                        <div class="col">10:00 a 17:00</div>
+                      </div>
+                      <div class="row">
+                        <div class="col">Jueves</div>
+                        <div class="col">10:00 a 17:00</div>
+                      </div>
+                      <div class="row">
+                        <div class="col">Viernes</div>
+                        <div class="col">10:00 a 17:00</div>
+                      </div>
+                      <div class="row">
+                        <div class="col">Sábado</div>
+                        <div class="col">10:00 a 17:00</div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="card text-bg-light border-secondary mb-3">  
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h6 class="card-title fw-bold">Servicios</h6>
+                      </div>
+                      <div class="col">
+                        <i class="bi bi-pen"></i>
+                      </div>
+                    </div>
+                    <div class="card border-secondary ">
+                      <div class="card-body">
+                        <span class="text-gray">Tratamiento</span>
+                        <h6 class="fw-bold">Tratamiento de caspa</h6>
+                        <span class="text-gray">$40.000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-bg-light border-secondary mb-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col">
+                        <h6 class="card-title fw-bold">Miembros</h6>
+                      </div>
+                      <div class="col">
+                        <i class="bi bi-pen"></i>
+                      </div>
+                    </div>  
+                    <div class="card border-secondary">
+                      <div class="card-body">
+                        <span class="text-gray">Empleada</span>
+                        <h6 class="fw-bold">Jessica Ramirez</h6>
+                        <span>3 servicios</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Crear negocio y conectar con google calendar
+                  </label>
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary w-100" id="next-btn">Continuar</button>
+              <a type="button" class="btn btn-primary w-100 mt-3 d-none" id="save-profile-btn" href="home.html">Crear perfil</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/signup.js"></script>
+  </body>
+</html>

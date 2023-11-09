@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Bootstrap Sass &amp; JS</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/brand.png" alt="logo"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" href="#">Descubre</a>
+                <a class="nav-link" href="#">Recursos</a>
+                <a class="nav-link" href="#">Reservas</a>
+              </div>
+            </div>
+            <div class="position-relative align-items-center d-none d-lg-flex">
+              <button class="btn btn-link text-dark">
+                <i class="bi bi-map" style="font-size: 1.3rem;"></i>
+              </button>
+              <button class="btn btn-link text-dark">
+                <i class="bi bi-bell" style="font-size: 1.3rem;"></i>
+              </button>
+              <div class="dropdown">
+                <button class="btn btn-link text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img class="d-inline" src="assets/images/profile-img.jpg" width="40" height="40">
+                  <span class="fw-bold">Alissa Gray</span>
+                  <!-- <span class="fs-7">alissargray@gmail.com</span> -->
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button">Opcion 1</button></li>
+                  <li><button class="dropdown-item" type="button">Opcion 2</button></li>
+                  <li><button class="dropdown-item" type="button">Opcion 3</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container-md">
+        <div class="mb-3 mb-lg-4">
+          <input type="search" class="form-control" id="home-search" placeholder="Busca, servicios, productos y más...">
+        </div>
+        <div class="w-100 rounded mb-3 mb-lg-4" style="height: 150px; background-position: center; background-size: cover; background-image: url('assets/images/home/banner.jpg')">
+          <div class="fs-5 text-end p-2">
+            <span class="d-block text-light">Tips de belleza</span>
+            <span class="d-block text-light">Beserva</span>
+          </div>
+        </div>
+        <section>
+          <div class="d-flex justify-content-between mt-3 mb-2">
+            <h5 class="fw-bold">Inspiración para ti</h5>
+            <button class="btn btn-link fw-semibold text-primary">Ver todo</button>
+          </div>
+          <div class="d-flex w-100 py-3">
+            <div class="">
+              <button class="btn btn-link text-gray">
+                <div class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto active" style="width: 50px; height: 50px;">
+                  <img src="assets/images/home/waves.png" width="30">
+                </div>
+                Peinados
+              </button>
+            </div>
+            <div class="">
+              <button class="btn btn-link text-gray">
+                <div class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto" style="width: 50px; height: 50px;">
+                  <img src="assets/images/home/makeup.png" width="30">
+                </div>
+                Maquillaje
+              </button>
+            </div>
+            <div class="">
+              <button class="btn btn-link text-gray">
+                <div class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto" style="width: 50px; height: 50px;">
+                  <img src="assets/images/home/eye.png" width="30">
+                </div>
+                Peinados
+              </button>
+            </div>
+            <div class="">
+              <button class="btn btn-link text-gray">
+                <div class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto" style="width: 50px; height: 50px;">
+                  <img src="assets/images/home/handSoap.png" width="30">
+                </div>
+                Uñas
+              </button>
+            </div>
+          </div>
+          <div class="d-flex py-3 mw-100 overflow-auto">
+            <div class="mx-2" style="min-width: 157px">
+              <div class="rounded border-secondary">
+                <img src="assets/images/home/hairstyle1.jpg" alt="peinado" class="w-100">
+              </div>
+              <div class="py-2">
+                <h6 class="fw-bold">Nombre del peinado</h6>
+                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+            </div>
+            <div class="mx-2" style="min-width: 157px">
+              <div class="rounded border-secondary">
+                <img src="assets/images/home/hairstyle2.jpg" alt="peinado" class="w-100">
+              </div>
+              <div class="py-2">
+                <h6 class="fw-bold">Nombre del peinado</h6>
+                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+            </div>
+            <div class="mx-2" style="min-width: 157px">
+              <div class="rounded border-secondary">
+                <img src="assets/images/home/hairstyle3.jpg" alt="peinado" class="w-100">
+              </div>
+              <div class="py-2">
+                <h6 class="fw-bold">Nombre del peinado</h6>
+                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+            </div>
+            <div class="mx-2" style="min-width: 157px">
+              <div class="rounded border-secondary">
+                <img src="assets/images/home/hairstyle4.jpg" alt="peinado" class="w-100">
+              </div>
+              <div class="py-2">
+                <h6 class="fw-bold">Nombre del peinado</h6>
+                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+            </div>
+            <div class="mx-2" style="min-width: 157px">
+              <div class="rounded border-secondary">
+                <img src="assets/images/home/hairstyle5.jpg" alt="peinado" class="w-100">
+              </div>
+              <div class="py-2">
+                <h6 class="fw-bold">Nombre del peinado</h6>
+                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+            </div>
+            <div class="" style="min-width: 157px">
+              <div class="rounded border-secondary">
+                <img src="assets/images/home/hairstyle6.jpg" alt="peinado" class="w-100">
+              </div>
+              <div class="py-2">
+                <h6 class="fw-bold">Nombre del peinado</h6>
+                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="d-flex justify-content-between mt-3 mb-2">
+            <h5 class="fw-bold">Blogs de belleza y salud</h5>
+            <button class="btn btn-link fw-semibold text-primary">Ver todo</button>
+          </div>
+          <div class="row py-3">
+            <div class="col d-flex mb-2">
+              <div class="rounded">
+                <img src="assets/images/home/blog-image.jpg">
+              </div>
+              <div class="p-3">
+                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>los impresindibles de este verano</span>
+                <span class="fs-7 fw-bold text-primary">Bianca</span>
+              </div>
+            </div>
+            <div class="col d-flex mb-2">
+              <div class="rounded">
+                <img src="assets/images/home/blog-image.jpg">
+              </div>
+              <div class="p-3">
+                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>los impresindibles de este verano</span>
+                <span class="fs-7 fw-bold text-primary">Bianca</span>
+              </div>
+            </div>
+            <div class="col d-flex mb-2">
+              <div class="rounded">
+                <img src="assets/images/home/blog-image.jpg">
+              </div>
+              <div class="p-3">
+                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>los impresindibles de este verano</span>
+                <span class="fs-7 fw-bold text-primary">Bianca</span>
+              </div>
+            </div>
+            <div class="col d-flex mb-2">
+              <div class="rounded">
+                <img src="assets/images/home/blog-image.jpg">
+              </div>
+              <div class="p-3">
+                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>los impresindibles de este verano</span>
+                <span class="fs-7 fw-bold text-primary">Bianca</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

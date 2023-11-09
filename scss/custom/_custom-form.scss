@@ -1,0 +1,39 @@
+.form-container{
+  height: 100vh;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.form-progress-indicators{
+  display: flex;
+  justify-content: space-between;
+  .progress-step{
+    width: 85px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: $secondary;
+    &.active{
+      background-color: $primary;
+    }
+  }
+}
+
+.form-step{
+  display: none;
+  &.active{
+    display: block !important;
+  }
+}
+
+.profile-image{
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: $secondary;
+}
+
+.cover-image{
+  width: 100%;
+  height: 70px;
+  background-color: $secondary;
+}

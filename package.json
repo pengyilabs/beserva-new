@@ -1,10 +1,10 @@
 {
-  "name": "sass-js",
-  "description": "Include Bootstrap's source Sass and compiled JavaScript bundle via npm.",
+  "name": "beserva",
+  "description": "",
   "version": "0.0.0",
   "private": true,
-  "repository": "twbs/examples",
-  "license": "MIT",
+  "repository": "https://github.com/pengyilabs/beserva-new.git",
+  "license": "",
   "stackblitz": {
     "startCommand": "npm start"
   },

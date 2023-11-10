@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <title>Bootstrap Sass &amp; JS</title>
+    <title>Beserva</title>
   </head>
   <body>
     <div class="container-fluid p-0">
       <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="home.html">
               <img src="assets/images/brand.png" alt="logo"/>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,16 +40,16 @@
                   <!-- <span class="fs-7">alissargray@gmail.com</span> -->
                 </button>
                 <ul class="dropdown-menu">
-                  <li><button class="dropdown-item" type="button">Opcion 1</button></li>
-                  <li><button class="dropdown-item" type="button">Opcion 2</button></li>
-                  <li><button class="dropdown-item" type="button">Opcion 3</button></li>
+                  <li><a class="dropdown-item" type="button" href="profile.html">Perfil</a></li>
+                  <li><a class="dropdown-item" type="button">Opcion 2</a></li>
+                  <li><a class="dropdown-item" type="button">Opcion 3</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </nav>
       </header>
-      <div class="container-md">
+      <main class="container-md">
         <div class="mb-3 mb-lg-4">
           <input type="search" class="form-control" id="home-search" placeholder="Busca, servicios, productos y más...">
         </div>
@@ -98,7 +98,7 @@
               </button>
             </div>
           </div>
-          <div class="d-flex py-3 mw-100 overflow-auto">
+          <div class="d-flex py-3 mw-100 overflow-auto custom-scrollbar">
             <div class="mx-2" style="min-width: 157px">
               <div class="rounded border-secondary">
                 <img src="assets/images/home/hairstyle1.jpg" alt="peinado" class="w-100">
@@ -166,7 +166,7 @@
                 <img src="assets/images/home/blog-image.jpg">
               </div>
               <div class="p-3">
-                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>los impresindibles de este verano</span>
+                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>losimpresindibles de este verano</span>
                 <span class="fs-7 fw-bold text-primary">Bianca</span>
               </div>
             </div>
@@ -175,7 +175,7 @@
                 <img src="assets/images/home/blog-image.jpg">
               </div>
               <div class="p-3">
-                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>los impresindibles de este verano</span>
+                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>losimpresindibles de este verano</span>
                 <span class="fs-7 fw-bold text-primary">Bianca</span>
               </div>
             </div>
@@ -184,7 +184,7 @@
                 <img src="assets/images/home/blog-image.jpg">
               </div>
               <div class="p-3">
-                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>los impresindibles de este verano</span>
+                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>losimpresindibles de este verano</span>
                 <span class="fs-7 fw-bold text-primary">Bianca</span>
               </div>
             </div>
@@ -193,13 +193,35 @@
                 <img src="assets/images/home/blog-image.jpg">
               </div>
               <div class="p-3">
-                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>los impresindibles de este verano</span>
+                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>losimpresindibles de este verano</span>
                 <span class="fs-7 fw-bold text-primary">Bianca</span>
               </div>
             </div>
           </div>
         </section>
-      </div>
+        <div class="d-flex d-md-none border-top">
+          <a class="btn btn-link" href="#">
+            <img src="assets/images/home.svg">
+            Inicio
+          </a>
+          <a class="btn btn-link fs-7" href="#">
+            <img src="assets/images/seacrh.svg">
+            Descubre
+          </a>
+          <a class="btn btn-link fs-7" href="#">
+            <img src="assets/images/sources.svg">
+            Recursos
+          </a>
+          <a class="btn btn-link fs-7" href="#">
+            <img src="assets/images/bookings.svg">
+            Reservas
+          </a>
+          <a class="btn btn-link fs-7" href="profile.html">
+            <img src="assets/images/profile.svg">
+            Perfil
+          </a>
+        </div>
+      </main>
     </div>
 
     <script type="module" src="js/main.js"></script>

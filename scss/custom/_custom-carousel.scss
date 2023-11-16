@@ -1,7 +1,7 @@
 
 .carousel-indicators {
   margin: 0;
-  top: 46%;
+  top: 51vh;
   bottom: unset;
   right: 0;
   left: 0;
@@ -21,6 +21,10 @@
   .carousel-img,
   .carousel-caption {
     width: 100%;
+    text-align: start;
+  }
+  .logo{
+    width: 150px;
   }
   
   .carousel-content {
@@ -49,12 +53,21 @@
   .carousel-item{
     height: 100vh;
     flex-direction: row;
+    .carousel-right-side{
+      width: 60%;
+    }
+    .logo{
+      width: auto;
+    }
     .carousel-img{
       width: 40%;
       height: 100% !important;
     }
     .carousel-content {
       height: 100% !important;
+    }
+    .carousel-caption{
+      text-align: center;
     }
   }
   .carousel-indicators{

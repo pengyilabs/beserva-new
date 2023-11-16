@@ -13,7 +13,7 @@
         <div class="col-5 d-none d-md-block">
           <img src="/assets/images/slide-1.jpg" class="w-100"/>
         </div>
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-7 bg-light">
           <div class="form-container px-lg-7 py-5">
             <div class="w-100 px-2 px-md-2 px-lg-7 position-relative text-center">
               <button class="btn position-absolute top-0 start-0 ms-lg-6" id="back-btn">
@@ -110,7 +110,7 @@
                   <div class="pb-2">
                     <div class="d-flex justify-content-between">
                       <div class="form-check form-switch">
-                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Lunes</label>
+                        <label class="form-check-label fw-semibold" for="flexSwitchCheckDefault">Lunes</label>
                         <input class="form-check-input" type="checkbox" role="switch" id="monday">
                       </div>
                       <button class="btn btn-link">+ Agregar horario</button>
@@ -129,7 +129,7 @@
                   <div class="pb-2">
                     <div class="d-flex justify-content-between">
                       <div class="form-check form-switch">
-                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Martes</label>
+                        <label class="form-check-label fw-semibold" for="flexSwitchCheckDefault">Martes</label>
                         <input class="form-check-input" type="checkbox" role="switch" id="monday">
                       </div>
                       <button class="btn btn-link">+ Agregar horario</button>
@@ -148,7 +148,7 @@
                   <div class="pb-2">
                     <div class="d-flex justify-content-between">
                       <div class="form-check form-switch">
-                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Miércoles</label>
+                        <label class="form-check-label fw-semibold" for="flexSwitchCheckDefault">Miércoles</label>
                         <input class="form-check-input" type="checkbox" role="switch" id="monday">
                       </div>
                       <button class="btn btn-link">+ Agregar horario</button>
@@ -167,7 +167,7 @@
                   <div class="pb-2">
                     <div class="d-flex justify-content-between">
                       <div class="form-check form-switch">
-                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Jueves</label>
+                        <label class="form-check-label fw-semibold" for="flexSwitchCheckDefault">Jueves</label>
                         <input class="form-check-input" type="checkbox" role="switch" id="monday">
                       </div>
                       <button class="btn btn-link">+ Agregar horario</button>
@@ -186,7 +186,7 @@
                   <div class="pb-2">
                     <div class="d-flex justify-content-between">
                       <div class="form-check form-switch">
-                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Viernes</label>
+                        <label class="form-check-label fw-semibold" for="flexSwitchCheckDefault">Viernes</label>
                         <input class="form-check-input" type="checkbox" role="switch" id="monday">
                       </div>
                       <button class="btn btn-link">+ Agregar horario</button>
@@ -205,7 +205,7 @@
                   <div class="pb-2">
                     <div class="d-flex justify-content-between">
                       <div class="form-check form-switch">
-                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Sábado</label>
+                        <label class="form-check-label fw-semibold" for="flexSwitchCheckDefault">Sábado</label>
                         <input class="form-check-input" type="checkbox" role="switch" id="monday">
                       </div>
                       <button class="btn btn-link">+ Agregar horario</button>
@@ -224,7 +224,7 @@
                   <div class="pb-2">
                     <div class="d-flex justify-content-between">
                       <div class="form-check form-switch">
-                        <label class="form-check-label fw-bold" for="flexSwitchCheckDefault">Domingo</label>
+                        <label class="form-check-label fw-semibold" for="flexSwitchCheckDefault">Domingo</label>
                         <input class="form-check-input" type="checkbox" role="switch" id="monday">
                       </div>
                       <button class="btn btn-link">+ Agregar horario</button>
@@ -245,26 +245,27 @@
               <div class="form-step">
                 <div class="py-2">
                   <h5 class="my-4">Servicios (Opcional)</h5>
+                  <div class="mb-4" id="services-list"></div>
                   <button class="btn btn-outline-primary w-100" id="new-service-btn">Agregar servicio</button>
                   <div class="service-form d-none" id="service-form">
                     <div class="p-1">
                       <label class="form-label fw-semibold">Categoría</label>
-                      <select class="form-select" aria-label="Categorías">
-                        <option value="1">Opción 1</option>
-                        <option value="2">Opción 2</option>
-                        <option value="3">Opción 3</option>
+                      <select class="form-select" id="service-category" aria-label="Categorías">
+                        <option value="Option 1">Opción 1</option>
+                        <option value="Option 2">Opción 2</option>
+                        <option value="Option 3">Opción 3</option>
                       </select>
                     </div>
                     <div class="p-1">
-                      <label class="form-label fw-semibold" for="serviceName" >Nombre del servicio</label>
-                      <input type="text" class="form-control" id="serviceName">
+                      <label class="form-label fw-semibold" for="service-name" >Nombre del servicio</label>
+                      <input type="text" class="form-control" id="service-name">
                     </div>
                     <div class="p-1">
                       <label class="form-label fw-semibold">Ubicación del servicio</label>
                       <select class="form-select" aria-label="Ubicación">
-                        <option value="1">Opción 1</option>
-                        <option value="2">Opción 2</option>
-                        <option value="3">Opción 3</option>
+                        <option value="Option 1">Opción 1</option>
+                        <option value="Option 2">Opción 2</option>
+                        <option value="Option 3">Opción 3</option>
                       </select>
                     </div>
                     <div class="p-1">
@@ -283,7 +284,7 @@
                         <li><a class="dropdown-item" href="#">Currency</a></li>
                         <li><a class="dropdown-item" href="#">Currency</a></li>
                       </ul>
-                      <input type="text" class="form-control" aria-label="Tipo de cambio">
+                      <input type="text" class="form-control" id="service-price" aria-label="Tipo de cambio">
                     </div>
                     <div class="p-1">
                       <label for="customRange1" class="form-label fw-semibold">Porcentaje</label>
@@ -319,18 +320,17 @@
                       <label class="form-label fw-semibold" for="instructions" >Reglas o instrucciones</label>
                       <input type="text" class="form-control" id="instructions">
                     </div>
-                    <button class="btn btn-outline-primary mx-auto mt-3" id="save-service">Agregar</button>
+                    <button class="btn btn-outline-primary w-100 mx-auto my-3" id="save-service">Agregar</button>
                   </div>
                 </div>
               </div>
               <div class="form-step py-2">
                 <h5 class="my-4">Administra tu equipo (Opcional)</h5>
-                <p class="fs-6 fw-light">Cada miembro del equipo tendrá su propio calendario de citas y disponibilidad dentro del calendario principal del negocio.</p>
-                <div class="card p-3 my-5 text-bg-light border-secondary">
+                <div class="card p-3 my-3 border-secondary">
                   <div class="row">
                     <div class="col">
-                      <span class="d-block">Owner</span>
-                      <span class="d-block">Maria Roman</span>
+                      <span class="d-block text-gray fs-7">Owner</span>
+                      <span class="d-block fw-semibold">Maria Roman</span>
                     </div>
                     <div class="col d-flex align-items-center">
                       <div class="form-check form-switch">
@@ -340,7 +340,8 @@
                     </div>
                   </div>
                 </div>
-                <button class="btn btn-outline-secondary text-black w-100" id="new-team-member-btn">Agregar equipo</button>
+                <div class="mb-4" id="members-list"></div>
+                <button class="btn btn-outline-primary w-100" id="new-team-member-btn">Agregar equipo</button>
                 <div class="team-member-form d-none" id="team-member-form">
                   <h5 class="my-4">Datos del miembro</h5>
                   <div class="p-1">
@@ -348,8 +349,8 @@
                     <input type="text" class="form-control" id="email">
                   </div>
                   <div class="p-1">
-                    <label class="form-label fw-semibold" for="name" >Name</label>
-                    <input type="text" class="form-control" id="name">
+                    <label class="form-label fw-semibold" for="member-name" >Name</label>
+                    <input type="text" class="form-control" id="member-name">
                   </div>
                   <div class="my-3">
                     <div class="profile-image"></div>                    
@@ -363,10 +364,10 @@
                   </div>
                   <div class="p-1">
                     <label class="form-label fw-semibold">Categoría</label>
-                    <select class="form-select" aria-label="Categorías">
-                      <option value="1">Opción 1</option>
-                      <option value="2">Opción 2</option>
-                      <option value="3">Opción 3</option>
+                    <select class="form-select" id="member-category" aria-label="Categorías">
+                      <option value="Category 1">Categoria 1</option>
+                      <option value="Category 2">Categoria 2</option>
+                      <option value="Category 3">Categoria 3</option>
                     </select>
                   </div>
                   <div class="p-1">
@@ -383,37 +384,33 @@
                     <label class="form-label fw-semibold" for="start-date" >Fecha de inicio</label>
                     <input type="date" class="form-control" id="start-date" placeholder="0 a 100%">
                   </div>
-                  <button class="btn btn-outline-primary mx-auto mt-3" id="save-team-member-btn">Agregar</button>
+                  <button class="btn btn-outline-primary w-100 mx-auto my-3" id="save-team-member-btn">Agregar</button>
                 </div>
               </div>
               <div class="form-step py-2">
                 <h5 class="my-4">Resumen</h5>
-                <div class="card text-bg-light border-secondary mb-3">                
+                <div class="card border-secondary mb-3">                
                   <div class="card-body">
-                    <div class="row">
-                      <div class="col">
-                        <h6 class="card-title fw-bold">Perfil</h6>
-                      </div>
-                      <div class="col">
+                    <div class="d-flex justify-content-between mb-2">
+                      <h6 class="card-title fw-bold">Miembros</h6>
+                      <button class="btn btn-link">
                         <i class="bi bi-pen"></i>
-                      </div>
-                    </div> 
+                      </button>
+                    </div>  
                     <div class="d-flex align-items-center mt-2">
                       <img class="me-2" src="assets/images/logo-pink.png"/>
                       <h6>Estética Beserva</h6>
                     </div>
                   </div>
                 </div>
-                <div class="card text-bg-light border-secondary mb-3">
+                <div class="card border-secondary mb-3">
                   <div class="card-body">
-                    <div class="row">
-                      <div class="col">
-                        <h6 class="card-title fw-bold">Tu centro</h6>
-                      </div>
-                      <div class="col">
+                    <div class="d-flex justify-content-between mb-2">
+                      <h6 class="card-title fw-bold">Miembros</h6>
+                      <button class="btn btn-link">
                         <i class="bi bi-pen"></i>
-                      </div>
-                    </div>
+                      </button>
+                    </div>  
                     <div class="py-1">
                       <span class="d-block">Calle 123</span>
                       <span class="d-block">Ciudad de Mexico - CP 1234</span>
@@ -443,16 +440,14 @@
                     </div>
                   </div> 
                 </div>
-                <div class="card text-bg-light border-secondary mb-3">  
+                <div class="card border-secondary mb-3">  
                   <div class="card-body">
-                    <div class="row">
-                      <div class="col">
-                        <h6 class="card-title fw-bold">Servicios</h6>
-                      </div>
-                      <div class="col">
+                    <div class="d-flex justify-content-between mb-2">
+                      <h6 class="card-title fw-bold">Miembros</h6>
+                      <button class="btn btn-link">
                         <i class="bi bi-pen"></i>
-                      </div>
-                    </div>
+                      </button>
+                    </div>  
                     <div class="card border-secondary ">
                       <div class="card-body">
                         <span class="text-gray">Tratamiento</span>
@@ -462,15 +457,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="card text-bg-light border-secondary mb-3">
+                <div class="card border-secondary mb-3">
                   <div class="card-body">
-                    <div class="row">
-                      <div class="col">
-                        <h6 class="card-title fw-bold">Miembros</h6>
-                      </div>
-                      <div class="col">
+                    <div class="d-flex justify-content-between mb-2">
+                      <h6 class="card-title fw-bold">Miembros</h6>
+                      <button class="btn btn-link">
                         <i class="bi bi-pen"></i>
-                      </div>
+                      </button>
                     </div>  
                     <div class="card border-secondary">
                       <div class="card-body">
@@ -488,8 +481,8 @@
                   </label>
                 </div>
               </div>
-              <button type="button" class="btn btn-primary w-100" id="next-btn">Continuar</button>
-              <a type="button" class="btn btn-primary w-100 mt-3 d-none" id="save-profile-btn" href="home.html">Crear perfil</a>
+              <button type="button" class="btn btn-primary text-light w-100" id="next-btn">Continuar</button>
+              <a type="button" class="btn btn-primary text-light w-100 mt-3 d-none" id="save-profile-btn" href="home.html">Crear perfil</a>
             </div>
           </div>
         </div>

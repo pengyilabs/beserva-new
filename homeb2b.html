@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/jsCalendar.css">
+    <script type="text/javascript" src="js/jsCalendar.js"></script>
     <title>Beserva</title>
   </head>
   <body>
-    <main class="vh-100">
+    <main class="vh-100 d-flex">
       <!-- Sidebar start -->
       <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-secondary h-100" style="width: 280px;">
         <a href="/" class="d-flex align-items-center justify-center my-3 mx-auto text-white text-decoration-none">
@@ -95,8 +97,201 @@
       </div>
       <!-- Sidebar end -->
       <!-- Right Content start -->
-      <div>
-        
+      <div class="w-100 px-3">
+        <nav class="navbar border-bottom">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Inicio</span>
+            <i class="bi bi-layout-sidebar"></i>
+          </div>
+        </nav>
+        <div class="row mt-3">
+          <div class="col-4 border-end">
+            <div class="card bg-light border-0 my-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title mb-4">Próxima cita</h5>
+                  <i class="bi bi-three-dots-vertical"></i>
+                </div>
+                <p class="card-text mb-0">Miercoles, 26 Junio 2023, 07:00</p>
+                <h5 class="card-title mb-0">Manicure</h5>
+                <p class="card-text">Maria, 1 hr con Alissa</p>
+                <button class="btn btn-primary text-light rounded">Re-agendar</button>
+                <button class="btn bg-white rounded border-0">Enviar mensaje</button>
+              </div>
+            </div>
+            <div class="card bg-light border-0 my-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title mb-4">Servicios mas vendidos</h5>
+                  <i class="bi bi-three-dots-vertical"></i>
+                </div>
+                <div>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2">
+                      <a class="text-primary">#1</a>
+                      <p>Manicura y pedicura</p>
+                    </div>
+                    <p>321</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2">
+                      <a>#2</a>
+                      <p>Alisado de cabello</p>
+                    </div>
+                    <p>90</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex gap-2">
+                      <a>#3</a>
+                      <p>Tinte</p>
+                    </div>
+                    <p>68</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-light border-0 my-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title mb-4">Estilista del mes</h5>
+                  <i class="bi bi-three-dots-vertical"></i>
+                </div>
+                <div class="d-flex gap-2 my-5">
+                  <img src="assets/images/profile-img.jpg" width="80" height="80">
+                  <div>
+                    <h5 class="mb-0">Maria Roman</h5>
+                    <p class="text-gray my-0">103 citas</p>
+                    <img src="assets/images/stars.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-light border-0 my-3">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <h5 class="card-title mb-0">Ventas diarias</h5>
+                    <p class="text-gray">Ultimos 30 dias</p>
+                  </div>
+                  <i class="bi bi-three-dots-vertical"></i>
+                </div>
+                <div class="my-5">
+                  <h2 class="text-primary fw-bold">MX $1,000</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <nav class="navbar border-bottom">
+              <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Reservas</span>
+                <div>
+                  <span class="badge px-3 py-2 text-bg-white border text-gray fw-normal">
+                    <i class="bi bi-circle-fill text-danger"></i>
+                    Lorena
+                  </span>
+                  <span class="badge px-3 py-2 text-bg-white border text-gray fw-normal">
+                    <i class="bi bi-circle-fill text-info"></i>
+                    Jorge
+                  </span>
+                  <span class="badge px-3 py-2 text-bg-white border text-gray fw-normal">
+                    <i class="bi bi-circle-fill text-warning"></i>
+                    Maria
+                  </span>
+                  <span class="badge px-3 py-2 text-bg-white border text-gray fw-normal">
+                    Estilistas (3)
+                  </span>
+                </div>
+              </div>
+            </nav>
+            <div class="row mt-2">
+              <div class="col-5 border-end">
+                <div class="auto-jsCalendar"></div>
+              </div>
+              <div class="col">
+                <div class="border-bottom">
+                  <div class="d-flex justify-content-between align-items-center p-2">
+                    <p class="navbar-brand mb-0">22 Junio 2023</p>
+                    <button class="btn btn-primary text-light rounded">
+                      <i class="bi bi-plus"></i>
+                      Crear Reserva
+                    </button>
+                  </div>
+                </div>
+                <table class="table table-light">
+                  <tbody>
+                    <tr>
+                      <th class="fw-normal text-gray fs-7">6:00</th>
+                      <td>
+                        <div class="p-5"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal text-gray fs-7">7:00</th>
+                      <td>
+                        <div class="bg-danger-subtle p-4 row rounded">
+                            <div class="col-4">
+                              <p class="text-primary fs-7 mb-1">7:00 - 7:30</p>
+                              <p class="text-primary fs-7">Manicura</p>
+                            </div>
+                            <div class="col">
+                              <p class="text-primary fs-7 mb-1">Alissa Gray</p>
+                              <span class="badge text-bg-light text-gray fw-normal">
+                                <i class="bi bi-circle-fill text-info"></i>
+                                Jorge
+                              </span>
+                            </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal text-gray fs-7">8:00</th>
+                      <td>
+                        <div class="p-5"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal text-gray fs-7">9:00</th>
+                      <td>
+                        <div class="p-5"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal text-gray fs-7">10:00</th>
+                      <td>
+                        <div class="bg-danger-subtle p-4 row rounded">
+                            <div class="col-4">
+                              <p class="text-primary fs-7 mb-1">10:00 - 10:30</p>
+                              <p class="text-primary fs-7">Alisado</p>
+                            </div>
+                            <div class="col">
+                              <p class="text-primary fs-7 mb-1">Julia Cardenas</p>
+                              <span class="badge text-bg-light text-gray fw-normal">
+                                <i class="bi bi-circle-fill text-warning"></i>
+                                Maria
+                              </span>
+                            </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal text-gray fs-7">11:00</th>
+                      <td>
+                        <div class="p-5"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="fw-normal text-gray fs-7">12:00</th>
+                      <td>
+                        <div class="p-5"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Right Content end -->
     </main>

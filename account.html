@@ -97,57 +97,75 @@
                     </li>
                 </ul>
             </div>
-            <!-- Sidebar end -->
+          
 
 
         </main>
         <!-- Topbar start -->
         <div>
-            </div>
-            <div class="d-flex" style="padding: 10px;">
-                <p>Cuenta</p>
-            </div>
-            <!-- Topbar End -->
-            <!-- AccountData start -->
-            <div>
+        </div>
+        <div class="w-100 px-3">
+            <nav class="navbar border-bottom">
+              <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Cuenta</span>
                 
-                <div class="d-flex row-gap-md-2" style="padding: 100px 180px;">
+              </div>
+            </nav>
+            <div class="row mt-3">
+        <!-- Topbar End -->
+        <!-- AccountData start -->
+        <div class="container m-7 align-items-center">
 
-                    <img src="assets/images/LogoCuenta.png" alt="LogoCuenta">
-                    <div>
+            <div class="d-flex">
 
-                        <p style="margin: 5px; font-family: Inter;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: normal;">Foto de perfil</p>
-                        <div class="d-flex row-gap-md-2">
+                <img class="m-3" src="assets/images/LogoCuenta.png" alt="LogoCuenta">
+                <div>
 
-                            <div
-                                style="margin: 4px; border: 1px solid var(--secundary-pink-pressed, #D6568A);border-radius: 6px;background: var(--primary-pink, #FF517C);">
-                                <img style="margin: 4px;" src="assets/images/Carga.png" alt="Carga">
-                                <button
-                                    style="color: var(--primary-white, #FFF); border: 0px solid var(--secundary-pink-pressed, #D6568A);border-radius: 0px;background: var(--primary-pink, #FF517C);">Subir
-                                    Foto</button>
-                            </div>
-                            <button
-                                style="margin: 3px;height: 30px;border-radius: 6px;background: var(--primary-white, #FFF); border:  1px solid var(--grayscale-stroke, #FFF7F6);">Eliminar</button>
-                        </div>
-                        <p style=" margin:5px;color: var(--grayscale-light-gray, #828282);font-family: Inter;font-size: 14px;font-style: normal;font-weight: 500;line-height: 18px;">Beserva solo soporta PNGs,JPEGs y GIFs menores de 10 mb</p>
+                    <p class="fs-5 m-2">Foto de perfil</p>
+                    <div class="d-flex row-gap-md-2">
+
                         <div>
+                            <button class="btn btn-primary text-light rounded m-1">
+                                <i class="bi bi-upload"></i>
+                                Subir Foto
+                            </button>
                         </div>
-
-
+                        <button class="btn btn-secondary text-dark rounded m-1"> <i
+                                class="bi bi-trash3"></i>Eliminar</button>
+                    </div>
+                    <p class="m-2">Beserva solo soporta PNGs, JPEGs y GIFs menores de 10 mb</p>
+                    <div>
                     </div>
 
+
                 </div>
-                <div class="d-flex row-gap-md-2" style="padding: 0px 180px;">
-                <p>Nombre</p>
+
             </div>
+            <div class="d-flex m-3">
+                <div class="m-1 ">
+                    <label class="fs-5">Nombre</label>
+                    <input type="text" placeholder="Carlos" class="form-control" id="centerName">
+                    <label class="fs-5">Correo</label>
+                    <input type="text" placeholder="Correo@beserva.com" class=" form-control" id="centerEmail">
+                </div>
+               
+                    <div class="m-1">
+                        <label class="fs-5">Apellido</label>
+                        <input type="text" placeholder="Rodriguez" class=" form-control" id="centerApellido">
+                    </div>
+                    <!-- AccountData Find -->
+                
+                </div>
+                <div class="d-flex justify-content-center m-4">
+                    <button class="btn btn-primary bg-gradient text-light rounded m-1 bs-gradient">Guardar Cambios</button>
+               </div>
+            
             </div>
+            
         </div>
     </div>
     </div>
+    
     <script type="module" src="js/main.js"></script>
 </body>
 

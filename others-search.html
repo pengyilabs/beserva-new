@@ -101,86 +101,39 @@
     <!-- Sidebar end -->
     <!-- Right Content start -->
 
-    <div class="w-100 px-3">
+    <div class="w-100 px-3 bg-gray bg-opacity-10">
       <nav class="navbar border-bottom">
         <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Servicios</span>
-          <i class="bi bi-layout-sidebar"></i>
+          <h6 class="m-1">Servicios</h6>
+
         </div>
       </nav>
-      <div class=" d-flex m-3">
-         <div class="m-1">
-        <button type="button" class="btn btn-light bg-white text-black rounded h-100">Filtros <i class="bi bi-filter m-3"></i></button>
-        
-      </div>
-        <i class="bi bi-search m-3"></i>
-        <input type="search" class="form-control w-25 h-25" id="Services-search" placeholder="Buscar servicios">
-         
-        <div class="offset-md-4">
+      <div class=" d-flex m-3 justify-content-between">
+        <div class="d-flex">
+          <div class="m-1">
+            <button type="button" class="btn btn-light  text-black rounded h-100">Filtros <i
+                class="bi bi-filter m-3"></i></button>
 
-          <button class="btn btn-primary text-light rounded h-75">Crear servicio</button>
-          <button class="btn btn-light bg-white rounded h-75">Exportar</button>
+          </div>
+          <div class="d-flex">
+            <i class="bi bi-search m-3 "></i>
+            <input type="search" class="form-control bg-body-tertiary" id="Services-search"
+              placeholder="Juliana@beserva.com">
+          </div>
         </div>
-      </div>
-      <div class="d-flex border p-3 rounded m-2">
+        <div class="d-flex">
 
-        <div class="w-50">
-          <p class="text-gray fw-semibold"> <img src="assets/images/Input.png"alt=""> Nombre</p>
-          <p><img src="assets/images/Input.png" alt=""> Tratamiento caspa</p>
-          <p><img src="assets/images/Input.png" alt=""> Styling</p>
-          <p><img src="assets/images/Input.png" alt=""> Uñas</p>
-          <p><img src="assets/images/Input.png" alt=""> Maquillaje</p>
-        </div>
-        <div class="w-25">
-          <p class="text-gray fw-semibold">Estado</p>
-          <p class="w-25 text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold">Activo</p>
-          <p class="w-25  text-gray">Inactivo</p>
-          <p class="w-25  text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold">Activo</p>
-          <p class="w-25  text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold">Activo</p>
-        </div>
-        <div class="w-25">
-          <p class="text-gray fw-semibold">Tipo</p>
-          <p>Tratamiento</p>
-          <p>Tratamiento</p>
-          <p>Tratamiento</p>
-          <p>Tratamiento</p>
-        </div>
-        <div>
-          <p class="text-gray fw-semibold">Precio</p>
-          <p>$40,000</p>
-          <p>$40,000</p>
-          <p>$40,000</p>
-          <p>$40,000</p>
+          <button class="btn btn-primary text-light rounded h-75 m-1">Agregar Miembro</button>
+          <button class="btn btn-light  text-black rounded h-75 m-1">Exportar CSV</button>
         </div>
       </div>
-      <div class="d-flex">
-        <p class="text-gray m-2">Mostrando 25 de 250 resultados</p>
-        <div class="d-flex offset-md-6">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item">
-
-              </li>
-              <i class="bi bi-caret-left m-2"></i>
-              <li class="page-item"><a class="page-link  bg-primary text-white rounded border-light " href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link border-light text-black" href="#">2</a></li>
-              <li class="page-item"><a class="page-link border-light text-black" href="#">3</a></li>
-              <li class="page-item"><a class="page-link border-light text-black" href="#">....</a></li>
-              <li class="page-item"><a class="page-link border-light text-black" href="#">10</a></li>
-              <i class="bi bi-caret-right m-2"></i>
-              <li class="page-item">
-
-                </a>
-              </li>
-            </ul>
-          </nav>
+      <div class="card w-50 h-50 m-7">
+        <div class="card-body">
+          <input type="search" class="form-control bg-white" id="Services-search"
+              placeholder="Buscar">
         </div>
       </div>
     </div>
-
-
-
     <!-- Right Content end -->
   </main>
 

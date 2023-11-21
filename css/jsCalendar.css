@@ -140,12 +140,12 @@
 		}
 
 		.jsCalendar thead {
-			display: block;
-			margin: 10px 40px;
+			display: table;
+			margin: auto;
 		}
 		.jsCalendar tbody {
-			display: block;
-			margin: 10px 40px;
+			display: table;
+			margin: auto;
 		}
 		.jsCalendar ::-moz-selection {
 			background: #83D8FF;

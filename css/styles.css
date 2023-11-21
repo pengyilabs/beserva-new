@@ -10848,6 +10848,10 @@ textarea.form-control-lg {
   overflow-x: scroll;
 }
 
+.body-overflow {
+  overflow: hidden;
+}
+
 #wrapper {
   overflow-x: hidden;
 }

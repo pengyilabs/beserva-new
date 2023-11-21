@@ -10841,6 +10841,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+/* EXTRA CLASSES  */
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
 #wrapper {
   overflow-x: hidden;
 }

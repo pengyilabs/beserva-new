@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="css/jsCalendar.css">
+  <script type="text/javascript" src="js/jsCalendar.js"></script>
+  <title>Beserva</title>
+</head>
+
+<body>
+
+  <main class="vh-100 d-flex">
+    <!-- Sidebar start -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-secondary h-100" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center justify-center my-3 mx-auto text-white text-decoration-none">
+        <img src="assets/images/logo-dark.png" alt="logo" />
+      </a>
+      <ul class="nav nav-pills flex-column mb-auto mt-5">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark d-flex gap-3" aria-current="page">
+            <i class="bi bi-search"></i>
+            Buscar
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark d-flex gap-3">
+            <i class="bi bi-bell"></i>
+            Notificationes
+          </a>
+        </li>
+      </ul>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark d-flex gap-3" aria-current="page">
+            <i class="bi bi-house"></i>
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark d-flex gap-3">
+            <i class="bi bi-calendar"></i>
+            Calendario
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark d-flex gap-3">
+            <i class="bi bi-graph-down"></i>
+            Metricas
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark d-flex gap-3">
+            <i class="bi bi-person-plus"></i>
+            Clientes
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark d-flex gap-3">
+            <i class="bi bi-ticket"></i>
+            Cupones
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark d-flex gap-3">
+            <i class="bi bi-people"></i>
+            Equipo
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark d-flex gap-3">
+            <i class="bi bi-inboxes"></i>
+            Inventario
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark d-flex gap-3">
+            <i class="bi bi-flower1"></i>
+            Servicios
+          </a>
+        </li>
+      </ul>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="#" class="nav-link text-dark d-flex gap-3" aria-current="page">
+            <i class="bi bi-person-gear"></i>
+            Cuenta
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-dark d-flex gap-3">
+            <i class="bi bi-box-arrow-left"></i>
+            Cerrar sesión
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Sidebar end -->
+    <!-- Right Content start -->
+
+    <div class="w-100 px-3">
+      <nav class="navbar border-bottom">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Inventario</span>
+          <i class="bi bi-layout-sidebar"></i>
+        </div>
+      </nav>
+      <div class=" d-flex m-3 justify-content-between">
+        <div class="d-flex">
+          <div class="m-1">
+            <button type="button" class="btn btn-light bg-white text-black rounded h-100">Filtros <i
+                class="bi bi-filter m-3"></i></button>
+
+          </div>
+          <div class="d-flex">
+            <i class="bi bi-search m-3 "></i>
+            <input type="search" class="form-control bg-white" id="Services-search"
+              placeholder="Buscar servicios">
+          </div>
+        </div>
+        <div class="d-flex">
+
+          <button class="btn btn-primary text-light rounded h-75 m-1">Crear servicio</button>
+          <button class="btn btn-light  text-black rounded h-75 m-1 bg-white">Exportar</button>
+          <button class="btn btn-light  text-black rounded h-75 m-1 bg-white">Importar</button>
+        </div>
+      </div>
+      <div class="border p-1 m-1 rounded justify-content-evenly">
+
+
+        <div class="d-flex justify-content-sm-between">
+          <p class="text-gray fw-semibold m-1"> <img src="assets/images/Input.png" alt=""> Nombre</p>
+          <p class="text-gray fw-semibold m-1" style="position: relative; left: 45px;">Estado</p>
+          <p class="text-gray fw-semibold m-1" style="position: relative; left: 20px"> Inventario</p>
+          <p class="text-gray fw-semibold m-1"> Tipo</p>
+          <p class="text-gray fw-semibold m-1"> Marca</p>
+          <p class="text-gray fw-semibold m-1"> SKU</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto1.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light">Activo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto2.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light">Activo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto3.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light"> Activo </p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1 ">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto4.png"> Moroccanoil Shampoo</p>
+          <p class="text-gray">Inactivo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto5.png"> Moroccanoil Shampoo</p>
+          <p class="text-gray">Inactivo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto6.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light">Activo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto7.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light">Activo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto8.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light">Activo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+          
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto9.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light">Activo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto10.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light">Activo</p>
+          <p class="text-gray">5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto11.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light">Activo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+        <div class="d-flex justify-content-between m-1">
+          <p><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto12.png"> Moroccanoil Shampoo</p>
+          <p class="text-bg-success bg-opacity-50 rounded text-center text-success fw-semibold border-light"> Activo</p>
+          <p class="text-gray"> 5 en stock</p>
+          <p class="text-gray"> Cuidado de cabello</p>
+          <p class="text-gray"> Marruecos</p>
+          <p class="text-gray fw-semibold"> FLO0930</p>
+
+          
+        </div>
+      </div>
+      <div class="d-flex m-1">
+        <p class="text-gray ">Mostrando 25 de 250 resultados</p>
+        <div class="d-flex offset-md-5">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+
+              </li>
+              <i class="bi bi-caret-left m-2"></i>
+              <li class="page-item"><a class="page-link  bg-primary text-white rounded border-light " href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link border-light text-black" href="#">2</a></li>
+              <li class="page-item"><a class="page-link border-light text-black" href="#">3</a></li>
+              <li class="page-item"><a class="page-link border-light text-black" href="#">....</a></li>
+              <li class="page-item"><a class="page-link border-light text-black" href="#">10</a></li>
+              <i class="bi bi-caret-right m-2"></i>
+              <li class="page-item">
+
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+
+
+    <!-- Right Content end -->
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

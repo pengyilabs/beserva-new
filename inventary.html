@@ -55,7 +55,7 @@
               </a>
             </li>
             <li>
-              <a href="calendar.html" class="nav-link active text-dark d-flex gap-3">
+              <a href="calendar.html" class="nav-link text-dark d-flex gap-3">
                 <i class="bi bi-calendar"></i>
                 Calendario
               </a>
@@ -85,7 +85,7 @@
               </a>
             </li>
             <li>
-              <a href="inventary.html" class="nav-link text-dark d-flex gap-3">
+              <a href="inventary.html" class="nav-link active text-dark d-flex gap-3">
                 <i class="bi bi-inboxes"></i>
                 Inventario
               </a>
@@ -131,45 +131,43 @@
         </nav>
         <div class="container-fluid">
           <div class="row pb-5 pt-3 content">
-            <div class="col 12">
+            <div class="col-12">
               <nav class="navbar border-bottom">
                 <div class="container-fluid d-flex justify-content-between">
-                  <div class="d-flex">
-                    <div class="m-1">
+                  <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <div>
                       <button type="button" class="btn btn-light bg-white text-black rounded h-100">Filtros <i
-                          class="bi bi-filter m-3"></i></button>
-          
+                          class="bi bi-chevron-down m-3"></i></button>
                     </div>
-                    <div class="d-flex">
-                      <i class="bi bi-search m-3 "></i>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-search"></i>
                       <input type="search" class="form-control bg-white" id="Services-search"
                         placeholder="Buscar servicios">
                     </div>
                   </div>
-                  <div class="d-flex">
-          
-                    <button class="btn btn-primary text-light rounded h-75 m-1">Crear servicio</button>
-                    <button class="btn btn-light  text-black rounded h-75 m-1 bg-white">Exportar</button>
-                    <button class="btn btn-light  text-black rounded h-75 m-1 bg-white">Importar</button>
+                  <div class="d-flex flex-wrap justify-content-center">
+                    <button class="btn btn-primary text-light rounded-pill h-75 m-1">Crear servicio</button>
+                    <button class="btn btn-light  text-black rounded-pill h-75 m-1 bg-white">Exportar</button>
+                    <button class="btn btn-light  text-black rounded-pill h-75 m-1 bg-white">Importar</button>
                   </div>
                 </div>
               </nav>
-              <div>
-                <table class="table">
-                  <thead class="">
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
                     <tr>
-                      <th class="text-gray fw-semibold"> <img src="assets/images/Input.png" alt=""> Nombre</th>
-                      <td class="text-gray fw-semibold">Estado</td>
-                      <td class="text-gray fw-semibold"> Inventario</td>
-                      <td class="text-gray fw-semibold"> Tipo</td>
-                      <td class="text-gray fw-semibold"> Marca</td>
-                      <td class="text-gray fw-semibold"> SKU</td>
+                      <th scope="col" class="text-gray fw-semibold"> <img src="assets/images/Input.png" alt=""> Nombre</th>
+                      <td scope="col" class="text-gray fw-semibold">Estado</td>
+                      <td scope="col" class="text-gray fw-semibold"> Inventario</td>
+                      <td scope="col" class="text-gray fw-semibold"> Tipo</td>
+                      <td scope="col" class="text-gray fw-semibold"> Marca</td>
+                      <td scope="col" class="text-gray fw-semibold"> SKU</td>
                     </tr>
                   </thead>
                   <tbody>
                     <tr >
-                      <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto1.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td scope="row"><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto1.png"> Moroccanoil Shampoo</td>
+                      <td><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -177,7 +175,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto2.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -185,7 +183,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto3.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -193,7 +191,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto4.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-light bg-opacity-50 rounded text-center text-gray border-light">Inactivo</p></td>
+                      <td><p class="text-bg-light bg-opacity-50 rounded-pill text-center text-gray border-light">Inactivo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -201,7 +199,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto5.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-light bg-opacity-50 rounded text-center text-gray border-light">Inactivo</p></td>
+                      <td><p class="text-bg-light bg-opacity-50 rounded-pill text-center text-gray border-light">Inactivo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -209,7 +207,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto6.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -217,7 +215,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto7.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td class=""><p class="bg-info-secondary bg-opacity-50 rounded-pill text-center text-dark border-light">Borrador</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -225,7 +223,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto8.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -233,7 +231,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto9.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -241,7 +239,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto10.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -249,7 +247,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto11.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -257,7 +255,7 @@
                     </tr>
                     <tr>
                       <td><img src="assets/images/Input.png" alt=""> <img src="assets/images/producto12.png"> Moroccanoil Shampoo</td>
-                      <td class=""><p class="text-bg-success bg-opacity-50 rounded text-center text-success border-light">Activo</p></td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
                       <td class="text-gray"> 5 en stock</td>
                       <td class="text-gray"> Cuidado de cabello</td>
                       <td class="text-gray"> Marruecos</td>
@@ -274,7 +272,7 @@
           
                         </li>
                         <i class="bi bi-caret-left m-2"></i>
-                        <li class="page-item"><a class="page-link  bg-primary text-white rounded border-light " href="#">1</a>
+                        <li class="page-item"><a class="page-link  bg-primary text-white rounded-pill border-light " href="#">1</a>
                         </li>
                         <li class="page-item"><a class="page-link border-light text-black" href="#">2</a></li>
                         <li class="page-item"><a class="page-link border-light text-black" href="#">3</a></li>

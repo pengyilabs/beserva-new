@@ -11031,3 +11031,30 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border: 1px solid var(--grayscale-stroke, #FFF7F6);
   background: var(--primary-white-default, #FBFCFD);
 }
+
+/* Right Sidebar Modal */
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 100%; /* Adjust the width as needed */
+  height: 100%;
+  top: 0;
+  right: -320px; /* Off-canvas initially */
+  transition: right 0.3s ease-in-out;
+}
+
+.modal.right.show .modal-dialog {
+  right: 0;
+}
+
+.input-group-text {
+  background-color: #fff;
+}
+
+.modal-footer {
+  display: block;
+}
+
+.cursor:hover {
+  cursor: pointer;
+}

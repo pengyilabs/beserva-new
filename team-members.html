@@ -32,7 +32,8 @@
           <ul class="nav nav-pills flex-column mb-auto mt-5">
             <li class="nav-item">
               <a
-                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#rightSidebarEditModal"
                 class="nav-link text-dark d-flex gap-3"
                 aria-current="page"
               >
@@ -294,7 +295,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-xl modal-dialog-scrollable">
-        <div class="modal-content">
+        <div class="modal-content h-100">
           <div class="modal-header">
             <h5 class="modal-title" id="rightSidebarModalLabel">
               Crear miembro
@@ -583,7 +584,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-xl modal-dialog-scrollable">
-        <div class="modal-content">
+        <div class="modal-content h-100">
           <div class="modal-header">
             <h5 class="modal-title" id="rightSidebarModalLabel">
               Editar miembro
@@ -873,7 +874,9 @@
             </div>
           </div>
           <div class="modal-footer">
-            <div class="d-flex justify-content-center flex-wrap justify-content-md-between my-3 align-items-center">
+            <div
+              class="d-flex justify-content-center flex-wrap justify-content-md-between my-3 align-items-center"
+            >
               <div class="form-check form-switch">
                 <input
                   class="form-check-input"
@@ -888,8 +891,10 @@
                 >
               </div>
               <div>
-                <button type="button" data-bs-toggle="modal"
-                data-bs-target="#DeleteModal"
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#DeleteModal"
                   class="btn btn-light text-black rounded-pill h-75 m-1 bg-white"
                 >
                   Eliminar miembro
@@ -926,15 +931,19 @@
             ></button>
           </div>
           <div class="modal-body text-center">
-            <h6>¿Estas seguro de que quieres eliminar a Juliana como miembro?</h6>
+            <h6>
+              ¿Estas seguro de que quieres eliminar a Juliana como miembro?
+            </h6>
             <p>Message explaining this goes here</p>
           </div>
           <div class="modal-footer d-flex justify-content-around">
-            <button type="button" class="btn btn-primary" style="width: 40%;">No, cancelar</button>
+            <button type="button" class="btn btn-primary" style="width: 40%">
+              No, cancelar
+            </button>
             <button
               type="button"
               class="btn btn-light text-black rounded-pill bg-white w-40"
-              style="width: 40%;"
+              style="width: 40%"
               data-bs-dismiss="modal"
             >
               Si, eliminar

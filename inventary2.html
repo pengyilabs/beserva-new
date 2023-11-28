@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Beserva</title>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jsCalendar.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jsCalendar.css" />
+  </head>
+  <body class="body-overflow">
+    <div class="d-flex" id="wrapper">
+      <div class="bg-white sidebar-container" id="sidebar-wrapper">
+        <!-- Sidebar start -->
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light h-100">
+          <a
+            href="homeb2b.html"
+            class="d-flex align-items-center justify-center my-3 mx-auto text-white text-decoration-none"
+          >
+            <img src="assets/images/logo-dark.png" alt="logo" />
+          </a>
+          <ul class="nav nav-pills flex-column mb-auto mt-5">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link text-dark d-flex gap-3"
+                aria-current="page"
+              >
+                <i class="bi bi-search"></i>
+                Buscar
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-dark d-flex gap-3">
+                <i class="bi bi-bell"></i>
+                Notificationes
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a
+                href="homeb2b.html"
+                class="nav-link text-dark d-flex gap-3"
+                aria-current="page"
+              >
+                <i class="bi bi-house"></i>
+                Inicio
+              </a>
+            </li>
+            <li>
+              <a href="calendar.html" class="nav-link text-dark d-flex gap-3">
+                <i class="bi bi-calendar"></i>
+                Calendario
+              </a>
+            </li>
+            <li>
+              <a href="metrics.html" class="nav-link text-dark d-flex gap-3">
+                <i class="bi bi-graph-down"></i>
+                Metricas
+              </a>
+            </li>
+            <li>
+              <a href="clients.html" class="nav-link text-dark d-flex gap-3">
+                <i class="bi bi-person-plus"></i>
+                Clientes
+              </a>
+            </li>
+            <li>
+              <a href="cupons.html" class="nav-link text-dark d-flex gap-3">
+                <i class="bi bi-ticket"></i>
+                Cupones
+              </a>
+            </li>
+            <li>
+              <a
+                href="team-members.html"
+                class="nav-link active text-dark d-flex gap-3"
+              >
+                <i class="bi bi-people"></i>
+                Equipo
+              </a>
+            </li>
+            <li>
+              <a href="inventary.html" class="nav-link text-dark d-flex gap-3">
+                <i class="bi bi-inboxes"></i>
+                Inventario
+              </a>
+            </li>
+            <li>
+              <a href="services.html" class="nav-link text-dark d-flex gap-3">
+                <i class="bi bi-flower1"></i>
+                Servicios
+              </a>
+            </li>
+          </ul>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a
+                href="account.html"
+                class="nav-link text-dark d-flex gap-3"
+                aria-current="page"
+              >
+                <i class="bi bi-person-gear"></i>
+                Cuenta
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-dark d-flex gap-3">
+                <i class="bi bi-box-arrow-left"></i>
+                Cerrar sesión
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Sidebar end -->
+      </div>
+      <!-- Page content wrapper-->
+      <div id="page-content-wrapper" class="px-3">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn btn-light bg-white border" id="sidebarToggle">
+              <i class="bi bi-list"></i>
+            </button>
+            <span class="navbar-brand h1 mb-0">Equipo</span>
+          </div>
+        </nav>
+        <div class="container-fluid">
+          <div class="row pb-5 pt-3 content">
+            <div class="col-12">
+              <nav class="navbar border-bottom">
+                <div class="container-fluid d-flex justify-content-between">
+                  <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <div>
+                      <button class="btn btn-light bg-white border rounded">
+                        Filtros
+                        <i class="bi bi-chevron-down"></i>
+                      </button>
+                    </div>
+                    <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-search"></i>
+                      <input
+                        type="search"
+                        class="form-control bg-white"
+                        id="Services-search"
+                        placeholder="Buscar servicios"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap justify-content-center">
+                    <button
+                      type="button"
+                      data-bs-toggle="modal"
+                      data-bs-target="#rightSidebarModal"
+                      class="btn btn-primary text-light rounded-pill h-75 m-1"
+                    >
+                      Crear servicio
+                    </button>
+                    <button
+                      class="btn btn-light text-black rounded-pill h-75 m-1 bg-white"
+                    >
+                      Exportar
+                    </button>
+                    <button
+                      class="btn btn-light text-black rounded-pill h-75 m-1 bg-white"
+                    >
+                      Importar
+                    </button>
+                  </div>
+                </div>
+              </nav>
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col" class="text-gray fw-semibold"> <img src="assets/images/Input.png" alt=""> Nombre</th>
+                      <td scope="col" class="text-gray fw-semibold">Estado</td>
+                      <td scope="col" class="text-gray fw-semibold"> Inventario</td>
+                      <td scope="col" class="text-gray fw-semibold"> Tipo</td>
+                      <td scope="col" class="text-gray fw-semibold"> Marca</td>
+                      <td scope="col" class="text-gray fw-semibold"> SKU</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr >
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto1.png"> Moroccanoil Shampoo</td>
+                      <td><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto2.png"> Moroccanoil Shampoo</td>
+                      <td><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto3.png"> Moroccanoil Shampoo</td>
+                      <td><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray "> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto4.png"> Moroccanoil Shampoo</td>
+                      <td><p class="text-bg-light bg-opacity-50 rounded-pill text-center text-gray border-light">Inactivo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto5.png"> Moroccanoil Shampoo</td>
+                      <td><p class="text-bg-light bg-opacity-50 rounded-pill text-center text-gray border-light">Inactivo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto6.png"> Moroccanoil Shampoo</td>
+                      <td><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto7.png"> Moroccanoil Shampoo</td>
+                      <td class=""><p class="bg-info-secondary bg-opacity-50 rounded-pill text-center text-dark border-light">Borrador</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto8.png"> Moroccanoil Shampoo</td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto9.png"> Moroccanoil Shampoo</td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto10.png"> Moroccanoil Shampoo</td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto11.png"> Moroccanoil Shampoo</td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                    <tr>
+                      <td scope="row"><input class="form-check-input mt-2" type="checkbox" value="" aria-label="Checkbox for following text input">  <img src="assets/images/producto12.png"> Moroccanoil Shampoo</td>
+                      <td class=""><p class="bg-success-secondary bg-opacity-50 rounded-pill text-center text-success border-light">Activo</p></td>
+                      <td class="text-gray"> 5 en stock</td>
+                      <td class="text-gray"> Cuidado de cabello</td>
+                      <td class="text-gray"> Marruecos</td>
+                      <td class="text-gray"> FLO0930</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex justify-content-between">
+                  <p class="text-gray m-2">Mostrando 25 de 250 resultados</p>
+                  <div class="d-flex">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item">
+          
+                        </li>
+                        <i class="bi bi-caret-left m-2"></i>
+                        <li class="page-item"><a class="page-link  bg-primary text-white rounded-pill border-light " href="#">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link border-light text-black" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link border-light text-black" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link border-light text-black" href="#">....</a></li>
+                        <li class="page-item"><a class="page-link border-light text-black" href="#">10</a></li>
+                        <i class="bi bi-caret-right m-2"></i>
+                        <li class="page-item">
+          
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Right Sidebar Modal -->
+    <div
+      class="modal right fade"
+      id="rightSidebarModal"
+      tabindex="-1"
+      aria-labelledby="rightSidebarModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rightSidebarModalLabel">
+              Crear producto
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="">
+                  <p>Foto principal</p>
+                  <div class="d-flex">
+                  <img src="assets/images/agregarfoto.png" alt="">
+                  <p class="m-2">Agregar foto</p>
+                </div>
+                </div>
+                <div class="my-3">
+                  <div class="">
+                    <p>Galeria</p>
+                    <div class="d-flex">
+                    <img src="assets/images/agregarfoto.png" alt="">
+                    <p class="m-2">Agregar foto</p>
+                  </div>
+                  </div>
+                  <label for="exampleColorInput" class="form-label"
+                    >Color del calendario</label
+                  >
+                  <input
+                    type="color"
+                    class="form-control form-control-color"
+                    id="exampleColorInput"
+                    value="#563d7c"
+                    title="Choose your color"
+                  />
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                  <p>Rol y permisos</p>
+                  <a href="#" class="link-primary text-decoration-none"
+                    >Editar permisos</a
+                  >
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Seleccionar</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="my-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="my-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Correo</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Ingresa Correo"
+                  />
+                </div>
+                <label for="basic-url" class="form-label">Cumpleaños</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="bi bi-calendar"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Cumpleaños"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="my-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Telefono</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Ingresa Telefono"
+                  />
+                </div>
+                <label for="basic-url" class="form-label"
+                  >Fecha de empleo</label
+                >
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="bi bi-calendar"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ingresa fecha de empleo"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <label for="basic-url" class="form-label"
+                  >Fecha de terminación</label
+                >
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="bi bi-calendar"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ingresa fecha de terminación"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Notas</label
+                  >
+                  <textarea
+                    class="form-control"
+                    placeholder="Escribe notas sobre este miembro"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <label for="basic-url" class="form-label">Comisión</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="0%"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    <i class="bi bi-plus"></i>
+                    Agregar
+                  </button>
+                </div>
+                <label for="basic-url" class="form-label">Especialidad</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Seleccionar"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    <i class="bi bi-plus"></i>
+                    Agregar
+                  </button>
+                </div>
+                <label for="basic-url" class="form-label mb-3">Horario</label>
+                <div class="d-grid" style="height: 400px">
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Lunes</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Martes</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Miercoles</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Jueves</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Viernes</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Sabado</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Domingo</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="d-flex justify-content-between my-3 align-items-center">
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                  >Activar perfil</label
+                >
+              </div>
+              <div>
+                <button
+                  type="button"
+                  class="btn btn-primary text-light rounded-pill h-75 m-1"
+                >
+                  Crear Miembro
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Edit Sidebar Modal -->
+    <div
+      class="modal right fade"
+      id="rightSidebarEditModal"
+      tabindex="-1"
+      aria-labelledby="rightSidebarModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rightSidebarModalLabel">
+              Editar miembro
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="d-flex align-items-center justify-content-between">
+                  <img src="assets/images/c1.png" />
+                  <p class="mb-0">Cambiar</p>
+                </div>
+                <div class="my-3">
+                  <label for="exampleColorInput" class="form-label"
+                    >Color del calendario</label
+                  >
+                  <input
+                    type="color"
+                    class="form-control form-control-color"
+                    id="exampleColorInput"
+                    value="#563d7c"
+                    title="Choose your color"
+                  />
+                </div>
+                <div class="my-2 d-flex justify-content-between">
+                  <p>Rol y permisos</p>
+                  <a href="#" class="link-primary text-decoration-none"
+                    >Editar permisos</a
+                  >
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Estilista</option>
+                  <option value="1">Estilista</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="my-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Nombre</label
+                  >
+                  <input
+                    type="text"
+                    value="Juliana Caceres"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="my-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Correo</label
+                  >
+                  <input
+                    type="email"
+                    value="juliana@beserva.com"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Ingresa Correo"
+                  />
+                </div>
+                <label for="basic-url" class="form-label">Cumpleaños</label>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="bi bi-calendar"></i>
+                  </span>
+                  <input
+                    type="text"
+                    value="Mar Mar 05, 1996"
+                    class="form-control"
+                    placeholder="Cumpleaños"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <div class="my-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Telefono</label
+                  >
+                  <input
+                    type="text"
+                    value="+57 3186347353"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Ingresa Telefono"
+                  />
+                </div>
+                <label for="basic-url" class="form-label"
+                  >Fecha de empleo</label
+                >
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="bi bi-calendar"></i>
+                  </span>
+                  <input
+                    type="text"
+                    value="Mar Mar 05, 1996"
+                    class="form-control"
+                    placeholder="Ingresa fecha de empleo"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+                <label for="basic-url" class="form-label"
+                  >Fecha de terminación</label
+                >
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-addon1">
+                    <i class="bi bi-calendar"></i>
+                  </span>
+                  <input
+                    type="text"
+                    value="Mar Mar 05, 1996"
+                    class="form-control"
+                    placeholder="Ingresa fecha de terminación"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Notas</label
+                  >
+                  <textarea
+                    class="form-control"
+                    value="No le gusta trabajar los fines de semana"
+                    placeholder="Escribe notas sobre este miembro"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <label for="basic-url" class="form-label">Comisión</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="25%"
+                    placeholder="0%"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    <i class="bi bi-plus"></i>
+                    Agregar
+                  </button>
+                </div>
+                <label for="basic-url" class="form-label">Especialidad</label>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Seleccionar"
+                    aria-label="Recipient's username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    <i class="bi bi-plus"></i>
+                    Agregar
+                  </button>
+                </div>
+                <label for="basic-url" class="form-label mb-3">Horario</label>
+                <div class="d-grid" style="height: 400px">
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Lunes</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Martes</label
+                    >
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckDefault"
+                        checked
+                      />
+                      <label
+                        class="form-check-label"
+                        for="flexSwitchCheckDefault"
+                        >Miercoles</label
+                      >
+                    </div>
+                    <div>
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          value="3:00pm - 4:00pm"
+                          placeholder="0%"
+                          aria-label="Recipient's username"
+                          aria-describedby="button-addon2"
+                        />
+                        <button
+                          class="btn btn-outline-secondary"
+                          type="button"
+                          id="button-addon2"
+                        >
+                          <i class="bi bi-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Jueves</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Viernes</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Sabado</label
+                    >
+                  </div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                      >Domingo</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="d-flex justify-content-center flex-wrap justify-content-md-between my-3 align-items-center">
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckChecked"
+                  value="true"
+                  checked
+                />
+                <label class="form-check-label" for="flexSwitchCheckDefault"
+                  >Activar perfil</label
+                >
+              </div>
+              <div>
+                <button type="button" data-bs-toggle="modal"
+                data-bs-target="#DeleteModal"
+                  class="btn btn-light text-black rounded-pill h-75 m-1 bg-white"
+                >
+                  Eliminar miembro
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-primary text-light rounded-pill h-75 m-1"
+                >
+                  Crear Miembro
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -32,8 +32,7 @@
           <ul class="nav nav-pills flex-column mb-auto mt-5">
             <li class="nav-item">
               <a
-                data-bs-toggle="modal"
-                data-bs-target="#rightSidebarEditModal"
+                href="#"
                 class="nav-link text-dark d-flex gap-3"
                 aria-current="page"
                 type="button" data-bs-toggle="modal"
@@ -298,7 +297,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-xl modal-dialog-scrollable">
-        <div class="modal-content h-100">
+        <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="rightSidebarModalLabel">
               Crear miembro
@@ -587,7 +586,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-xl modal-dialog-scrollable">
-        <div class="modal-content h-100">
+        <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="rightSidebarModalLabel">
               Editar miembro
@@ -877,9 +876,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <div
-              class="d-flex justify-content-center flex-wrap justify-content-md-between my-3 align-items-center"
-            >
+            <div class="d-flex justify-content-center flex-wrap justify-content-md-between my-3 align-items-center">
               <div class="form-check form-switch">
                 <input
                   class="form-check-input"
@@ -894,10 +891,8 @@
                 >
               </div>
               <div>
-                <button
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#DeleteModal"
+                <button type="button" data-bs-toggle="modal"
+                data-bs-target="#DeleteModal"
                   class="btn btn-light text-black rounded-pill h-75 m-1 bg-white"
                 >
                   Eliminar miembro
@@ -934,19 +929,15 @@
             ></button>
           </div>
           <div class="modal-body text-center">
-            <h6>
-              ¿Estas seguro de que quieres eliminar a Juliana como miembro?
-            </h6>
+            <h6>¿Estas seguro de que quieres eliminar a Juliana como miembro?</h6>
             <p>Message explaining this goes here</p>
           </div>
           <div class="modal-footer d-flex justify-content-around">
-            <button type="button" class="btn btn-primary" style="width: 40%">
-              No, cancelar
-            </button>
+            <button type="button" class="btn btn-primary" style="width: 40%;">No, cancelar</button>
             <button
               type="button"
               class="btn btn-light text-black rounded-pill bg-white w-40"
-              style="width: 40%"
+              style="width: 40%;"
               data-bs-dismiss="modal"
             >
               Si, eliminar
@@ -963,34 +954,43 @@
       aria-labelledby="SearchModal"
       aria-hidden="true"
     >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="d-flex align-items-center gap-2">
-              <i class="bi bi-search"></i>
-              <input
-                type="search"
-                class="form-control bg-white w-100"
-                id="Services-search"
-                placeholder="Buscar servicios"
-              />
-            </div>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body text-center">
-          <div class="d-flex justify-content-between">
-          <p>Crear Cita</p><p>C</p>
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-2">
+                      <i class="bi bi-search"></i>
+                      <input
+                        type="search"
+                        class="form-control bg-white"
+                        id="Services-search"
+                        placeholder="Buscar servicios"
+                      />
+                    </div>
         </div>
-          </div>
-          
+        <div class="modal-body text-center">
+          <div class="d-flex justify-content-sm-between bg-danger-subtle rounded">
+           <p class="m-2 text-primary" ><img src="assets/images/CalendarBlank.png" alt=""> Crear cita</p>
+           <p class="m-2 text-primary">C</p>
         </div>
+        <div class="d-flex justify-content-between">
+          <p class="m-2"><img src="assets/images/ticket.png" alt=""> Crear cupón</p>
+          <p class="m-2">D</p>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p class="m-2"><img src="assets/images/UserList.png" alt=""> Crear cliente</p>
+          <p class="m-2">A</p>
+        </div>
+        
+        </div>
+        <div class="m-4">
+        <p class="text-secondary">Recientes</p>
+        
+        <p class="text-secondary" ><i class="bi bi-search"></i> Morocan Oil</p>
+        <p class="text-secondary "><i class="bi bi-search"></i> Joshua Rodriguez</p>
+      </div>
       </div>
     </div>
+  </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

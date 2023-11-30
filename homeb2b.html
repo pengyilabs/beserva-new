@@ -10,7 +10,10 @@
     <meta name="author" content="" />
     <title>Beserva</title>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <link href="css/styles.css" rel="stylesheet" />
     <script type="text/javascript" src="js/jsCalendar.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jsCalendar.css" />
@@ -29,11 +32,12 @@
           <ul class="nav nav-pills flex-column mb-auto mt-5">
             <li class="nav-item">
               <a
-              href="#"
-              class="nav-link text-dark d-flex gap-3"
-              aria-current="page"
-              type="button" data-bs-toggle="modal"
-              data-bs-target="#SearchModal"
+                href="#"
+                class="nav-link text-dark d-flex gap-3"
+                aria-current="page"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#SearchModal"
               >
                 <i class="bi bi-search"></i>
                 Buscar
@@ -82,7 +86,10 @@
               </a>
             </li>
             <li>
-              <a href="team-members.html" class="nav-link text-dark d-flex gap-3">
+              <a
+                href="team-members.html"
+                class="nav-link text-dark d-flex gap-3"
+              >
                 <i class="bi bi-people"></i>
                 Equipo
               </a>
@@ -432,7 +439,11 @@
                       <tr>
                         <th class="fw-normal text-muted fs-7">7:00</th>
                         <td>
-                          <div class="bg-danger-subtle p-4 row rounded">
+                          <div
+                            class="bg-danger-subtle p-4 row rounded cursor"
+                            data-bs-toggle="modal"
+                            data-bs-target="#reservationModal"
+                          >
                             <div class="col-4">
                               <p class="text-primary fs-7 mb-1">7:00 - 7:30</p>
                               <p class="text-primary fs-7">Manicura</p>
@@ -464,7 +475,11 @@
                       <tr>
                         <th class="fw-normal text-muted fs-7">10:00</th>
                         <td>
-                          <div class="bg-danger-subtle p-4 row rounded">
+                          <div
+                            class="bg-danger-subtle p-4 row rounded cursor"
+                            data-bs-toggle="modal"
+                            data-bs-target="#reservationModal"
+                          >
                             <div class="col-4">
                               <p class="text-primary fs-7 mb-1">
                                 10:00 - 10:30
@@ -506,51 +521,181 @@
         </div>
       </div>
     </div>
-     <!--Search Modal-->
-     <div
-     class="modal"
-     id="SearchModal"
-     tabindex="-1"
-     aria-labelledby="SearchModal"
-     aria-hidden="true"
-   >
-   <div class="modal-dialog modal-dialog-centered">
-     <div class="modal-content">
-       <div class="modal-header">
-         <div class="d-flex align-items-center gap-2">
-                     <i class="bi bi-search"></i>
-                     <input
-                       type="search"
-                       class="form-control bg-white"
-                       id="Services-search"
-                       placeholder="Buscar servicios"
-                     />
-                   </div>
-       </div>
-       <div class="modal-body text-center">
-         <div class="d-flex justify-content-sm-between bg-danger-subtle rounded">
-          <p class="m-2 text-primary" ><img src="assets/images/CalendarBlank.png" alt=""> Crear cita</p>
-          <p class="m-2 text-primary">C</p>
-       </div>
-       <div class="d-flex justify-content-between">
-         <p class="m-2"><img src="assets/images/ticket.png" alt=""> Crear cupón</p>
-         <p class="m-2">D</p>
-       </div>
-       <div class="d-flex justify-content-between">
-         <p class="m-2"><img src="assets/images/UserList.png" alt=""> Crear cliente</p>
-         <p class="m-2">A</p>
-       </div>
-       
-       </div>
-       <div class="m-4">
-       <p class="text-secondary">Recientes</p>
-       
-       <p class="text-secondary" ><i class="bi bi-search"></i> Morocan Oil</p>
-       <p class="text-secondary "><i class="bi bi-search"></i> Joshua Rodriguez</p>
-     </div>
-     </div>
-   </div>
- </div>
+    <!--Search Modal-->
+    <div
+      class="modal"
+      id="SearchModal"
+      tabindex="-1"
+      aria-labelledby="SearchModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-search"></i>
+              <input
+                type="search"
+                class="form-control bg-white"
+                id="Services-search"
+                placeholder="Buscar servicios"
+              />
+            </div>
+          </div>
+          <div class="modal-body text-center">
+            <div
+              class="d-flex justify-content-sm-between bg-danger-subtle rounded"
+            >
+              <p class="m-2 text-primary">
+                <img src="assets/images/CalendarBlank.png" alt="" /> Crear cita
+              </p>
+              <p class="m-2 text-primary">C</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="m-2">
+                <img src="assets/images/ticket.png" alt="" /> Crear cupón
+              </p>
+              <p class="m-2">D</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="m-2">
+                <img src="assets/images/UserList.png" alt="" /> Crear cliente
+              </p>
+              <p class="m-2">A</p>
+            </div>
+          </div>
+          <div class="m-4">
+            <p class="text-secondary">Recientes</p>
+
+            <p class="text-secondary">
+              <i class="bi bi-search"></i> Morocan Oil
+            </p>
+            <p class="text-secondary">
+              <i class="bi bi-search"></i> Joshua Rodriguez
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Detalles de la cita Modal -->
+    <div
+      class="modal"
+      id="reservationModal"
+      tabindex="-1"
+      aria-labelledby="rightSidebarModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xs modal-dialog-scrollable">
+        <div class="modal-content h-100">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rightSidebarModalLabel">
+              Detalles de la cita
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="my-3 d-flex justify-content-between align-items-center">
+              <div>
+                <div class="d-flex gap-1 align-items-center">
+                  <a href="" class="text-decoration-none fw-500">Miercoles, 26 Junio, 7:00 -7:30</a>
+                  <i class="bi bi-pencil"></i>
+                </div>
+                <p class="mb-0">MX $30</p>
+                <p class="text-muted mb-0">Maria, 1 hr con Alissa</p>
+              </div>
+              <div>
+                <button class="btn btn-light text-black bg-white">
+                  Eliminar
+                </button>
+              </div>
+            </div>
+            <div class="my-3">
+              <p class="text-muted fs-5">Cliente</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <img src="assets/images/Ellipse 7.png" alt="" />
+                  <p class="mt-2 mb-0">Alissa Gray</p>
+                  <p class="text-muted mb-0">alissagray@gmail.com</p>
+                </div>
+                <div>
+                  <button class="btn btn-light text-black bg-white">
+                    Guardar cliente
+                  </button>
+                </div>
+              </div>
+            </div>
+            <label for="basic-url" class="form-label text-muted fs-5"
+              >Servicios</label
+            >
+            <div class="d-flex justify-content-between mb-3">
+              <p class="mb-0">Manicura</p>
+              <i class="bi bi-trash3"></i>
+            </div>
+            <div class="input-group mb-3">
+              <select class="form-select border-light" aria-label="Default select example">
+                <option selected>Seleccionar</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button
+                class="btn btn-outline-secondary border-light"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="bi bi-plus"></i>
+                Agregar
+              </button>
+            </div>
+            <label for="basic-url" class="form-label text-muted fs-5"
+              >Estilista</label
+            >
+            <div class="input-group mb-3">
+              <select class="form-select border-light" aria-label="Default select example">
+                <option selected>Seleccionar</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <button
+                class="btn btn-outline-secondary border-light"
+                type="button"
+                id="button-addon2"
+              >
+                Cambiar
+              </button>
+            </div>
+            <div class="my-3">
+              <label
+                for="exampleFormControlInput1"
+                class="form-label text-muted fs-5"
+                >Notas</label
+              >
+              <textarea
+                class="form-control border-light"
+                placeholder="Escribe notas sobre este miembro"
+                id="exampleFormControlTextarea1"
+                rows="4"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="d-flex justify-content-end">
+              <div>
+                <button type="button" class="btn btn-primary text-light">
+                  Guardar cambios
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

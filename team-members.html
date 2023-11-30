@@ -312,24 +312,19 @@
           <div class="modal-body">
             <div class="row">
               <div class="col-12 col-md-6">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div
-                    class="bg-secondary rounded-circle"
-                    style="width: 40px; height: 40px"
-                  ></div>
-                  <p class="mb-0">Seleccionar</p>
-                </div>
+                <div class="d-flex align-items-center">
+                  <img src="assets/images/CirculoGris.png" alt="">
+                  <p class="m-2 justify-content-center">Cambiar</p>
+                </div> 
                 <div class="my-3">
-                  <label for="exampleColorInput" class="form-label"
-                    >Color del calendario</label
-                  >
-                  <input
-                    type="color"
-                    class="form-control form-control-color"
-                    id="exampleColorInput"
-                    value="#563d7c"
-                    title="Choose your color"
-                  />
+                  
+                  <p>Color calendario</p>
+
+                  <div class="d-flex">
+                 <img class="m-2" src="assets/images/Eclipse2.png" alt="">
+                 <img class="m-1" src="assets/images/Eclipse3.png" alt="">
+                 <img class="m-1" src="assets/images/Eclipse4.png" alt="">
+                </div>
                 </div>
                 <div class="my-2 d-flex justify-content-between">
                   <p>Rol y permisos</p>
@@ -337,7 +332,7 @@
                     >Editar permisos</a
                   >
                 </div>
-                <select class="form-select" aria-label="Default select example">
+                <select class="form-select  border-light text-secondary" aria-label="Default select example">
                   <option selected>Seleccionar</option>
                   <option value="1">One</option>
                   <option value="2">Two</option>
@@ -349,7 +344,7 @@
                   >
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control border-light"
                     id="exampleFormControlInput1"
                     placeholder="Nombre"
                   />
@@ -360,19 +355,19 @@
                   >
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control border-light"
                     id="exampleFormControlInput1"
                     placeholder="Ingresa Correo"
                   />
                 </div>
-                <label for="basic-url" class="form-label">Cumpleaños</label>
+                <label for="basic-url" class="form-label border-light">Cumpleaños</label>
                 <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
+                  <span class="input-group-text border-light " id="basic-addon1">
                     <i class="bi bi-calendar"></i>
                   </span>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control border-light"
                     placeholder="Cumpleaños"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
@@ -384,7 +379,7 @@
                   >
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control border-light"
                     id="exampleFormControlInput1"
                     placeholder="Ingresa Telefono"
                   />
@@ -393,12 +388,12 @@
                   >Fecha de empleo</label
                 >
                 <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
+                  <span class="input-group-text border-light" id="basic-addon1">
                     <i class="bi bi-calendar"></i>
                   </span>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control border-light"
                     placeholder="Ingresa fecha de empleo"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
@@ -408,12 +403,12 @@
                   >Fecha de terminación</label
                 >
                 <div class="input-group mb-3">
-                  <span class="input-group-text" id="basic-addon1">
+                  <span class="input-group-text border-light" id="basic-addon1">
                     <i class="bi bi-calendar"></i>
                   </span>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control border-light"
                     placeholder="Ingresa fecha de terminación"
                     aria-label="Username"
                     aria-describedby="basic-addon1"
@@ -426,7 +421,7 @@
                     >Notas</label
                   >
                   <textarea
-                    class="form-control"
+                    class="form-control border-light"
                     placeholder="Escribe notas sobre este miembro"
                     id="exampleFormControlTextarea1"
                     rows="3"
@@ -436,17 +431,17 @@
                 <div class="input-group mb-3">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control border-light"
                     placeholder="0%"
                     aria-label="Recipient's username"
                     aria-describedby="button-addon2"
                   />
                   <button
-                    class="btn btn-outline-secondary"
+                    class="btn btn-outline-secondary border-light"
                     type="button"
                     id="button-addon2"
                   >
-                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-plus border-light"></i>
                     Agregar
                   </button>
                 </div>
@@ -454,17 +449,17 @@
                 <div class="input-group mb-3">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control border-light"
                     placeholder="Seleccionar"
                     aria-label="Recipient's username"
                     aria-describedby="button-addon2"
                   />
                   <button
-                    class="btn btn-outline-secondary"
+                    class="btn btn-outline-secondary border-light"
                     type="button"
                     id="button-addon2"
                   >
-                    <i class="bi bi-plus"></i>
+                    <i class="bi bi-plus "></i>
                     Agregar
                   </button>
                 </div>
@@ -472,10 +467,11 @@
                 <div class="d-grid" style="height: 400px">
                   <div class="form-check form-switch mb-2">
                     <input
-                      class="form-check-input"
+                      class="form-check-input"  
                       type="checkbox"
                       role="switch"
                       id="flexSwitchCheckDefault"
+                      style="transform: scale(1.4)"
                     />
                     <label class="form-check-label" for="flexSwitchCheckDefault"
                       >Lunes</label
@@ -487,6 +483,7 @@
                       type="checkbox"
                       role="switch"
                       id="flexSwitchCheckDefault"
+                      style="transform: scale(1.4)"
                     />
                     <label class="form-check-label" for="flexSwitchCheckDefault"
                       >Martes</label
@@ -498,6 +495,7 @@
                       type="checkbox"
                       role="switch"
                       id="flexSwitchCheckDefault"
+                      style="transform: scale(1.4)"
                     />
                     <label class="form-check-label" for="flexSwitchCheckDefault"
                       >Miercoles</label
@@ -509,6 +507,7 @@
                       type="checkbox"
                       role="switch"
                       id="flexSwitchCheckDefault"
+                      style="transform: scale(1.4)"
                     />
                     <label class="form-check-label" for="flexSwitchCheckDefault"
                       >Jueves</label
@@ -520,8 +519,9 @@
                       type="checkbox"
                       role="switch"
                       id="flexSwitchCheckDefault"
+                      style="transform: scale(1.4)"
                     />
-                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                    <label class="form-check-label m-1" for="flexSwitchCheckDefault"
                       >Viernes</label
                     >
                   </div>
@@ -531,8 +531,9 @@
                       type="checkbox"
                       role="switch"
                       id="flexSwitchCheckDefault"
+                      style="transform: scale(1.4)"
                     />
-                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                    <label class="form-check-label m-1" for="flexSwitchCheckDefault"
                       >Sabado</label
                     >
                   </div>
@@ -542,6 +543,7 @@
                       type="checkbox"
                       role="switch"
                       id="flexSwitchCheckDefault"
+                      style="transform: scale(1.4)"
                     />
                     <label class="form-check-label" for="flexSwitchCheckDefault"
                       >Domingo</label
@@ -559,6 +561,7 @@
                   type="checkbox"
                   role="switch"
                   id="flexSwitchCheckDefault"
+                  style="transform: scale(1.4)"
                 />
                 <label class="form-check-label" for="flexSwitchCheckDefault"
                   >Activar perfil</label

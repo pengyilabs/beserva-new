@@ -11062,3 +11062,27 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .fw-500 {
   font-weight: 500;
 }
+
+.bg-landing {
+  background-image: url('../assets/images/bg-landing.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.beserva-section {
+  background-image: url('../assets/images/beserva-section.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 800px;
+}
+
+.bg-primary-dark {
+  background: #420F1E;
+}
+
+.bg-blue {
+  background: #1A2342;
+}

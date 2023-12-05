@@ -11086,3 +11086,16 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .bg-blue {
   background: #1A2342;
 }
+@media (max-width: 768px) {
+  #perfil1 {
+    columns: 1;
+    
+  }
+  
+  
+}
+
+.activeperfil{
+  color: black;
+  
+}

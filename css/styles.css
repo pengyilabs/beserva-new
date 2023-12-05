@@ -11086,57 +11086,48 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .bg-blue {
   background: #1A2342;
 }
-@media (max-width: 768px) {
-  #perfil1 {
-    flex-wrap: wrap;
-    
-  }
-  
-  
-}
 
 .activeperfil{
   color: black;
-  
+}
+
+.f-20 {
+  font-size: 1.25rem;
+}
+
+.f-18 {
+  font-size: 1.125rem;
+}
+
+.f-100 {
+  font-size: 6.25rem;
+}
+
+.f-60 {
+  font-size: 3.75rem;
+}
+
+.f-25 {
+  font-size: 1.563rem;
 }
 
 @media (max-width: 768px) {
+  .beserva-section {
+    height: 400px;
+  }
+  #perfil1 {
+    flex-wrap: wrap;
+  };
   #tienda1 {
     display: flex;
-   
-    
-  }
-  
-  
-}
-
-@media (max-width: 768px) {
+  };
   #Tienda-search2 {
-   position: absolute;
-  
-   
-    
-  }
-  
-  
-}
-@media (min-width: 768px) {
+    position: absolute;
+  };
   #vermas {
-   display:  none;
-  
-   
-    
-  }
-  
-  
-}
-@media (max-width: 768px) {
-  #vertodo {
-   display:  none;
-  
-   
-    
-  }
-  
-  
+    display: none; 
+   };
+   #vertodo {
+    display: none;
+   }
 }

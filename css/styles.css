@@ -11100,3 +11100,43 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   
 }
 
+@media (max-width: 768px) {
+  #tienda1 {
+    display: flex;
+   
+    
+  }
+  
+  
+}
+
+@media (max-width: 768px) {
+  #Tienda-search2 {
+   position: absolute;
+  
+   
+    
+  }
+  
+  
+}
+@media (min-width: 768px) {
+  #vermas {
+   display:  none;
+  
+   
+    
+  }
+  
+  
+}
+@media (max-width: 768px) {
+  #vertodo {
+   display:  none;
+  
+   
+    
+  }
+  
+  
+}

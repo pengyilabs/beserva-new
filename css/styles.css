@@ -11088,7 +11088,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 @media (max-width: 768px) {
   #perfil1 {
-    columns: 1;
+    flex-wrap: wrap;
     
   }
   
@@ -11099,3 +11099,4 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   color: black;
   
 }
+

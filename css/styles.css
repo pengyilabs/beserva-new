@@ -11113,7 +11113,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 @media (max-width: 768px) {
   .beserva-section {
-    height: 400px;
+    height: 250px;
   }
   #perfil1 {
     flex-wrap: wrap;

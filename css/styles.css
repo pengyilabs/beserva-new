@@ -11140,3 +11140,15 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   
   
 }
+@media (max-width: 768px) {
+  #buttonperfil {
+  width: 120px;
+  height: 40px;
+
+  
+   
+    
+  }
+  
+  
+}

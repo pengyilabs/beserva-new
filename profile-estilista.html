@@ -14,9 +14,9 @@
     <header class="border-bottom pb-2">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="home.html">
-            <img src="assets/images/brand.png" alt="logo" />
-          </a>
+          <a id="flecha1" href="profile-salon.html"><i class="bi bi-arrow-left" style="color:black"></i></a>
+          
+         
           <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -59,16 +59,16 @@
       <div class="row">
         <div class="col">
           <div class="d-flex align-items-center mb-3">
-            <img src="assets/images/profile/profile-img.jpg">
+            <img  src="assets/images/profile/stylist-profile-photo.png" width="48" height="48">
             <div class="mx-2">
-              <h5 class="fw-semibold mb-0">Victorys Beaty</h5>
-              <span class="fs-7 text-gray">@vitorysbeaty</span>
+              <h5 class="fw-semibold mb-0">Alfons Baptista</h5>
+              <span class="fs-7 text-gray">@ChrisSmith83</span>
             </div>
           </div>
           <p class="text-gray">Mi nombre es Ala, soy de Argentina, y soy amante del maquillaje y cuidado personal.</p>
-          <a href="#" class="text-blue" style="    color: #3b9aeb">
-            <i class="bi bi-link-45deg"></i>
-            www.beautyvictory.com
+          <a href="#" class="text-blue text-decoration-none" style="    color: #3b9aeb">
+            <i class="bi bi-bag"></i>
+            @victorysbeauty
           </a>
           <div class="my-4">
             <span class="me-2"><b>3259</b> Seguidores</span>
@@ -86,11 +86,7 @@
               Siguiendo
             </button>
           </div>
-          <div>
-            <a href="profile-salon-tienda.html" type="button"
-              class="btn btn-outline-secondary  text-black rounded-pill bg-white m-1 border-black"><i
-                class="bi bi-bag m-1"></i>Tienda</a>
-          </div>
+          
           <div>
             <button class="btn btn-outline-secondary  text-black rounded-pill bg-white m-1 border-black">
               <i class="bi bi-three-dots-vertical"></i>
@@ -102,9 +98,9 @@
         <button class="btn btn-link text-gray submenu-item active text-decoration-none" style="color: gray;"
           id="info">Info</button>
         <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: gray;"
-          id="stylists">Estilistas</button>
+          id="stylists">Servicios</button>
         <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: gray;"
-          id="posts">Posts</button>
+          id="posts">Post</button>
         <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: gray;"
           id="reviews">Reseñas</button>
       </div>
@@ -137,99 +133,185 @@
           </div>
         </section>
         <section class="profile-content" id="stylists">
-          <ul class="list-group list-group-flush">
-          
-              <div class="d-flex justify-content-between">
-
-
-                <div class=" d-flex">
-                  <div class="rounded-circle">
-                    <img  src="assets/images/profile/stylist-profile-photo.png" width="48" height="48">
-                  </div>
-                  <div class="">
-                    <h6 class="fw-bold">Alfons Baptista</h6>
-                    <span class="text-secondary">Maquillaje, Uñas, Styling, etc...</span>
-                  </div>
-
-                </div>
-             
-                  <button class="btn btn-primary text-primary bg-white rounded-pill m-2" id="buttonperfil"><a class="text-decoration-none" href="profile-estilista.html">Ver perfil
-                  </a></button>
+          <div>
+            <input type="search" class="form-control bg-white w-75" id="Tienda-search2"
+                        placeholder="Busca, servicios, productos y mas...">
+          </div>
+          <div class="d-flex mb-3">
+           <p id="vermas">Ver más</p>
+          </div>
+          <div class="d-grid">
+           
+          <div class="my-3 d-flex justify-content-md-between border-bottom">
+            <span class="fw-semibold">Peluqueria y Barbería</span>
+            <p class="text-primary fw-semibold" id="vertodo">Ver todo</p>
+            <p class="text-primary fw-semibold" style="margin-left: 140px;" id="vermas">Ver más</p>
+          </div>
+      
+        
+          <div class="card-group" id="tienda1">
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p  class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1"id="imgservice2">
+              <img src="assets/images/profile-mobile/service2.png" class="card-img-top" style="height: 80px;"  alt="...">
+              <div class="card-body">
+                <p class="card-title">Nombre del servicio</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1" id="imgservice3">
+              <img src="assets/images/profile-mobile/service2.png" class="card-img-top" style="height: 120px;" alt="...">
+              <div class="card-body">
+                <p class="card-title">Nombre del servicio</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure4.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
             
+          </div>
+          <div class="my-3 d-flex justify-content-md-between border-bottom">
+            <span class="fw-semibold">Cuidados de piel</span>
+            <p class="text-primary fw-semibold" id="vertodo">Ver todo</p>
+            <p class="text-primary fw-semibold" style="margin-left: 180px;" id="vermas">Ver más</p>
+          </div>
+      
+          <div class="card-group " id="tienda1">
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p  class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
               </div>
-           
-           
-              <div class="d-flex justify-content-between">
-
-
-                <div class="d-flex">
-                  <div class="rounded-circle">
-                    <img  src="assets/images/profile-mobile/catalina.png" width="48" height="48">
-                  </div>
-                  <div class="">
-                    <h6 class="fw-bold">Catalina Casas</h6>
-                    <span class="text-secondary">Maquillaje, Uñas, Styling, etc...</span>
-                  </div>
-
-                </div>
-                <button class="btn btn-primary text-primary bg-white rounded-pill m-2" id="buttonperfil">
-
-                  Ver perfil
-                </button>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text">$14.99</p>
+                
+                
               </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure5.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
+            <div class="card m-1">
+              <img src="assets/images/profile-mobile/manicure2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title">Manicure</p>
+                <p class="card-text text-secondary">Crema para piel grasa y mixta</p>
+                <p class="card-text text-bg-light">$14.99</p>
+                
+                
+              </div>
+            </div>
             
-           
-              <div class="d-flex justify-content-between">
-
-                <div class="d-flex">
-                  <div class="rounded-circle ">
-                    <img  src="assets/images/profile-mobile/james.png" width="48" height="48">
-                  </div>
-                  <div class="">
-                    <h6 class="fw-bold">James Botosh</h6>
-                    <span class="text-secondary">Maquillaje, Uñas, Styling, etc...</span>
-                  </div>
-
-                </div>
-                <button class="btn btn-primary text-primary bg-white rounded-pill m-2" id="buttonperfil">
-
-                  Ver perfil
-                </button>
-              </div>
-           
-              <div class="d-flex justify-content-between">
-
-                <div class="d-flex">
-                  <div class="rounded-circle">
-                    <img  src="assets/images/profile-mobile/sam.png" width="48" height="48">
-                  </div>
-                  <div class="">
-                    <h6 class="fw-bold">Sam Korsgaard</h6>
-                    <span class="text-secondary">Maquillaje, Uñas, Styling, etc...</span>
-                  </div>
-                </div>
-                <button class="btn btn-primary text-primary bg-white rounded-pill m-2" id="buttonperfil">Ver perfil</button>
-              </div>
-         
-           
-              <div class="d-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="rounded-circle">
-                    <img  src="assets/images/profile-mobile/cooper.png" width="48" height="48">
-                  </div>
-                  <div class="">
-                    <h6 class="fw-bold">Cooper Levin</h6>
-                    <span class="text-secondary">Maquillaje, Uñas, Styling, etc...</span>
-                  </div>
-
-                </div>
-                <button class="btn btn-primary text-primary bg-white rounded-pill m-2" id="buttonperfil">
-
-                  Ver perfil
-                </button>
-              </div>
-           
-          </ul>
+          </div>
+        </div>
         </section>
         <section class="profile-content " id="posts">
 
@@ -237,30 +319,30 @@
             <div class="d-flex">
               <div class="m-1">
                 <div>
-                  <img class="card-img m-1 " id="imgperfil" src="assets/images/profile-mobile/perfil1.png" alt="">
+                  <img class="card-img m-1 "  src="assets/images/profile-mobile/perfil1.png" alt="">
                 </div>
                 <div>
-                  <img class="card-img m-1 " id="imgperfil" src="assets/images/profile-mobile/perfil4.png" alt="">
+                  <img class="card-img my-3 h-80 "  src="assets/images/profile-mobile/perfil4.png" alt="">
                 </div>
               </div>
 
               <div class="m-1 ">
-                <img class="card-img m-1 " id="imgperfil" src="assets/images/profile-mobile/perfil2.png" alt="">
-                <img class="card-img m-1 " id="imgperfil" src="assets/images/profile-mobile/perfil3.png" alt="">
+                <img class="card-img m-1 rounded"  src="assets/images/profile-mobile/perfil7.png" alt="">
+                <img class="card-img m-1 "  src="assets/images/profile-mobile/perfil3.png" alt="">
               </div>
             </div>
             <div class="d-flex">
               <div class="m-1">
                 <div>
-                  <img class="card-img m-1 " id="imgperfil" src="assets/images/profile-mobile/perfil1.png" alt="">
+                  <img class="card-img m-1 " src="assets/images/profile-mobile/perfil1.png" alt="">
                 </div>
                 <div>
-                  <img class="card-img m-1 " id="imgperfil" src="assets/images/profile-mobile/perfil4.png" alt="">
+                  <img class="card-img m-1 "  src="assets/images/profile-mobile/perfil4.png" alt="">
                 </div>
               </div>
               <div class="m-1">
-                <img class="card-img m-1 " id="imgperfil" src="assets/images/profile-mobile/perfil2.png" alt="">
-                <img class="card-img m-1 " id="imgperfil" src="assets/images/profile-mobile/perfil3.png" alt="">
+                <img class="card-img m-1 rounded "  src="assets/images/profile-mobile/perfil2 - copia.png" alt="">
+                <img class="card-img m-1 "  src="assets/images/profile-mobile/perfil3.png" alt="">
               </div>
             </div>
           </div>

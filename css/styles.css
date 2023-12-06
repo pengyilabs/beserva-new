@@ -660,6 +660,9 @@ progress {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
+  #flecha1{
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
@@ -11111,23 +11114,41 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   font-size: 1.563rem;
 }
 
+.activeperfil{
+  color: black;
+
+}
+
 @media (max-width: 768px) {
-  .beserva-section {
-    height: 400px;
-  }
   #perfil1 {
     flex-wrap: wrap;
-  };
+
+  }
   #tienda1 {
     display: flex;
-  };
+
+  }
   #Tienda-search2 {
     position: absolute;
-  };
-  #vermas {
-    display: none; 
-   };
-   #vertodo {
-    display: none;
+ 
+ 
    }
+   #vertodo {
+    display:  none;}
+
+    #imgservice3{
+      display: none;
+       } 
+  
 }
+@media (min-width: 768px) {
+  #vermas {
+   display:  none;
+  
+  }
+  #imgservice2{
+   display: none;
+    }   
+}
+
+

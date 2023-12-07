@@ -663,6 +663,13 @@ progress {
   #flecha1{
     display: none;
   }
+  #imgservice2{
+    display: none;
+  }
+  #vermas {
+    display: none;
+  }
+
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
@@ -11153,9 +11160,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .w-330 {
   width: 20.6rem;
-}
 
-@media (max-width: 768px) {
+}
   .beserva-section {
     height: 250px;
   }
@@ -11180,14 +11186,3 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
        } 
   
 }
-@media (min-width: 768px) {
-  #vermas {
-   display:  none;
-  
-  }
-  #imgservice2{
-   display: none;
-    }   
-}
-
-

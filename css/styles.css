@@ -669,6 +669,13 @@ progress {
   #vermas {
     display: none;
   }
+  #inspiracion{
+    display: table-column-group;
+  }
+  #inspiracion2{
+   
+   margin: 0;
+  }
 
 }
 @media (min-width: 992px) {
@@ -11184,5 +11191,17 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     #imgservice3{
       display: none;
        } 
-  
+       #imglogo{
+        height: 25px;
+        width: 150px;
+       }
+       #buttonperfil{
+    height: 40px;
+    width: 100px;
+       }
+       #buttonperfil4{
+        height: 40px;
+        width: 108px;
+           }
 }
+

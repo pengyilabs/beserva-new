@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <title>Beserva</title>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <header class="border-bottom pb-2">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+
+          <img src="assets/images/brand.png" id="imglogo" alt="logo" />
+
+          <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="bi bi-map" style="font-size: 1.3rem;"></i> <i class="bi bi-bell" style="font-size: 1.3rem;">
+            </i><span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link text-primary" href="#">Descubre</a>
+              <a class="nav-link" href="#">Recursos</a>
+              <a class="nav-link" href="#">Reservas</a>
+            </div>
+          </div>
+          <div class="position-relative align-items-center d-none d-lg-flex">
+            <button class="btn btn-link text-dark">
+              <i class="bi bi-map" style="font-size: 1.3rem;"></i>
+            </button>
+            <button class="btn btn-link text-dark">
+              <i class="bi bi-bell" style="font-size: 1.3rem;"></i>
+            </button>
+            <div class="dropdown">
+              <button class="btn btn-link text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img class="d-inline" src="assets/images/profile-img.jpg" width="40" height="40">
+                <span class="fw-bold">Alissa Gray</span>
+                <!-- <span class="fs-7">alissargray@gmail.com</span> -->
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" type="button" href="profile.html">Perfil</a></li>
+                <li><a class="dropdown-item" type="button">Opcion 2</a></li>
+                <li><a class="dropdown-item" type="button">Opcion 3</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-md my-4">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex align-items-center mb-3">
+            <img src="assets/images/profile-mobile/chris.png" width="48" height="48">
+            <div class="mx-2">
+              <h5 class="fw-semibold mb-0">Chris Smith</h5>
+              <span class="fs-7 text-gray">@ChrisSmith83</span>
+            </div>
+          </div>
+          <p class="text-gray">Mi nombre es Ala, soy de Argentina, y soy amante del maquillaje y cuidado personal.</p>
+          <a href="#" class="text-blue text-decoration-none" style="    color: #3b9aeb">
+            <i class="bi bi-bag"></i>
+            @victorysbeauty
+          </a>
+          <div class="my-4">
+            <span class="me-2"><b>3259</b> Seguidores</span>
+            <span><b>678</b> Siguiendo</span>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-md-end justify-content-start align-items-center mb-3">
+          <div>
+            <button class="btn btn-primary text-light rounded-pill m-1">
+              Editar perfil
+            </button>
+          </div>
+          <div>
+            <button class="btn btn-primary text-primary bg-white rounded-pill m-1">
+              Compartir
+            </button>
+          </div>
+
+          <div>
+            <button class="btn btn-outline-secondary  text-black rounded-pill bg-white m-1 border-black">
+              <i class="bi bi-three-dots-vertical"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex border-bottom">
+        <button class="btn btn-link text-gray submenu-item active text-decoration-none" style="color: gray;"
+          id="info">Info</button>
+        <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: gray;"
+          id="stylists">Favoritos</button>
+        <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: gray;"
+          id="posts">Post</button>
+        <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: gray;"
+          id="reviews">Reseñas</button>
+      </div>
+      <div class="container mt-4">
+        <section class="profile-content active" id="info">
+          <h5>Información</h5>
+          <p>Mi nombre es Ala, soy de Argentina, y soy amante del maquillaje y cuidado personal. Comencé este blog para
+            compartir con ustedes mis ideas.</p>
+          <div class="mt-2">
+            <div class="mb-4">
+              <i class="bi bi-plus-circle"></i>
+              <span class="text-primary">Agregar informacion</span>
+            </div>
+            <div class="mb-4">
+              <i class="bi bi-person-circle"></i>
+              <span style="color: #bdaaaa;"><span class="text-secondary">Chris,</span> @Chris_Smith90</span>
+            </div>
+            <div class="mb-4">
+              <i class="bi bi-geo-alt"></i>
+              <span class="text-secondary">Los Angeles, California</span>
+            </div>
+            <div class="mb-4">
+              <i class="bi bi-cake"></i>
+              <span>16 de Abril</span>
+            </div>
+
+          </div>
+        </section>
+        <section class="profile-content" id="stylists">
+          <div>
+            <input type="search" class="form-control bg-white w-75" id="Tienda-search2"
+              placeholder="Busca, servicios, productos y mas...">
+          </div>
+          <div class="d-flex mb-3">
+            <p id="vermas">Ver más</p>
+          </div>
+          <div class="d-grid">
+
+            <div class="my-3 d-flex justify-content-md-between border-bottom">
+              <span class="fw-semibold">Estilistas</span>
+              <p class="text-primary fw-semibold" id="vertodo">Ver todo</p>
+              <p class="text-primary fw-semibold" style="margin-left: 200px;" id="vermas">Ver más</p>
+            </div>
+
+
+            <section class="profile-content" id="stylists">
+              <ul class="list-group list-group-flush">
+        
+                <div class="d-flex justify-content-between">
+                  <div class=" d-flex">
+                    <div class="rounded-circle">
+                      <img src="assets/images/profile-mobile/inicio.png" width="48" height="48">
+                    </div>
+                    <div class="">
+                      <h6 class="fw-bold">Victorys Beaty</h6>
+                      <span class="text-secondary">Maquillaje, Uñas, Styling, etc...</span>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary text-primary bg-white rounded-pill m-2" id="buttonperfil">
+                 Siguiendo
+                    </button>
+                </div>
+                
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex">
+                    <div class="rounded-circle">
+                      <img src="assets/images/profile/stylist-profile-photo.png" width="48" height="48">
+                    </div>
+                    <div class="">
+                      <h6 class="fw-bold">Alfons Baptista</h6>
+                      <span class="text-secondary">ChrisSmith83</span>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary text-light rounded-pill m-2" id="buttonperfil">
+                    Seguir
+                  </button>
+                </div>
+                
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex">
+                    <div class="rounded-circle ">
+                      <img src="assets/images/profile-mobile/Spacalifornia.png" width="48" height="48">
+                    </div>
+                    <div class="w-70">
+                      <h6 class="fw-bold">Spa California</h6>
+                      <span class="text-secondary">Maquillaje, Uñas, Styling, etc...</span>
+                    </div>
+                  </div>
+                  <div>
+                  <button class="btn btn-primary text-light rounded-pill m-2" id="buttonperfil">
+                       Seguir                                                                                                             
+                  </button>
+                </div>
+                </div>
+        
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex">
+                    <div class="rounded-circle">
+                      <img src="assets/images/profile-mobile/Maren.png" width="48" height="48">
+                    </div>
+                    <div class="">
+                      <h6 class="fw-bold">Maren Aminoff</h6>
+                      <span class="text-secondary">Asesor de imagen</span>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary text-light rounded-pill m-2" id="buttonperfil">
+                    Seguir
+                  </button>
+                </div>
+               
+              </ul>
+            </section>
+          </div>
+          <div id="inspiracion2">
+            <h6 class="m-3 text-black">Inspiracion</h6>
+            <div class="d-flex">
+            <div class="card-group m-2" id="inspiracion">
+              <div class="d-flex">
+            <div class="card">
+              <div class="">
+                <img src="assets/images/profile-mobile/miboda1.png" alt="">
+              </div>
+            </div>
+            
+            <div class="card">
+              <div >
+                <img src="assets/images/profile-mobile/miboda2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="card">
+              <div>
+                <img src="assets/images/profile-mobile/miboda3.png" alt="">
+              </div>
+            </div>
+            <div class="card">
+              <div>
+                <img src="assets/images/profile-mobile/miboda4.png" alt="">
+                </div>
+            </div>
+            </div>
+            <p class="text-black fw-semibold">Mi boda</p>
+          </div>
+        
+          <div class="card-group m-2"  id="inspiracion">
+            <div class="d-flex">
+          <div class="card">
+            <div class="">
+              <img src="assets/images/profile-mobile/uñas1.png" alt="">
+            </div>
+          </div>
+          
+          <div class="card">
+            <div >
+              <img src="assets/images/profile-mobile/uñas2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="card">
+            <div>
+              <img src="assets/images/profile-mobile/uñas3.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <img src="assets/images/profile-mobile/uñas4.png" alt="">
+            </div>
+          </div>
+          </div>
+          <p class="text-black fw-semibold">Diseño de uñas</p>
+        </div>
+        </div>
+        
+        <div class="d-flex" >
+          <div class="card-group m-2"  id="inspiracion">
+            <div class="d-flex">
+          <div class="card">
+            <div class="">
+              <img src="assets/images/profile-mobile/maquillaje1.png" alt="">
+            </div>
+          </div>
+          
+          <div class="card">
+            <div >
+              <img src="assets/images/profile-mobile/maquillaje2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="card">
+            <div>
+              <img src="assets/images/profile-mobile/maquillaje3.png" alt="">
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <img src="assets/images/profile-mobile/maquillaje4.png" alt="">
+            </div>
+          </div>
+          </div>
+          <p class="text-black fw-semibold">Maquillaje
+          </p>
+        </div>
+        
+        <div class="card-group m-2"  id="inspiracion">
+          <div class="d-flex">
+        <div class="card">
+          <div class="">
+            <img src="assets/images/profile-mobile/rutina1.png" alt="">
+          </div>
+        </div>
+        
+        <div class="card">
+          <div >
+            <img src="assets/images/profile-mobile/rutina2.png" alt="">
+          </div>
+        </div>
+        </div>
+        <div class="d-flex">
+        <div class="card">
+          <div>
+            <img src="assets/images/profile-mobile/rutina3.png" alt="">
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <img src="assets/images/profile-mobile/rutina4.png" alt="">
+          </div>
+        </div>
+        </div>
+        <p class="text-black fw-semibold">Rutinas de Skincare</p>
+        </div>
+        </div>
+          </div>
+        </section>
+        <section class="profile-content " id="posts">
+
+          <div class="d-flex " id="perfil1">
+            <div class="d-flex">
+              <div class="m-1">
+                <div>
+                  <img class="card-img m-1 " src="assets/images/profile-mobile/perfil1.png" alt="">
+                </div>
+                <div>
+                  <img class="card-img my-3 h-80 " src="assets/images/profile-mobile/perfil4.png" alt="">
+                </div>
+              </div>
+
+              <div class="m-1 ">
+                <a href="profile-usuario-post-smith.html"><img class="card-img m-1 rounded"
+                    src="assets/images/profile-mobile/perfil7.png" alt=""></a>
+                <img class="card-img m-1 " src="assets/images/profile-mobile/perfil3.png" alt="">
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="m-1">
+                <div>
+                  <img class="card-img m-1 " src="assets/images/profile-mobile/perfil1.png" alt="">
+                </div>
+                <div>
+                  <img class="card-img m-1 " src="assets/images/profile-mobile/perfil4.png" alt="">
+                </div>
+              </div>
+              <div class="m-1">
+                <img class="card-img m-1 rounded " src="assets/images/profile-mobile/perfil2 - copia.png" alt="">
+                <img class="card-img m-1 " src="assets/images/profile-mobile/perfil3.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section class="profile-content" id="reviews">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+              <div class="card">
+                <div class="card-body text-gray">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/images/profile-mobile/chris.png">
+                      <div class="ms-2">
+                        <h6>Chris Smith</h6>
+                        <span>@Chris_Smith90</span>
+                      </div>
+                    </div>
+                    <button class="btn btn-icon">
+                      <i class="bi bi-three-dots-vertical"></i>
+                    </button>
+                  </div>
+                  <div class="d-flex my-2 align-items-center">
+                    <div>
+                      <span><i class="bi bi-star-fill" style="color:#ffdb4d ;"></i></span>
+                      <span><i class="bi bi-star-fill" style="color:#ffdb4d ;"></i></span>
+                      <span><i class="bi bi-star-fill" style="color:#ffdb4d ;"></i></span>
+                      <span><i class="bi bi-star-fill" style="color:#f5f4ef ;"></i></span>
+                      <span><i class="bi bi-star-fill" style="color:#f5f4ef ;"></i></span>
+                    </div>
+                    <span class="fs-7 ms-2">Hace 2 meses</span>
+                  </div>
+                  <span class="fw-semibold">Me encantó 😍</span>
+                  <p>Para mi es el mejor salón de uñas de toda la ciudad, calidad y comodidad con el mejor servicio.</p>
+                  <div>
+                    <i class="bi bi-heart"></i>
+                    <span class="fw-bold">5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+        </section>
+        
+    </main>
+
+    <div class="d-flex d-md-none border-top">
+      <a class="btn btn-link text-black text-decoration-none" id="activeperfil" href="#">
+        <img src="assets/images/profile-mobile/inicio.png">
+        Inicio
+      </a>
+      <a class="btn btn-link text-black text-decoration-none" href="#">
+        <img src="assets/images/profile-mobile/Descubre2.png">
+        Descubre
+      </a>
+      <a class="btn btn-link text-black text-decoration-none" href="#">
+        <img src="assets/images/sources.svg">
+        Recursos
+      </a>
+      <a class="btn btn-link text-black text-decoration-none" href="#">
+        <img src="assets/images/bookings.svg">
+        Reservas
+      </a>
+      <a class="btn btn-link active text-decoration-none" href="profile.html">
+        <img src="assets/images/profile-mobile/UserCircle2.png">
+        Perfil
+      </a>
+    </div>
+    
+</div>
+  
+  <script type="module" src="js/profile.js"></script>
+</body>
+
+</html>

@@ -676,6 +676,9 @@ progress {
    
    margin: 0;
   }
+  #borderbottom{
+    display: none;
+  }
 
 }
 @media (min-width: 992px) {
@@ -11203,5 +11206,6 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
         height: 40px;
         width: 108px;
            }
+          
 }
 

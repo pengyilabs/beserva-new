@@ -1260,6 +1260,9 @@ progress {
   .gy-md-5 {
     --bs-gutter-y: 3rem;
   }
+  #stories1{
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .col-lg {
@@ -11207,6 +11210,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
         height: 40px;
         width: 108px;
            }
-          
+          #stories2{
+            display: none;
+          }
 }
 

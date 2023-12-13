@@ -11207,6 +11207,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   border-radius: 20px;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
 .f-22 {
   font-size: 1.375rem;

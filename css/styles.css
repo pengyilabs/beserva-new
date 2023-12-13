@@ -11108,6 +11108,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   background: var(--primary-dark, #F22F60);
 }
 
+.bg-primary-dark-3 {
+  background: #24070F;
+}
+
 .bg-primary-light {
   background: #FBF2F7;
 }
@@ -11116,7 +11120,9 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   background: var(--primary-brand-color, #FF517C);
 }
 
-.bg-p
+.bg-primary-light-3 {
+  background: #FFDCE5;
+}
 
 .bg-blue {
   background: #1A2342;
@@ -11135,6 +11141,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .bg-light-blue {
   background: #F3F5F7;
+}
+
+.bg-light-blue-2 {
+  background: #262F4E;
 }
 
 .bg-warning-light {

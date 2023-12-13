@@ -11,12 +11,17 @@
     <title>Beserva</title>
   </head>
   <body>
-    <div>
+    <div class="overflow-x-hidden">
       <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid py-2 px-4">
             <a class="navbar-brand" href="home.html">
-              <img src="assets/images/brand.svg" alt="logo" />
+              <img
+                src="assets/images/logo-primary.svg"
+                alt="logo"
+                class="img-fluid"
+                style="width: 138px; height: 28px"
+              />
             </a>
             <button
               class="navbar-toggler"
@@ -39,8 +44,9 @@
                 >
                 <a class="nav-link mx-3 text-dark" href="#">Cómo funciona</a>
                 <a class="nav-link mx-3 text-dark" href="#">Servicios</a>
+                <a class="nav-link mx-3 text-dark" href="#pricing">Pricing</a>
                 <a class="nav-link mx-3 text-dark" href="#"
-                  >Centro de belleza</a
+                  >Centros de belleza</a
                 >
                 <a class="nav-link mx-3 text-dark" href="#">Blog</a>
                 <a class="nav-link mx-3 text-dark" href="#">Tienda</a>
@@ -149,7 +155,7 @@
             <div class="col">
               <img
                 src="/assets/images/b2b-section-2.png"
-                class="d-block m-auto mb-3"
+                class="d-block m-auto mb-3 img-fluid"
                 alt="b2b"
               />
             </div>
@@ -194,17 +200,17 @@
                 <h2 class="f-30">Únete a nuestra comunidad de belleza</h2>
                 <p class="f-20 text-muted">
                   Explora las ventajas de unirte a nuestra comunidad de belleza.
-                  Conéctate con tu audiencia, atrae a más clientes a través de
-                  tu contenido y crece tu salón.
+                  Conecta con tu audiencia, atrae a más clientes a través de tu
+                  contenido y crece tu salón.
                 </p>
-                <button class="btn btn-primary">Descargar App</button>
+                <button class="btn btn-primary">Descargar</button>
               </div>
             </div>
             <div class="col"></div>
             <div class="col">
               <img
                 src="/assets/images/b2b-section-3.png"
-                class="d-block ms-auto"
+                class="d-block ms-auto img-fluid"
                 alt="beserva-section-3"
               />
             </div>
@@ -227,7 +233,7 @@
                     y los resultados tangibles en términos de organización y
                     visibilidad son inigualables.
                   </p>
-                  <h6 class="mb-0 f-20">Sofia</h6>
+                  <h6 class="mb-0 f-20">Sofía</h6>
                   <p class="f-18">Ciudad de México</p>
                 </div>
                 <div class="col-12 col-md-3 card border p-3">
@@ -254,12 +260,12 @@
             </div>
           </div>
         </div>
-        <div class="p-5">
+        <div id="pricing" class="p-5">
           <div class="p-5">
             <h2 class="text-center text-primary">
               Profesionales independientes
             </h2>
-            <p class="f-20 text-center">Encuentra el plan adecuado para ti</p>
+            <p class="f-20 text-center">Encuentra el plan adecuado para ti.</p>
           </div>
           <div class="row g-0 container m-auto">
             <div class="col">
@@ -281,129 +287,99 @@
               </div>
             </div>
             <div class="col">
-              <div class="p-5 bg-primary-light-2 text-white rounded-20 rounded-end">
+              <div
+                class="p-5 bg-primary-light-2 text-white rounded-20 rounded-end"
+              >
                 <h2 class="text-center">Plan Básico</h2>
                 <div class="my-5">
                   <div class="d-flex gap-1">
                     <i class="bi bi-person"></i>
-                    <p>
-                      1 empleado
-                    </p>
+                    <p>1 empleado</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Citas Básico
-                    </p>
+                    <p>Gestión de Citas Básico</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Clientes Básico
-                    </p>
+                    <p>Gestión de Clientes Básico</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Facturación y Pagos Básico
-                    </p>
+                    <p>Facturación y Pagos Básico</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Inventario Básico
-                    </p>
+                    <p>Inventario Básico</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Informes Básicos
-                    </p>
+                    <p>Informes Básicos</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Herramientas de Creación de Contenido Básicas
-                    </p>
+                    <p>Herramientas de Creación de Contenido Básicas</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Comunidad: Acceso Limitado
-                    </p>
+                    <p>Comunidad: Acceso Limitado</p>
                   </div>
                 </div>
                 <div class="m-5 p-2 border border-white rounded">
                   <h2 class="text-center">$305 MXN</h2>
                 </div>
-                <button class="btn btn-primary bg-primary-dark-2 m-auto my-5 d-block">
+                <button
+                  class="btn btn-primary bg-primary-dark-2 m-auto my-5 d-block"
+                >
                   Registrarme
                 </button>
               </div>
             </div>
             <div class="col">
-              <div class="p-5 bg-primary-dark-2 text-white rounded-20 rounded-end">
+              <div
+                class="p-5 bg-primary-dark-2 text-white rounded-20 rounded-end"
+              >
                 <h2 class="text-center">Plan Avanzado</h2>
                 <div class="my-5">
                   <div class="d-flex gap-1">
                     <i class="bi bi-person"></i>
-                    <p>
-                      1 empleado
-                    </p>
+                    <p>1 empleado</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Citas Avanzada
-                    </p>
+                    <p>Gestión de Citas Avanzada</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Clientes Avanzada
-                    </p>
+                    <p>Gestión de Clientes Avanzada</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Facturación y Pagos Avanzados
-                    </p>
+                    <p>Facturación y Pagos Avanzados</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Inventario Avanzado
-                    </p>
+                    <p>Inventario Avanzado</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Herramientas de Marketing
-                    </p>
+                    <p>Herramientas de Marketing</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Analítica de Negocios
-                    </p>
+                    <p>Analítica de Negocios</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Herramientas de Creación de Contenido Avanzadas
-                    </p>
+                    <p>Herramientas de Creación de Contenido Avanzadas</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Soporte Prioritario 24/7
-                    </p>
+                    <p>Soporte Prioritario 24/7</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Comunidad: Acceso Completo
-                    </p>
+                    <p>Comunidad: Acceso Completo</p>
                   </div>
                 </div>
                 <div class="m-5 p-2 border border-white rounded">
@@ -417,21 +393,25 @@
           </div>
           <div class="p-5">
             <h2 class="text-center text-warning mt-5">
-              Salones de Belleza y Bienestar 
+              Salones de Belleza y Bienestar
             </h2>
-            <p class="f-20 text-center">Impulsa tu negocio con el plan que mejor se ajuste a tus necesidades.</p>
+            <p class="f-20 text-center">
+              Impulsa tu negocio con el plan que mejor se ajuste a tus
+              necesidades.
+            </p>
           </div>
           <div class="row g-0 container-fluid m-auto">
-            <div class="col">
+            <div class="col-12 col-lg-3">
               <div class="p-5 bg-light-gray rounded-20 rounded-end">
                 <h2 class="text-center text-warning">Plan Gratuito</h2>
                 <div class="d-flex gap-1 my-5">
                   <i class="bi bi-check-circle text-warning"></i>
                   <p>
-                    Crea tu perfil y agrega tus servicios y horarios para que la comunidad de Beserva pueda encontrar y descubrir tu negocio.
+                    Crea tu perfil y agrega tus servicios y horarios para que la
+                    comunidad de Beserva pueda encontrar y descubrir tu negocio.
                   </p>
                 </div>
-                <div class="m-5 p-2 border border-dark rounded">
+                <div class="m-2 p-2 border border-dark rounded">
                   <h2 class="text-center">$0 MXN</h2>
                 </div>
                 <button class="btn bg-white text-dark m-auto my-5 d-block">
@@ -439,60 +419,46 @@
                 </button>
               </div>
             </div>
-            <div class="col">
-              <div class="p-5 bg-warning-light text-white rounded-20 rounded-end">
+            <div class="col-12 col-lg-3">
+              <div
+                class="p-5 bg-warning-light text-white rounded-20 rounded-end"
+              >
                 <h2 class="text-center">Plan Básico</h2>
                 <div class="my-5">
                   <div class="d-flex gap-1">
                     <i class="bi bi-person"></i>
-                    <p>
-                      2-5 empleados
-                    </p>
+                    <p>2-5 empleados</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Citas Básico
-                    </p>
+                    <p>Gestión de Citas Básico</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Clientes Básico
-                    </p>
+                    <p>Gestión de Clientes Básico</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Facturación y Pagos Básico
-                    </p>
+                    <p>Facturación y Pagos Básico</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Inventario Básico
-                    </p>
+                    <p>Inventario Básico</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Informes Básicos
-                    </p>
+                    <p>Informes Básicos</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Herramientas de Creación de Contenido Básicas
-                    </p>
+                    <p>Herramientas de Creación de Contenido Básicas</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Comunidad: Acceso Limitado
-                    </p>
+                    <p>Comunidad: Acceso Limitado</p>
                   </div>
                 </div>
-                <div class="m-5 p-2 border border-white rounded">
+                <div class="m-2 p-2 border border-white rounded">
                   <h2 class="text-center">$690 MXN</h2>
                 </div>
                 <button class="btn bg-white m-auto my-5 d-block">
@@ -500,150 +466,120 @@
                 </button>
               </div>
             </div>
-            <div class="col">
-              <div class="p-5 bg-warning text-white rounded-20 rounded-end">
-                <h2 class="text-center">Plan Avanzado</h2>
-                <div class="my-5">
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-person"></i>
-                    <p>
-                      2-7 empleados
-                    </p>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Citas Avanzada
-                    </p>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Clientes Avanzada
-                    </p>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-check-circle"></i>
-                    <p>
-                      Facturación y Pagos Avanzados
-                    </p>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-check-circle"></i>
-                    <p>
-                      Inventario Avanzado
-                    </p>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-check-circle"></i>
-                    <p>
-                      Herramientas de Marketing
-                    </p>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-check-circle"></i>
-                    <p>
-                      Analítica de Negocios
-                    </p>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-check-circle"></i>
-                    <p>
-                      Herramientas de Creación de Contenido Avanzadas
-                    </p>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-check-circle"></i>
-                    <p>
-                      Soporte Prioritario 24/7
-                    </p>
-                  </div>
-                  <div class="d-flex gap-1">
-                    <i class="bi bi-check-circle"></i>
-                    <p>
-                      Comunidad: Acceso Completo
-                    </p>
+            <div class="col-12 col-lg-3">
+              <div class="bg-warning text-white rounded-20 rounded-end">
+                <div class="d-flex pt-2 ps-2">
+                  <div
+                    class="rounded px-3 py-1 gap-2 border-white border d-flex"
+                  >
+                    <i class="bi bi-heart f-12"></i>
+                    <p class="mb-0 f-12">Mas popular</p>
                   </div>
                 </div>
-                <div class="mx-5 p-2 border border-white rounded">
-                  <h2 class="text-center">$1890 MXN</h2>
+                <div class="pb-5 px-5">
+                  <h2 class="text-center pt-2">Plan Avanzado</h2>
+                  <div class="my-5">
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-person"></i>
+                      <p>2-7 empleados</p>
+                    </div>
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-check-circle"></i>
+                      <p>Gestión de Citas Avanzada</p>
+                    </div>
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-check-circle"></i>
+                      <p>Gestión de Clientes Avanzada</p>
+                    </div>
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-check-circle"></i>
+                      <p>Facturación y Pagos Avanzados</p>
+                    </div>
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-check-circle"></i>
+                      <p>Inventario Avanzado</p>
+                    </div>
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-check-circle"></i>
+                      <p>Herramientas de Marketing</p>
+                    </div>
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-check-circle"></i>
+                      <p>Analítica de Negocios</p>
+                    </div>
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-check-circle"></i>
+                      <p>Herramientas de Creación de Contenido Avanzadas</p>
+                    </div>
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-check-circle"></i>
+                      <p>Soporte Prioritario 24/7</p>
+                    </div>
+                    <div class="d-flex gap-1">
+                      <i class="bi bi-check-circle"></i>
+                      <p>Comunidad: Acceso Completo</p>
+                    </div>
+                  </div>
+                  <div class="m-2 p-2 border border-white rounded">
+                    <h2 class="text-center">$1890 MXN</h2>
+                  </div>
+                  <button
+                    class="btn bg-white text-dark my-5 m-auto d-block"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Registrarme
+                  </button>
                 </div>
-                <div class="d-flex gap-1">
-                  <i class="bi bi-check-lg"></i>
-                  <p class="f-12 mb-0">Recibe 10% de descuento si realizas el pago anual</p>
-                </div>
-                <button class="btn bg-white text-dark mt-3 m-auto d-block">
-                  Registrarme con pago anual
-                </button>
-                <a href="" class="text-white d-flex justify-content-center f-12">Quiero registrarme con pago mensual</a>
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
               <div class="p-5 bg-blue text-white rounded-20 rounded-end">
                 <h2 class="text-center">Plan Premium</h2>
                 <div class="my-5">
                   <div class="d-flex gap-1">
                     <i class="bi bi-person"></i>
-                    <p>
-                      2-20 empleados
-                    </p>
+                    <p>2-20 empleados</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Citas Avanzada
-                    </p>
+                    <p>Gestión de Citas Avanzada</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Gestión de Clientes Avanzada
-                    </p>
+                    <p>Gestión de Clientes Avanzada</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Facturación y Pagos Avanzados
-                    </p>
+                    <p>Facturación y Pagos Avanzados</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Inventario Avanzado
-                    </p>
+                    <p>Inventario Avanzado</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Herramientas de Marketing
-                    </p>
+                    <p>Herramientas de Marketing</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Analítica de Negocios
-                    </p>
+                    <p>Analítica de Negocios</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Herramientas de Creación de Contenido Avanzadas
-                    </p>
+                    <p>Herramientas de Creación de Contenido Avanzadas</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Soporte Prioritario 24/7
-                    </p>
+                    <p>Soporte Prioritario 24/7</p>
                   </div>
                   <div class="d-flex gap-1">
                     <i class="bi bi-check-circle"></i>
-                    <p>
-                      Comunidad: Acceso Completo
-                    </p>
+                    <p>Comunidad: Acceso Completo</p>
                   </div>
                 </div>
-                <div class="m-5 p-2 border border-white rounded">
+                <div class="m-2 p-2 border border-white rounded">
                   <h2 class="text-center">$6670 MXN</h2>
                 </div>
                 <button class="btn bg-white text-dark m-auto my-5 d-block">
@@ -746,6 +682,82 @@
           </footer>
         </div>
       </main>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Selecciona tu plan
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-between">
+                <div class="border p-3 border-secondary rounded">
+                  <div class="form-check d-flex justify-content-end">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                  </div>
+                  <div>
+                    <p class="f-18 fw-bolder mb-1">$3500 MXN / Mensual</p>
+                    <p class="fw-bold mb-0">Plan Avanzado</p>
+                    <p class="text-secondary f-12">Profesionales Independientes</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check-circle text-primary f-12"></i>
+                    <p class="mb-0 text-secondary f-12">10% de descuento</p>
+                  </div>
+                </div>
+                <div class="border p-3 border-secondary rounded">
+                  <div class="form-check d-flex justify-content-end">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                  </div>
+                  <div>
+                    <p class="f-18 fw-bolder mb-1">$37800 MXN / Anual</p>
+                    <p class="fw-bold mb-0">Plan Avanzado</p>
+                    <p class="text-secondary f-12">Profesionales Independientes</p>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <i class="bi bi-check-circle text-primary f-12"></i>
+                    <p class="mb-0 text-secondary f-12">10% de descuento</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancelar
+              </button>
+              <button type="button" class="btn btn-primary">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="js/main.js"></script>

@@ -11,12 +11,17 @@
     <title>Beserva</title>
   </head>
   <body>
-    <div>
+    <div class="overflow-x-hidden">
       <header>
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid py-2 px-4">
             <a class="navbar-brand" href="home.html">
-              <img src="assets/images/brand.svg" alt="logo" />
+              <img
+                src="assets/images/logo-primary.svg"
+                alt="logo"
+                class="img-fluid"
+                style="width: 138px; height: 28px"
+              />
             </a>
             <button
               class="navbar-toggler"
@@ -40,7 +45,7 @@
                 <a class="nav-link mx-3 text-dark" href="#">Cómo funciona</a>
                 <a class="nav-link mx-3 text-dark" href="#">Servicios</a>
                 <a class="nav-link mx-3 text-dark" href="#"
-                  >Centro de belleza</a
+                  >Centros de belleza</a
                 >
                 <a class="nav-link mx-3 text-dark" href="#">Blog</a>
                 <a class="nav-link mx-3 text-dark" href="#">Tienda</a>
@@ -88,10 +93,21 @@
                         belleza!
                       </p>
                       <div class="d-flex gap-3">
-                        <button class="btn btn-primary">Aplica ahora</button>
-                        <button class="btn bg-white">
-                          Preguntas frequentes
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          Aplica ahora
                         </button>
+                        <a
+                          class="btn bg-white"
+                          target="_blank"
+                          href="/assets/Embajadoras.pdf"
+                        >
+                          Preguntas frequentes
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -114,12 +130,11 @@
                 <h2 class="text-white f-55">Eres trendsetter</h2>
               </div>
               <div class="col-12 col-md-6">
-                <p class="text-white f-30">
+                <p class="text-white f-20">
                   Destacas por tu originalidad, creatividad y capacidad para
                   adelantarte a las tendencias actuales. Eres una persona
                   visionaria con gran sentido de estilo.
                 </p>
-                <button class="btn bg-white">Preguntas frequentes</button>
               </div>
             </div>
           </div>
@@ -131,13 +146,12 @@
                 <h2 class="text-white f-55">Te apasiona la belleza</h2>
               </div>
               <div class="col-12 col-md-6">
-                <p class="text-white f-30">
+                <p class="text-white f-20">
                   Te encanta saber las últimas tendencias, productos y técnicas
                   en el mundo de la belleza. Disfrutas experimentando con
                   diferentes estilos, colores y productos para crear looks
                   únicos y expresar tu individualidad.
                 </p>
-                <button class="btn bg-white">Preguntas frequentes</button>
               </div>
             </div>
           </div>
@@ -149,13 +163,12 @@
                 <h2 class="text-primary f-55">Conectas gente</h2>
               </div>
               <div class="col-12 col-md-6">
-                <p class="text-white f-30">
+                <p class="text-white f-20">
                   Creas oportunidades para que personas nuevas se conozcan,
                   compartan ideas, establezcan relaciones y colaboren. Te
                   encanta crear vínculos nuevos y fomentar el intercambio de
                   ideas.
                 </p>
-                <button class="btn bg-white">Preguntas frequentes</button>
               </div>
             </div>
           </div>
@@ -167,13 +180,12 @@
                 <h2 class="text-primary f-55">Juegas en equipo</h2>
               </div>
               <div class="col-12 col-md-6">
-                <p class="text-white f-30">
+                <p class="text-white f-20">
                   Creas oportunidades para que personas nuevas se conozcan,
                   compartan ideas, establezcan relaciones y colaboren. Te
                   encanta crear vínculos nuevos y fomentar el intercambio de
                   ideas.
                 </p>
-                <button class="btn bg-white">Preguntas frequentes</button>
               </div>
             </div>
           </div>
@@ -185,30 +197,45 @@
                 <h2 class="text-dark f-55">Inspiras</h2>
               </div>
               <div class="col-12 col-md-6">
-                <p class="text-white f-30">
+                <p class="text-white f-20">
                   Influyes de manera positiva en las personas que te rodean y
                   empoderas a tu comunidad.
                 </p>
-                <button class="btn bg-white">Preguntas frequentes</button>
               </div>
             </div>
           </div>
         </div>
         <div>
-            <div class="row g-0">
-                <div class="col-12 col-md-3">
-                    <img src="/assets/images/embajadoras-section-2.png" class="img-fluid w-100" alt="">
-                </div>
-                <div class="col-12 col-md-3">
-                    <img src="/assets/images/embajadoras-section-3.png" class="img-fluid w-100" alt="">
-                </div>
-                <div class="col-12 col-md-3">
-                    <img src="/assets/images/embajadoras-section-4.png" class="img-fluid w-100" alt="">
-                </div>
-                <div class="col-12 col-md-3">
-                    <img src="/assets/images/embajadoras-section-5.png" class="img-fluid w-100"alt="">
-                </div>
+          <div class="row g-0">
+            <div class="col-12 col-md-3">
+              <img
+                src="/assets/images/embajadoras-section-2.png"
+                class="img-fluid w-100"
+                alt=""
+              />
             </div>
+            <div class="col-12 col-md-3">
+              <img
+                src="/assets/images/embajadoras-section-3.png"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-md-3">
+              <img
+                src="/assets/images/embajadoras-section-4.png"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+            <div class="col-12 col-md-3">
+              <img
+                src="/assets/images/embajadoras-section-5.png"
+                class="img-fluid w-100"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
         <div class="container-fluid bg-primary p-5">
           <footer
@@ -297,6 +324,171 @@
           </footer>
         </div>
       </main>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Formulario para aplicar
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="inputEmail4" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label"
+                    >Apellido</label
+                  >
+                  <input type="text" class="form-control" id="inputPassword4" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputPassword4"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label"
+                    >Fecha de nacimiento</label
+                  >
+                  <input type="text" class="form-control" id="inputEmail4" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label"
+                    >Perfil en redes sociales 1</label
+                  >
+                  <select id="inputState" class="form-select">
+                    <option selected>Seleccionar...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label"
+                    >Nombre de usuario o url</label
+                  >
+                  <input type="text" class="form-control" id="inputEmail4" />
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label"
+                    >Perfil en redes sociales 2</label
+                  >
+                  <select id="inputState" class="form-select">
+                    <option selected>Seleccionar...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label"
+                    >Nombre de usuario o url</label
+                  >
+                  <input type="text" class="form-control" id="inputEmail4" />
+                </div>
+                <div class="col-md-12">
+                  <label for="inputState" class="form-label"
+                    >¿Cómo te has enterado del programa de Embajadores?</label
+                  >
+                  <select id="inputState" class="form-select">
+                    <option selected>Seleccionar...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck"
+                    />
+                    <label class="form-check-label" for="gridCheck">
+                      ¿Sigues en la universidad?
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="inputState" class="form-label"
+                    >¿Dónde estudias?</label
+                  >
+                  <select id="inputState" class="form-select">
+                    <option selected>Seleccionar...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="inputState" class="form-label"
+                    >¿Dónde vives?</label
+                  >
+                  <select id="inputState" class="form-select">
+                    <option selected>Seleccionar...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="inputState" class="form-label"
+                    >Selecciona tus intereses</label
+                  >
+                  <select id="inputState" class="form-select">
+                    <option selected>Seleccionar...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck"
+                    />
+                    <label class="form-check-label" for="gridCheck">
+                      ¿Confirmas que tienes 3/4 horas semanales disponibles para
+                      Beserva además de tus otras responsabilidades?
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label for="customRange1" class="form-label"
+                    >En una escala del 1-10 ¿te gusta trabajar en equipo?</label
+                  >
+                  <input type="range" class="form-range" id="customRange1" />
+                </div>
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label"
+                    >¿Algo más que quieras compartir?</label
+                  >
+                  <input type="text" class="form-control" id="inputEmail4" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancelar
+              </button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="js/main.js"></script>

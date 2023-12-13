@@ -11107,8 +11107,24 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   background: #420F1E;
 }
 
+.bg-primary-dark-2 {
+  background: var(--primary-dark, #F22F60);
+}
+
+.bg-primary-dark-3 {
+  background: #24070F;
+}
+
 .bg-primary-light {
   background: #FBF2F7;
+}
+
+.bg-primary-light-2 {
+  background: var(--primary-brand-color, #FF517C);
+}
+
+.bg-primary-light-3 {
+  background: #FFDCE5;
 }
 
 .bg-blue {
@@ -11128,6 +11144,22 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .bg-light-blue {
   background: #F3F5F7;
+}
+
+.bg-light-blue-2 {
+  background: #262F4E;
+}
+
+.bg-warning-light {
+  background: var(--Primary-Yellow, #F9D476);
+}
+
+.bg-blue {
+  background: #1A2342;
+}
+
+.bg-light-gray {
+  background: var(--gris-100, #F3F5F7);
 }
 
 .activeperfil{
@@ -11162,9 +11194,17 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   font-size: 1.563rem;
 }
 
+.f-12 {
+  font-size: .8rem;
+}
+
 .activeperfil{
   color: black;
 
+}
+
+.rounded-20 {
+  border-radius: 20px;
 }
 
 @media (max-width: 768px) {

@@ -29,6 +29,7 @@
               <a class="nav-link text-primary" href="#">Descubre</a>
               <a class="nav-link" href="#">Recursos</a>
               <a class="nav-link" href="#">Reservas</a>
+              <a class="nav-link " data-bs-toggle="modal" data-bs-target="#rightSidebarModal" href="#">Editar perfil</a>
             </div>
           </div>
           <div class="position-relative align-items-center d-none d-lg-flex">
@@ -63,6 +64,7 @@
             <div class="mx-2">
               <h5 class="fw-semibold mb-0">Victorys Beaty</h5>
               <span class="fs-7 text-gray">@vitorysbeaty</span>
+              
             </div>
           </div>
           <p class="text-gray">Mi nombre es Ala, soy de Argentina, y soy amante del maquillaje y cuidado personal.</p>
@@ -364,7 +366,138 @@
       </a>
     </div>
   </div>
-  <script type="module" src="js/profile.js"></script>
+
+  <!-- Right Sidebar Modal -->
+<div class="modal right fade" id="rightSidebarModal" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-xs modal-dialog-scrollable";>
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="d-flex">
+      <i class="bi bi-arrow-left m-2 " data-bs-dismiss="modal" aria-label="Close" style="color:black"></i>
+      <p class="text-black m-2" id="rightSidebarModalLabel">Editar perfil</p>
+    </div>
+      
+    </div>
+    <div class="modal-body">
+      <div class="col">
+        <div class="col-12 ">
+          <div class="my-3">
+
+            <div>
+              <div class="d-flex ">
+             <img src="assets/images/profile-mobile/california3.png" alt="">
+             <button class="btn btn-primary bg-white border-0 text-primary rounded-pill ">
+              Cambiar foto de perfil
+            </button>
+            </div>
+             
+            <div class="d-flex ">
+              <img class="h-50 m-2" src="assets/images/profile-mobile/inicioactive.png" alt="">
+              <button class="btn btn-primary bg-white border-0 text-primary rounded-pill ">
+               Cambiar foto de portada
+             </button>
+             </div>
+             <div class="m-2">
+              <p class="fw-semibold">Dias de Atencion</p>
+              <div class="d-flex mb-3">
+                
+                <select class="form-select border-light" aria-label="Default select example">
+                  <option selected>Lunes</option>
+                  <option value="1">Martes</option>
+                  <option value="2">Miercoles</option>
+                  <option value="3">Jueves</option>
+                  <option value="3">Viernes</option>
+                  <option value="3">Sabado</option>
+                  <option value="3">Domingo</option>
+                </select>
+                <p class="m-2">a</p>
+                <select class="form-select border-light" aria-label="Default select example">
+                  <option value="3">Lunes</option>
+                  <option value="1">Martes</option>
+                  <option value="2">Miercoles</option>
+                  <option value="3">Jueves</option>
+                  <option value="3">Viernes</option>
+                  <option selected>Sabado</option>
+                  <option value="3">Domingo</option>
+                </select>
+              </div>
+             </div>
+             <div class="m-2">
+              <p class="fw-semibold">Horarios de atencion</p>
+              <div class="d-flex mb-3">
+                
+                <select class="form-select border-light" aria-label="Default select example">
+                  <option selected>8 a.m</option>
+                  <option value="1">9 a.m</option>
+                  <option value="2">10 a.m</option>
+                  <option value="3">11 a.m</option>
+                  <option value="3">12 a.m</option>
+                  <option value="3">13 p.m</option>
+                  <option value="3">14 p.m</option>
+                </select>
+                <p class="m-2">a</p>
+                <select class="form-select border-light" aria-label="Default select example">
+                  <option value="2">7 p.m</option>
+                  <option value="1">8 p.m</option>
+                  <option selected>9 p.m</option>
+                  <option value="3">10 p.m</option>
+                  <option value="3">11 p.m</option>
+                  <option value="3">12 p.m</option>
+                  
+                </select>
+              </div>
+             </div>
+
+             <div>
+              <p class="fw-semibold">Direccion</p>
+              <input type="search" class="form-control bg-white  border-light" 
+              placeholder="Calle">
+              <input type="search" class="form-control bg-white  border-light" 
+              placeholder="Numero">
+              <div class="d-flex">
+                <i class="bi bi-compass my-3 opacity-50"></i>
+                <input type="search" class="form-control bg-white  border-light" 
+              placeholder="Mapa">
+
+              </div>
+             </div>
+            </div>
+          
+
+          </div>
+
+          
+
+
+
+
+
+
+        </div>
+
+      </div>
+      
+     
+    
+    </div>
+    <button type="button" class="btn btn-primary text-white rounded-pill  mb-5 m-2">
+      Guardar cambios
+    </button>
+     
+       
+      
+    </div>
+  </div>
+</div>
+
+
+  
+<script type="module" src="js/profile.js"></script>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
 </body>
 
 </html>

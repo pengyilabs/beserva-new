@@ -212,7 +212,7 @@
                             Vista día
                             <i class="bi bi-chevron-down"></i>
                         </button>
-                        <button class="btn btn-primary text-light rounded">
+                        <button class="btn btn-primary text-light rounded" data-bs-toggle="modal" data-bs-target="#rightSidebarModal" >
                             <i class="bi bi-plus"></i>
                             Crear Reserva
                         </button>
@@ -393,10 +393,69 @@ aria-hidden="true"
 </div>
 </div>
 
+ <!-- Right Sidebar Modal -->
+ <div class="modal right fade" id="rightSidebarModal" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog modal-xs modal-dialog-scrollable";>
+   <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="rightSidebarModalLabel">
+        Reserva espacio en Calendario
+      </h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div> 
 
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-  </body>
-</html>
+     <div class="modal-body">
+      <div class="my-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Nombre del cliente/a</label
+        >
+        <input
+          type="text"
+          class="form-control border-light"
+          id="exampleFormControlInput1"
+          placeholder="Nombre del cliente/a"
+        />
+      </div>    
+      <div>
+        <label for="exampleFormControlInput1" class="form-label"
+          >Seleccione servicio</label>
+      <select class="form-select border-light" aria-label="Default select example">
+        <option selected>Servicio 1</option>
+        <option value="1">Servicio 2</option>
+        <option value="2">Servicio 3</option>
+        <option value="3">Servicio 4</option>
+        <option value="3">Servicio 5</option>
+        <option value="3">Servicio 6</option>
+        <option value="3">Servicio 7</option>
+      </select>
+     
+    </div>
+     </div>
+     <button type="button" class="btn btn-primary text-white rounded-pill  mb-5 m-2">
+       Guardar cambios
+     </button>
+      
+        
+       
+     </div>
+   </div>
+ </div>
+ 
+ 
+   
+ <script type="module" src="js/profile.js"></script>
+ <!-- Bootstrap core JS-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Core theme JS-->
+ <script src="js/scripts.js"></script>
+ </body>
+ 
+ </html>
+
+ 

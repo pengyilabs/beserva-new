@@ -122,7 +122,7 @@
           <button class="btn btn-light bg-white border" id="sidebarToggle">
             <i class="bi bi-list"></i>
           </button>
-          <span class="navbar-brand h1 mb-0">Clientes</span>
+          <span class="navbar-brand h1 mb-0">Finanzas</span>
         </div>
       </nav>
       <div class="container-fluid">
@@ -140,12 +140,12 @@
                   <div class="d-flex align-items-center gap-2">
                     <i class="bi bi-search"></i>
                     <input type="search" class="form-control bg-white" id="Services-search"
-                      placeholder="Buscar servicios">
+                      placeholder="Buscar resumenes">
                   </div>
                 </div>
                 <div class="d-flex flex-wrap justify-content-center">
                   <button type="button" data-bs-toggle="modal" data-bs-target="#rightSidebarModal"
-                    class="btn btn-primary text-light rounded-pill h-75 m-1">Agregar Cliente</button>
+                    class="btn btn-primary text-light rounded-pill h-75 m-1">Agregar Gasto</button>
                   <button class="btn btn-light  text-black rounded-pill h-75 m-1 bg-white">Exportar CSV</button>
 
                 </div>
@@ -156,10 +156,9 @@
                 <thead>
                   <tr>
                     <th scope="col" class="text-gray fw-semibold"> Nombre</th>
-                    <td scope="col" class="text-gray fw-semibold"> Registrado</td>
-                    <td scope="col" class="text-gray fw-semibold"> Correo</td>
-                    <td scope="col" class="text-gray fw-semibold"> Telefono</td>
-                    <td scope="col" class="text-gray fw-semibold"> Total de ordenes</td>
+                    <td scope="col" class="text-gray fw-semibold"> Fecha</td>
+                    <td scope="col" class="text-gray fw-semibold"> Total</td>
+                    <td scope="col" class="text-gray fw-semibold"> Servicio</td>
 
                   </tr>
                 </thead>
@@ -167,86 +166,38 @@
                   <tr>
                     <td scope="row"> <img src="assets/images/c1.png"> Maria Roman</td>
                     <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
+                    <td class="text-success"> $850</td>
+                    <td class="text-gray"> Corte de cabello</td>
                   </tr>
                   <tr>
                     <td scope="row"> <img src="assets/images/c2.png"> Joshua Rodriguez</td>
                     <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
+                    <td class="text-success"> $300</td>
+                    <td class="text-gray"> Lavado</td>
                   </tr>
                   <tr>
                     <td scope="row"> <img src="assets/images/c3.png"> Carlos Macias</td>
                     <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
+                    <td class="text-success"> $800</td>
+                    <td class="text-gray"> Servicio premium</td>
                   </tr>
                   <tr>
                     <td scope="row"> <img src="assets/images/c4.png"> Cristina Agudelo</td>
                     <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
+                    <td class="text-danger"> $50</td>
+                    <td class="text-gray"> Cobro de comisiones</td>
                   </tr>
                   <tr>
                     <td scope="row"> <img src="assets/images/c5.png"> Arturo Castillo</td>
                     <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
+                    <td class="text-danger"> $30</td>
+                    <td class="text-gray"> Cobro de comisiones</td>
                   </tr>
                   <tr>
                     <td scope="row"> <img src="assets/images/c6.png"> Alejandra Ramirez</td>
                     <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="assets/images/c7.png"> Steven Lopez</td>
-                    <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="assets/images/c8.png"> Mario Diaz</td>
-                    <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="assets/images/c9.png"> Clara Isabel Lopez</td>
-                    <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="assets/images/c10.png"> Alejandro Quintero</td>
-                    <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="assets/images/c11.png"> Cris Ruiz</td>
-                    <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
-                  </tr>
-                  <tr>
-                    <td scope="row"> <img src="assets/images/c1.png"> Juliana Jeru</td>
-                    <td class="text-gray"> 20/03/2023</td>
-                    <td class="text-gray"> name@mail.com</td>
-                    <td class="text-gray"> +13475679088</td>
-                    <td class="text-gray"> 130</td>
+                    <td class="text-danger"> $1500</td>
+                    <td class="text-gray"> Membresia anual</td>
                   </tr>
                 </tbody>
               </table>
@@ -289,7 +240,7 @@
       <div class="modal-content h-100">
         <div class="modal-header">
           <h5 class="modal-title" id="rightSidebarModalLabel">
-            Crear cliente
+            Crear gasto
           </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -310,20 +261,20 @@
 
               <div class="my-3">
                 <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                <input type="text" class="form-control border-light" id="exampleFormControlInput1" placeholder="Nombre" />
+                <input type="text" class="form-control border-light" id="exampleFormControlInput1" placeholder="Ingrese nombre" />
               </div>
               <div class="my-3">
-                <label for="exampleFormControlInput1" class="form-label">Correo</label>
-                <input type="email" class="form-control border-light" id="exampleFormControlInput1"
-                  placeholder="juliana@beserva.com" />
+                <label for="exampleFormControlInput1" class="form-label">Fecha</label>
+                <input type="text" class="form-control border-light" id="exampleFormControlInput1"
+                  placeholder="Ingrese fecha" />
               </div>
               <div class="my-3">
-                <label for="exampleFormControlInput1" class="form-label">Telefono</label>
-                <input type="number" class="form-control border-light" id="exampleFormControlInput1" placeholder="0" />
+                <label for="exampleFormControlInput1" class="form-label">Total</label>
+                <input type="number" class="form-control border-light" id="exampleFormControlInput1" placeholder="$" />
               </div>
               <div class="my-3">
-                <label for="exampleFormControlInput1" class="form-label ">Ordenes</label>
-                <input type="number" class="form-control border-light" id="exampleFormControlInput1" placeholder="0" />
+                <label for="exampleFormControlInput1" class="form-label ">Servicio</label>
+                <input type="text" class="form-control border-light" id="exampleFormControlInput1" placeholder="Ingrese servicio" />
               </div>
 
 

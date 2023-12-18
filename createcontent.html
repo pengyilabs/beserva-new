@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div class="container-fluid p-0">
+  <div class="container-fluid p-0"  style="height: 100vh;">
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -105,7 +105,7 @@
               placeholder="¿De que vas a escribir?"
             />
           </div>
-          <div class="my-5">
+          <div class="my-5" style="padding-top: 150px;">
             <div class="d-flex">
               <i class="bi bi-file-image m-4 text-secondary" style="transform: scale(2);"></i>
              <i class="bi bi-camera-video-fill text-secondary m-4" style="transform: scale(2);"></i>
@@ -116,16 +116,62 @@
             </button>
           </div>
         </section>
-        
+        <section class="profile-content" id="lugares">
+          <div class="my-3">
+            <label for="exampleFormControlInput1" class="form-label text-secondary fw-bold"
+              >Nombre</label
+            >
+            <input
+              type="name"
+             
+              class="form-control border-light text-black fw-semibold"
+              id="exampleFormControlInput1"
+              placeholder="Nueva App de Beserva"
+              
+            />
           </div>
+
+          <div class="my-3">
+            <label for="exampleFormControlInput1" class="form-label text-secondary fw-bold"
+              >Categoria</label
+            >
+            <select class="form-select border-light text-secondary fw-semibold" aria-label="Default select example text-secondary">
+              <option class="text-black fw-semibold">Anuncio</option>
+              <option value="1">Category name</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
           
-         
+          <div class="my-3">
+            <label for="exampleFormControlInput1" class="form-label text-secondary fw-bold"
+              >Contenido</label
+            >
+            <input
+              type="name"
+             
+              class="form-control border-light text-secondary fw-semibold flex-wrap"
+              id="exampleFormControlInput1"
+              placeholder="Acabamos de lanzar una nueva app, en la cual estuvimos trabajando en los ultimos 4 meses"
+            />
+          </div>
+          <div class="my-5" style="padding-top: 150px;">
+            <div class="d-flex">
+              <i class="bi bi-file-image m-4 text-secondary" style="transform: scale(2);"></i>
+             <i class="bi bi-camera-video-fill text-secondary m-4" style="transform: scale(2);"></i>
+
+            </div>
+            <button class="btn btn-primary bg-primary text-white rounded-pill fw-semibold my-3 w-100">
+              Publicar
+            </button>
+          </div>
+        </section>
+        </div>
+        </main>
 
         
-        
-    </main>
-
-    <div class="d-flex d-md-none border-top">
+    <div class="d-flex d-md-none border-top ">
       <a class="btn btn-link text-black text-decoration-none" id="activeperfil" href="#">
         <img src="assets/images/profile-mobile/inicio.png">
         Inicio

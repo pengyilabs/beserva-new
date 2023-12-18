@@ -9,21 +9,24 @@
   <title>Beserva</title>
 </head>
 
-<body>
-  <div class="container-fluid p-0 position-absolute ">
+<body class="h-100">
+  <div class="container-fluid p-0">
     <header class="m-2">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
 
 
           <img src="assets/images/brand.png" id="imglogo" alt="logo" />
-
-          <button class="navbar-toggler border-light" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="bi bi-map" style="font-size: 1.3rem;"></i> <a href="notifications.html" class="text-black"><i class="bi bi-bell" style="font-size: 1.3rem;">
-            </i></a><span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="d-flex">
+            <i class="bi bi-map m-2 " style="font-size: 1.3rem;"></i>
+            <a href="notifications.html" class="text-black m-2"><i class="bi bi-bell" style="font-size: 1.3rem;">
+              </i></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-black"></span>
+            </button>
+          </div>
           <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link" aria-current="page" href="#">Inicio</a>
@@ -56,8 +59,8 @@
         </div>
       </nav>
     </header>
-    <main class="container-md my-4">
-      
+    <main class="container-md my-4 h-100">
+
       <div class="d-flex border-bottom">
         <button class="btn btn-link text-gray submenu-item  text-decoration-none" style="color:rgb(219, 206, 206);"
           id="info">Reservas</button>
@@ -70,159 +73,348 @@
       </div>
       <div class="container">
         <section class="profile-content active " id="info">
-          
-          <div class="m-5">
-            <img src="assets/images/profile-mobile/calendar-plus.png" class="align-content-center my-2" style="margin-left:100px;"  alt="">
-            <p class="text-secondary" style="margin-left:20px;">Actualmente no tienes ninguna reserva, busca un servicio hoy</p>
+
+          <div class="m-5" id="calendarplus1">
+            <img src="assets/images/profile-mobile/calendar-plus.png" class="align-content-center my-2"
+              style="margin-left:100px;" alt="">
+            <p class="text-secondary" style="margin-left:20px;">Actualmente no tienes ninguna reserva, busca un servicio
+              hoy</p>
+          </div>
+          <div class="m-5" id="calendarplus2">
+            <img src="assets/images/profile-mobile/calendar-plus.png" class="align-content-center my-2"
+              style="margin-left:390px;" alt="">
+            <p class="text-secondary" style="margin-left:220px;">Actualmente no tienes ninguna reserva, busca un
+              servicio hoy</p>
           </div>
           <div class="">
-            <button class="btn bg-primary text-white rounded w-100 my-4"   data-bs-toggle="modal" data-bs-target="#rightSidebarModal">Buscar servicio</button>
+            <button class="btn bg-primary text-white rounded w-100 my-4" data-bs-toggle="modal"
+              data-bs-target="#rightSidebarModal">Buscar servicio</button>
           </div>
 
         </section>
-      
-        
-         
-            <section class="profile-content" id="stylists">
-              <div class="my-4 d-flex justify-content-between">
-                
-                  <h6 class="m-1 fw-semibold"><img src="assets/images/profile-mobile/Ellipse 1.png" class="m-1" alt="">Próxima reserva</h6>              
-            
-             
-                <p class=" m-1 fw-semibold text-secondary"><img src="assets/images/profile-mobile/calendar-dates.png" class="m-1" alt="">12/03/23</p>
+
+
+
+        <section class="profile-content" id="stylists">
+          <div id="calendarplus1">
+          <div class="my-4 d-flex justify-content-between">
+
+            <h6 class="m-1 fw-semibold"><img src="assets/images/profile-mobile/Ellipse 1.png" class="m-1" alt="">Próxima
+              reserva</h6>
+
+
+            <p class=" m-1 fw-semibold text-secondary"><img src="assets/images/profile-mobile/calendar-dates.png"
+                class="m-1" alt="">12/03/23</p>
+
+          </div>
+          <div class=" d-flex">
+
+            <div>
+              <img class="m-1" src="assets/images/profile-mobile/Spacalifornia.png" alt="">
+            </div>
+            <div class="m-1">
+              <h6>Estilo y Color</h6>
+              <p class="text-secondary">BER-8890</p>
+              <p class="text-secondary">$4,0000</p>
+              <p class="text-secondary">Lunes 3 de Abril, 15:25</p>
+
+              <div class="d-flex">
+
+                <a class="w-75" style="color:blue" href="">Calle 34 # 89 -12</a>
+
+
+                <button class="btn btn-primary bg-white text-primary rounded-pill fw-semibold" style="width: 272px;">
+                  Modificar reserva
+                </button>
 
               </div>
-              <div class=" d-flex">
-                
-                <div>
+
+
+            </div>
+
+          </div>
+        </div>
+
+          <div class="container text-center  my-3" id="calendarplus2">
+            <div class="row align-items-start">
+              <div class="col">
+                <h6 class="m-1 fw-semibold"><img src="assets/images/profile-mobile/Ellipse 1.png" class="m-1"
+                    alt="">Próxima reserva</h6>
+              </div>
+              <div class="col">
+
+              </div>
+              <div class="col">
+                <p class=" m-1 fw-semibold text-secondary"><img src="assets/images/profile-mobile/calendar-dates.png"
+                    class="m-1" alt="">12/03/23</p>
+              </div>
+            </div>
+            <div class="row align-items-center">
+              <div class="col">
+                <div class=" d-flex">
+
+                  <div>
+                    <img class="m-1" src="assets/images/profile-mobile/Spacalifornia.png" alt="">
+                  </div>
+                  <div class="m-1">
+                    <h6>Estilo y Color</h6>
+                    <p class="text-secondary">BER-8890</p>
+                    <p class="text-secondary">$4,0000</p>
+                    <p class="text-secondary">Lunes 3 de Abril, 15:25</p>
+
+                    <div class="d-flex">
+
+                      <a class="w-75" style="color:blue" href="">Calle 34 # 89 -12</a>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="col">
+                <button class="btn btn-primary bg-white text-primary rounded-pill fw-semibold" style="width: 272px;">
+                  Modificar reserva
+                </button>
+              </div>
+              <div class="col">
+
+              </div>
+            </div>
+
+          </div>
+          <div class="d-flex justify-content-between my-4" id="calendarplus1">
+            <p class="text-secondary" id="calendarplus1">Corte</p>
+            <p class="text-secondary" id="calendarplus1">Tintura</p>
+            <p class="text-secondary" id="calendarplus1">Alisado</p>
+            <p class="text-secondary" id="calendarplus1">Repolarizacion</p>
+            <i class="bi bi-three-dots-vertical bg-light" id="calendarplus1"></i>
+
+          </div>
+          <div class="d-flex justify-content-evenly" id="calendarplus2">
+            <p class="text-secondary m-4" id="calendarplus2">Corte</p>
+            <p class="text-secondary m-4" id="calendarplus2">Tintura</p>
+            <p class="text-secondary m-4" id="calendarplus2">Alisado</p>
+            <p class="text-secondary m-4" id="calendarplus2">Repolarizacion</p>
+            <i class="bi bi-three-dots-vertical bg-light m-4" id="calendarplus2"></i>
+
+          </div>
+        </section>
+        <section class="profile-content " id="posts">
+          <div id="calendarplus1">
+            <div class="my-4 d-flex justify-content-between">
+  
+              <h6 class="m-1 fw-semibold"><img src="assets/images/profile-mobile/Ellipse 2.svg" class="m-1" alt="">Reserva cancelada</h6>
+  
+  
+              <p class=" m-1 fw-semibold text-secondary"><img src="assets/images/profile-mobile/calendar-dates.png"
+                  class="m-1" alt="">12/03/23</p>
+  
+            </div>
+            <div class=" d-flex">
+  
+              <div>
                 <img class="m-1" src="assets/images/profile-mobile/Spacalifornia.png" alt="">
               </div>
-                <div class="m-1">
+              <div class="m-1">
                 <h6>Estilo y Color</h6>
                 <p class="text-secondary">BER-8890</p>
-                 <p class="text-secondary">$4,0000</p>
+                <p class="text-secondary">$4,0000</p>
                 <p class="text-secondary">Lunes 3 de Abril, 15:25</p>
-               
-                <div class="d-flex">  
-                  
-               <a class="w-75" style="color:blue" href="">Calle 34 # 89 -12</a>
-              
-             
-               <button class="btn btn-primary bg-white text-primary rounded-pill fw-semibold" style="width: 272px;">
-                Modificar reserva
-              </button>
-           
-            </div>
-              
-              
-              </div>
-        
-              </div>
-              <div class="d-flex justify-content-between my-4">
-                <p class="text-secondary">Corte</p>
-                <p class="text-secondary">Tintura</p>
-                <p class="text-secondary">Alisado</p>
-                <p class="text-secondary">Repolarizacion</p>
-                <i class="bi bi-three-dots-vertical bg-light"></i>
-                
-              </div>
-            </section>
-        <section class="profile-content " id="posts">
-          <div class="my-4 d-flex justify-content-between">
-                
-            <h6 class="m-1 fw-semibold"><img src="assets/images/profile-mobile/Ellipse 2.svg" class="m-1" alt="">Reserva cancelada</h6>              
-      
-       
-          <p class=" m-1 fw-semibold text-secondary"><img src="assets/images/profile-mobile/calendar-dates.png" class="m-1" alt="">12/03/23</p>
-
-        </div>
-        <div class=" d-flex">
-          
-          <div>
-          <img class="m-1" src="assets/images/profile-mobile/Spacalifornia.png" alt="">
-        </div>
-          <div class="m-1">
-          <h6>Estilo y Color</h6>
-          <p class="text-secondary">BER-8890</p>
-           <p class="text-secondary">$4,0000</p>
-          <p class="text-secondary">Lunes 3 de Abril, 15:25</p>
-         
-          <div class="d-flex">  
-            
-         <p class="w-100 text-secondary" href="">Calle 34 # 89 -12</p>
-        
-       
-         
-     
-      </div>
-        
-        
-        </div>
   
-        </div>
-        <div class="d-flex justify-content-between my-4">
-          <p class="text-secondary">Corte</p>
-          <p class="text-secondary">Tintura</p>
-          <p class="text-secondary">Alisado</p>
-          <p class="text-secondary">Repolarizacion</p>
-          <i class="bi bi-three-dots-vertical bg-light"></i>
-          
-        </div>
-          
+                <div class="d-flex">
+  
+                  <a class="w-75 text-secondary text-decoration-none">Calle 34 # 89 -12</a>
+  
+  
+                  
+  
+                </div>
+  
+  
+              </div>
+  
+            </div>
+          </div>
+  
+            <div class="container text-center  my-3" id="calendarplus2">
+              <div class="row align-items-start">
+                <div class="col">
+                  <h6 class="m-1 fw-semibold"><img src="assets/images/profile-mobile/Ellipse 2.svg" class="m-1"
+                      alt="">Reserva cancelada</h6>
+                </div>
+                <div class="col">
+  
+                </div>
+                <div class="col">
+                  <p class=" m-1 fw-semibold text-secondary"><img src="assets/images/profile-mobile/calendar-dates.png"
+                      class="m-1" alt="">12/03/23</p>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class=" d-flex">
+  
+                    <div>
+                      <img class="m-1" src="assets/images/profile-mobile/Spacalifornia.png" alt="">
+                    </div>
+                    <div class="m-1">
+                      <h6>Estilo y Color</h6>
+                      <p class="text-secondary">BER-8890</p>
+                      <p class="text-secondary">$4,0000</p>
+                      <p class="text-secondary">Lunes 3 de Abril, 15:25</p>
+  
+                      <div class="d-flex">
+  
+                        <a class="w-75 text-secondary text-decoration-none" >Calle 34 # 89 -12</a>
+  
+                      </div>
+  
+                    </div>
+  
+                  </div>
+                </div>
+                <div class="col">
+                  
+                </div>
+                <div class="col">
+  
+                </div>
+              </div>
+  
+            </div>
+            <div class="d-flex justify-content-between my-4" id="calendarplus1">
+              <p class="text-secondary" id="calendarplus1">Corte</p>
+              <p class="text-secondary" id="calendarplus1">Tintura</p>
+              <p class="text-secondary" id="calendarplus1">Alisado</p>
+              <p class="text-secondary" id="calendarplus1">Repolarizacion</p>
+              <i class="bi bi-three-dots-vertical bg-light" id="calendarplus1"></i>
+  
+            </div>
+            <div class="d-flex justify-content-evenly" id="calendarplus2">
+              <p class="text-secondary m-4" id="calendarplus2">Corte</p>
+              <p class="text-secondary m-4" id="calendarplus2">Tintura</p>
+              <p class="text-secondary m-4" id="calendarplus2">Alisado</p>
+              <p class="text-secondary m-4" id="calendarplus2">Repolarizacion</p>
+              <i class="bi bi-three-dots-vertical bg-light m-4" id="calendarplus2"></i>
+  
+            </div>
         </section>
         <section class="profile-content " id="reviews">
-          <div class="my-4 d-flex justify-content-between">
-                
-            <h6 class="m-1 fw-semibold">Reserva anterior</h6>              
-      
-       
-          <p class=" m-1 fw-semibold text-secondary"><img src="assets/images/profile-mobile/calendar-dates.png" class="m-1" alt="">12/03/23</p>
-
-        </div>
-        <div class=" d-flex">
-          
-          <div>
-          <img class="m-1" src="assets/images/profile-mobile/Spacalifornia.png" alt="">
-        </div>
-          <div class="m-1 w-100">
-          <h6>Estilo y Color</h6>
-          <p class="text-secondary">BER-8890</p>
-           <p class="text-secondary">$4,0000</p>
-           
-          <p class="text-secondary">Lunes 3 de Abril, 15:25</p>
-                
-        
-            
-         <a style="color:blue" href="">Calle 34 # 89 -12</a>
-        
-       
-         
-     
-     
-        
-        
-        </div>
-        <div class="my-5">
-          <button class="btn btn-primary bg-primary text-white rounded-pill fw-semibold m-1" style="width: 150px;">
-            Escribir reseña
-          </button>
-          <button class="btn btn-primary bg-white text-primary rounded-pill fw-semibold m-1">
-            Volver a reservar
-          </button>
-        </div>
+          <div id="calendarplus1">
+            <div class="my-4 d-flex justify-content-between">
   
-        </div>
-        <div class="d-flex justify-content-between my-4">
-          <p class="text-secondary">Corte</p>
-          <p class="text-secondary">Tintura</p>
-          <p class="text-secondary">Alisado</p>
-          <p class="text-secondary">Repolarizacion</p>
-          <i class="bi bi-three-dots-vertical bg-light"></i>
-          
-        </div>
-          
+              <h6 class="m-1 fw-semibold">Reserva anterior</h6>
+  
+  
+              <p class=" m-1 fw-semibold text-secondary"><img src="assets/images/profile-mobile/calendar-dates.png"
+                  class="m-1" alt="">12/03/23</p>
+  
+            </div>
+            <div class=" d-flex">
+  
+              <div>
+                <img class="m-1" src="assets/images/profile-mobile/Spacalifornia.png" alt="">
+              </div>
+              <div class="m-1">
+                <h6>Estilo y Color</h6>
+                <p class="text-secondary">BER-8890</p>
+                <div></div>
+                <p class="text-secondary">$4,0000</p>
+                <div class="d-flex">
+                <p class="text-secondary w-75">Lunes 3 de Abril, 15:25</p>
+                <button class="btn btn-primary bg-primary text-white rounded-pill fw-semibold m-1 h-25" style="width: 272px;">
+                  Escribir Reseña
+                </button>
+              </div>
+                <div class="d-flex">
+  
+                  <a class="w-75" style="color:blue" href="">Calle 34 # 89 -12</a>
+                  <button class="btn btn-primary bg-white text-primary rounded-pill fw-semibold m-1" style="width: 272px;">
+                    Volver a reservar
+                  </button>
+  
+                  
+  
+                </div>
+  
+  
+              </div>
+  
+            </div>
+          </div>
+  
+            <div class="container text-center  my-3" id="calendarplus2">
+              <div class="row align-items-start">
+                <div class="col">
+                  <h6 class="m-1 fw-semibold">Reserva anterior</h6>
+                </div>
+                <div class="col">
+  
+                </div>
+                <div class="col">
+                  <p class=" m-1 fw-semibold text-secondary"><img src="assets/images/profile-mobile/calendar-dates.png"
+                      class="m-1" alt="">12/03/23</p>
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <div class="col">
+                  <div class=" d-flex">
+  
+                    <div>
+                      <img class="m-1" src="assets/images/profile-mobile/Spacalifornia.png" alt="">
+                    </div>
+                    <div class="m-1">
+                      <h6>Estilo y Color</h6>
+                      <p class="text-secondary">BER-8890</p>
+                      <p class="text-secondary">$4,0000</p>
+                      <p class="text-secondary">Lunes 3 de Abril, 15:25</p>
+  
+                      <div class="d-flex">
+  
+                        <a class="w-75" style="color:blue" href="">Calle 34 # 89 -12</a>
+  
+                      </div>
+  
+                    </div>
+  
+                  </div>
+                </div>
+                <div class="col">
+                  
+                </div>
+                <div class="col">
+                  <div>
+                  <button class="btn btn-primary bg-primary text-white rounded-pill fw-semibold m-1" style="width: 272px;">
+                    Escribir reseña
+                  </button>
+                  <button class="btn btn-primary bg-white text-primary rounded-pill fw-semibold m-1" style="width: 272px;">
+                    Volver a reservar
+                  </button>
+                </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="d-flex justify-content-between my-4" id="calendarplus1">
+              <p class="text-secondary" id="calendarplus1">Corte</p>
+              <p class="text-secondary" id="calendarplus1">Tintura</p>
+              <p class="text-secondary" id="calendarplus1">Alisado</p>
+              <p class="text-secondary" id="calendarplus1">Repolarizacion</p>
+              <i class="bi bi-three-dots-vertical bg-light" id="calendarplus1"></i>
+  
+            </div>
+            <div class="d-flex justify-content-evenly" id="calendarplus2">
+              <p class="text-secondary m-4" id="calendarplus2">Corte</p>
+              <p class="text-secondary m-4" id="calendarplus2">Tintura</p>
+              <p class="text-secondary m-4" id="calendarplus2">Alisado</p>
+              <p class="text-secondary m-4" id="calendarplus2">Repolarizacion</p>
+              <i class="bi bi-three-dots-vertical bg-light m-4" id="calendarplus2"></i>
+  
+            </div>
+
         </section>
-        
+
     </main>
 
     <div class="d-flex d-md-none border-top">
@@ -247,133 +439,127 @@
         Perfil
       </a>
     </div>
-    
-</div>
-<!-- Right Sidebar Modal -->
-<div class="modal right fade" id="rightSidebarModal" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
-aria-hidden="true">
-<div class="modal-dialog modal-xs modal-dialog-scrollable";>
-  <div class="modal-content">
-    <div class="modal-header">
-      <div class="d-flex">
-      <i class="bi bi-arrow-left m-2 " data-bs-dismiss="modal" aria-label="Close" style="color:black"></i>
-      <p class="text-black m-2" id="rightSidebarModalLabel">Reservas</p>
-    </div>
-      <span type="button" class="text-primary">Limpiar todo</span>
-    </div>
-    <div class="modal-body">
-      <div class="col">
-        <div class="col-12 ">
-          <div class="my-3">
 
-            <div>
-             <p class="fw-semibold">¿Que servicios buscas? <b class="btn btn-primary rounded-5">3</b></p>
-             <input type="search" class="form-control bg-white my-3 border-light" 
-             placeholder="Busca un servicio">
-             <div class="d-flex mb-3">
-              <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
-               Corte
-              </button>
-              <button class="btn btn-primary text-black bg-white rounded-pill border-0 m-2">
-                Tintura
-               </button>
-               <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
-               Alisado
-               </button>
-               <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
-              Styling
-               </button>
-               <button class="btn btn-primary text-black bg-white rounded-pill border-0 m-2">
-                Maquillaje
-               </button>
-             </div>
-             <div>
-              <p class="fw-semibold">¿Que salón buscas?</p>
-              <input type="search" class="form-control bg-white my-3 border-light" 
-              placeholder="Busca salón">
-             </div>
-             <div>
-              <p class="fw-semibold">¿Cuando deseas agendar?</p>
-              <div class="d-flex mb-3">
-                <select class="form-select border-light" aria-label="Default select example">
-                  <option selected>Mes</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <select class="form-select border-light" aria-label="Default select example">
-                  <option selected>Dia</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <select class="form-select border-light" aria-label="Default select example">
-                  <option selected>Hora</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-             </div>
-             <div>
-              <p class="fw-semibold">¿Donde deseas agendar?</p>
-              <div class="d-flex">
-                <i class="bi bi-compass my-3 opacity-50"></i>
-                <input type="search" class="form-control bg-white  border-light" 
-              placeholder="Ubicacion">
+  </div>
+  <!-- Right Sidebar Modal -->
+  <div class="modal right fade" id="rightSidebarModal" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xs modal-dialog-scrollable" ;>
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex">
+            <i class="bi bi-arrow-left m-2 " data-bs-dismiss="modal" aria-label="Close" style="color:black"></i>
+            <p class="text-black m-2" id="rightSidebarModalLabel">Reservas</p>
+          </div>
+          <span type="button" class="text-primary">Limpiar todo</span>
+        </div>
+        <div class="modal-body">
+          <div class="col">
+            <div class="col-12 ">
+              <div class="my-3">
+
+                <div>
+                  <p class="fw-semibold">¿Que servicios buscas? <b class="btn btn-primary rounded-5">3</b></p>
+                  <input type="search" class="form-control bg-white my-3 border-light" placeholder="Busca un servicio">
+                  <div class="d-flex mb-3">
+                    <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
+                      Corte
+                    </button>
+                    <button class="btn btn-primary text-black bg-white rounded-pill border-0 m-2">
+                      Tintura
+                    </button>
+                    <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
+                      Alisado
+                    </button>
+                    <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
+                      Styling
+                    </button>
+                    <button class="btn btn-primary text-black bg-white rounded-pill border-0 m-2">
+                      Maquillaje
+                    </button>
+                  </div>
+                  <div>
+                    <p class="fw-semibold">¿Que salón buscas?</p>
+                    <input type="search" class="form-control bg-white my-3 border-light" placeholder="Busca salón">
+                  </div>
+                  <div>
+                    <p class="fw-semibold">¿Cuando deseas agendar?</p>
+                    <div class="d-flex mb-3">
+                      <select class="form-select border-light" aria-label="Default select example">
+                        <option selected>Mes</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <select class="form-select border-light" aria-label="Default select example">
+                        <option selected>Dia</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <select class="form-select border-light" aria-label="Default select example">
+                        <option selected>Hora</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div>
+                    <p class="fw-semibold">¿Donde deseas agendar?</p>
+                    <div class="d-flex">
+                      <i class="bi bi-compass my-3 opacity-50"></i>
+                      <input type="search" class="form-control bg-white  border-light" placeholder="Ubicacion">
+
+                    </div>
+                  </div>
+                </div>
+
 
               </div>
-             </div>
+
+              <div class="d-flex justify-content-between">
+                <p class="fw-semibold">Servicio a domicilio</p>
+                <div class=" form-check form-switch">
+
+
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                    style="transform: scale(1.4)" />
+
+                </div>
+              </div>
+
+
+
+
+
+
             </div>
-          
 
           </div>
 
-          <div class="d-flex justify-content-between">
-          <p class="fw-semibold">Servicio a domicilio</p>
-          <div class=" form-check form-switch">
-            
-  
-            <input
-                      class="form-check-input"  
-                      type="checkbox"
-                      role="switch"
-                      id="flexSwitchCheckDefault"
-                      style="transform: scale(1.4)"
-                    />
-                  
-          </div>
+
+
         </div>
 
 
 
 
-
-
-        </div>
 
       </div>
-      
-     
-    
-    </div>
-    <button type="button" class="btn btn-secondary text-light rounded-pill  mb-5 m-2" style="background: #a39f9f;">
-      Buscar servicios
-    </button>
-     
-       
-      
+      <button type="button" class="btn btn-secondary text-light rounded-pill  mb-5 m-2" style="background: #a39f9f;">
+        Buscar servicios
+      </button>
     </div>
   </div>
-</div>
 
 
-  
-<script type="module" src="js/profile.js"></script>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+
+  <script type="module" src="js/profile.js"></script>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -680,6 +680,10 @@ progress {
     display: none;
   }
  
+ #calendarplus1{
+  display: none;
+ }
+ 
 
 }
 @media (min-width: 992px) {
@@ -1263,6 +1267,7 @@ progress {
   #stories1{
     display: none;
   }
+  
 }
 @media (min-width: 992px) {
   .col-lg {
@@ -11259,6 +11264,12 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
         width: 108px;
            }
           #stories2{
+            display: none;
+          }
+          #calendarplus2{
+            display: none;
+          }
+          #corte1{
             display: none;
           }
       

@@ -1,321 +1,415 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <title>Beserva</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <title>Beserva</title>
-</head>
-
-<body>
-  <div class="container-fluid p-0">
-    <header class="">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
-
-
-          <a id="flecha1" class="text-decoration-none text-black" href="profile-usuario.html"><i class="bi bi-arrow-left" style="color:black"></i></a>
-          <img src="assets/images/brand.png" id="vertodo"   alt="logo" />          
-          <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
-              <a class="nav-link" href="#">Descubre</a>
-              <a class="nav-link" href="#">Recursos</a>
-              <a class="nav-link" href="#">Reservas</a>
+  <body>
+    <div class="container-fluid p-0">
+      <header class="">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a
+              id="flecha1"
+              class="text-decoration-none text-black"
+              href="profile-usuario.html"
+              ><i class="bi bi-arrow-left" style="color: black"></i
+            ></a>
+            <img src="assets/images/brand.png" id="vertodo" alt="logo" />
+            <div
+              class="collapse navbar-collapse justify-content-center fw-bold"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="home.html"
+                  >Inicio</a
+                >
+                <a class="nav-link" href="reservas-descubre.html">Descubre</a>
+                <a class="nav-link" href="recursos.html">Recursos</a>
+                <a class="nav-link" href="bookings-searchservice.html"
+                  >Reservas</a
+                >
+              </div>
+            </div>
+            <div class="position-relative align-items-center d-none d-lg-flex">
+              <button class="btn btn-link text-dark">
+                <i class="bi bi-map" style="font-size: 1.3rem"></i>
+              </button>
+              <button class="btn btn-link text-dark">
+                <i class="bi bi-bell" style="font-size: 1.3rem"></i>
+              </button>
+              <div class="dropdown">
+                <button
+                  class="btn btn-link text-dark dropdown-toggle text-decoration-none"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="d-inline"
+                    src="assets/images/profile-img.jpg"
+                    width="40"
+                    height="40"
+                  />
+                  <span class="fw-bold">Alissa Gray</span>
+                  <!-- <span class="fs-7">alissargray@gmail.com</span> -->
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" type="button" href="profile.html"
+                      >Perfil</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" type="button">Opcion 2</a></li>
+                  <li><a class="dropdown-item" type="button">Opcion 3</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="position-relative align-items-center d-none d-lg-flex">
-            <button class="btn btn-link text-dark">
-              <i class="bi bi-map" style="font-size: 1.3rem;"></i>
-            </button>
-            <button class="btn btn-link text-dark">
-              <i class="bi bi-bell" style="font-size: 1.3rem;"></i>
-            </button>
-            <div class="dropdown">
-              <button class="btn btn-link text-dark dropdown-toggle text-decoration-none" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img class="d-inline" src="assets/images/profile-img.jpg" width="40" height="40">
-                <span class="fw-bold">Alissa Gray</span>
-                <!-- <span class="fs-7">alissargray@gmail.com</span> -->
+        </nav>
+      </header>
+      <main class="container-md my-4">
+        <div>
+          <h5 id="vertodo">Notificaciones</h5>
+          <div id="vermas">
+            <div class="d-flex border-bottom">
+              <button
+                class="btn btn-link text-gray submenu-item active text-decoration-none"
+                style="color: gray"
+                id="info"
+              >
+                Todos
               </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" type="button" href="profile.html">Perfil</a></li>
-                <li><a class="dropdown-item" type="button">Opcion 2</a></li>
-                <li><a class="dropdown-item" type="button">Opcion 3</a></li>
-              </ul>
+              <button
+                class="btn btn-link text-gray submenu-item text-decoration-none"
+                style="color: gray"
+                id="lugares"
+              >
+                Menciones
+              </button>
+              <button
+                class="btn btn-link text-gray submenu-item text-decoration-none"
+                style="color: gray"
+                id="stylists"
+              >
+                Comentarios
+              </button>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <main class="container-md my-4">
-      <div>
-        <h5 id="vertodo">Notificaciones</h5>
-        <div id="vermas">
-      <div class="d-flex border-bottom">
-        <button class="btn btn-link text-gray submenu-item active text-decoration-none" style="color: gray;"
-          id="info">Todos</button>
-        <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: gray;"
-          id="lugares">Menciones</button>
-        <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: gray;"
-          id="stylists">Comentarios</button>
-         </div>
-        </div>
-        </div>
-      <div class="container mt-4">
-        <section class="profile-content active" id="info">
-          
-        
-          <ul class="list-group list-group-flush my-3">
-          
-            <div class="d-flex justify-content-between my-3">
-
-
-              <div class=" d-flex">
-                <div class="rounded-circle">
-                  <img  src="assets/images/profile-mobile/noti.png" width="48" height="48">
-                </div>
-                <div class="">
-                  <span><b>Marilyn Saris</b> ha comenzado a seguirte.</span>
-                </div>
-
-              </div>
-           
-                <button class="btn btn-primary text-white bg-primary rounded-pill m-2" id="buttonperfil">Seguir
-                </button>
-          
-            </div>
-         
-         
-            <div class="d-flex justify-content-between my-3">
-
-
-              <div class="d-flex">
-                <div class="rounded-circle">
-                  <img  src="assets/images/profile-mobile/noti1.png" width="48" height="48">
-                </div>
-                <div class="">
-                  <span><b>Spa California</b> y otros <b>41</b> han reaccionado a tu publicacion.</span>
-                </div>
-
-              </div>
-              <button class="btn btn-light bg-white text-black rounded-pill m-2 border-0" id="buttonperfil"><i class="bi bi-three-dots-vertical"></i>
-              </button>
-            </div>
-          
-            <div class="d-flex justify-content-between my-3">
-
-
-              <div class=" d-flex">
-                <div class="rounded-circle">
-                  <img  src="assets/images/profile-mobile/noti.png" width="48" height="48">
-                </div>
-                <div class="">
-                  <span><b>Marilyn Saris</b> ha comenzado a seguirte.</span>
-                </div>
-
-              </div>
-           
-                <button class="btn btn-primary text-white bg-primary rounded-pill m-2" id="buttonperfil">Seguir
-                </button>
-          
-            </div>
-         
-         
-            <div class="d-flex justify-content-between  my-3">
-
-
-              <div class="d-flex">
-                <div class="rounded-circle">
-                  <img  src="assets/images/profile-mobile/noti1.png" width="48" height="48">
-                </div>
-                <div class="">
-                  <span><b>Spa California</b> y otros <b>41</b> han reaccionado a tu publicacion.</span>
-                </div>
-
-              </div>
-              <button class="btn btn-light bg-white text-black rounded-pill m-2 border-0" id="buttonperfil"><i class="bi bi-three-dots-vertical"></i>
-              </button>
-            </div>
-
-            <div class="d-flex justify-content-between my-3">
-
-
-              <div class=" d-flex">
-                <div class="rounded-circle">
-                  <img  src="assets/images/profile-mobile/noti.png" width="48" height="48">
-                </div>
-                <div class="">
-                  <span><b>Marilyn Saris</b> ha comenzado a seguirte.</span>
-                </div>
-
-              </div>
-           
-                <button class="btn btn-primary text-white bg-primary rounded-pill m-2" id="buttonperfil">Seguir
-                </button>
-          
-            </div>
-         
-         
-            <div class="d-flex justify-content-between  my-3">
-
-
-              <div class="d-flex">
-                <div class="rounded-circle">
-                  <img  src="assets/images/profile-mobile/noti1.png" width="48" height="48">
-                </div>
-                <div class="">
-                  <span><b>Spa California</b> y otros <b>41</b> han reaccionado a tu publicacion.</span>
-                </div>
-
-              </div>
-              <button class="btn btn-light bg-white text-black rounded-pill m-2 border-0" id="buttonperfil"><i class="bi bi-three-dots-vertical"></i>
-              </button>
-            </div>
-            <div class="d-flex justify-content-between my-3">
-
-
-              <div class=" d-flex">
-                <div class="rounded-circle">
-                  <img  src="assets/images/profile-mobile/noti.png" width="48" height="48">
-                </div>
-                <div class="">
-                  <span><b>Marilyn Saris</b> ha comenzado a seguirte.</span>
-                </div>
-
-              </div>
-           
-                <button class="btn btn-primary text-white bg-primary rounded-pill m-2" id="buttonperfil">Seguir
-                </button>
-          
-            </div>
-         
-         
-            <div class="d-flex justify-content-between my-3">
-
-
-              <div class="d-flex">
-                <div class="rounded-circle">
-                  <img  src="assets/images/profile-mobile/noti1.png" width="48" height="48">
-                </div>
-                <div class="">
-                  <span><b>Spa California</b> y otros <b>41</b> han reaccionado a tu publicacion.</span>
-                </div>
-
-              </div>
-              <button class="btn btn-light bg-white text-black rounded-pill m-2 border-0" id="buttonperfil"><i class="bi bi-three-dots-vertical"></i>
-              </button>
-            </div>
-            
-            
-         
-           
-         
-        </ul>
-        </section>
-        
-          </div>
-          
-          <section class="profile-content" id="stylists">
-            <ul class="list-group list-group-flush">
-      
+        <div class="container mt-4">
+          <section class="profile-content active" id="info">
+            <ul class="list-group list-group-flush my-3">
               <div class="d-flex justify-content-between my-3">
-                <div class=" d-flex">
+                <div class="d-flex gap-2">
                   <div class="rounded-circle">
-                    <img src="assets/images/profile-mobile/inicio.png" width="48" height="48">
+                    <img
+                      src="assets/images/profile-mobile/noti.png"
+                      width="48"
+                      height="48"
+                    />
                   </div>
                   <div class="">
-                    <h6 class="fw-bold">Victorys Beaty</h6>
-                    <span class="text-secondary">Maquillaje, Uñas, Styling, etc...</span>
+                    <span><b>Marilyn Saris</b> ha comenzado a seguirte.</span>
                   </div>
                 </div>
-                <button class="btn btn-primary text-primary bg-white rounded-pill m-2" id="buttonperfil">
-               Siguiendo
-                  </button>
-              </div>
-              
-              <div class="d-flex justify-content-between my-3">
-                <div class="d-flex">
-                  <div class="rounded-circle">
-                    <img src="assets/images/profile/stylist-profile-photo.png" width="48" height="48">
-                  </div>
-                  <div class="">
-                    <h6 class="fw-bold">Alfons Baptista</h6>
-                    <span class="text-secondary">ChrisSmith83</span>
-                  </div>
-                </div>
-                <button class="btn btn-primary text-light rounded-pill m-2" id="buttonperfil">
+
+                <button
+                  class="btn btn-primary text-white bg-primary rounded-pill m-2"
+                  id="buttonperfil"
+                >
                   Seguir
                 </button>
               </div>
-              
+
               <div class="d-flex justify-content-between my-3">
-                <div class="d-flex">
-                  <div class="rounded-circle ">
-                    <img src="assets/images/profile-mobile/Spacalifornia.png" width="48" height="48">
-                  </div>
-                  <div class="w-70">
-                    <h6 class="fw-bold">Spa California</h6>
-                    <span class="text-secondary">Maquillaje, Uñas, Styling, etc...</span>
-                  </div>
-                </div>
-                <div>
-                <button class="btn btn-primary text-light rounded-pill m-2" id="buttonperfil">
-                     Seguir                                                                                                             
-                </button>
-              </div>
-              </div>
-      
-              <div class="d-flex justify-content-between my-3">
-                <div class="d-flex">
+                <div class="d-flex gap-2">
                   <div class="rounded-circle">
-                    <img src="assets/images/profile-mobile/Maren.png" width="48" height="48">
+                    <img
+                      src="assets/images/profile-mobile/noti1.png"
+                      width="48"
+                      height="48"
+                    />
                   </div>
                   <div class="">
-                    <h6 class="fw-bold">Maren Aminoff</h6>
-                    <span class="text-secondary">Asesor de imagen</span>
+                    <span
+                      ><b>Spa California</b> y otros <b>41</b> han reaccionado a
+                      tu publicacion.</span
+                    >
                   </div>
                 </div>
-                <button class="btn btn-primary text-light rounded-pill m-2" id="buttonperfil">
+                <button
+                  class="btn btn-light bg-white text-black rounded-pill m-2 border-0"
+                  id="buttonperfil"
+                >
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex gap-2">
+                  <div class="rounded-circle">
+                    <img
+                      src="assets/images/profile-mobile/noti.png"
+                      width="48"
+                      height="48"
+                    />
+                  </div>
+                  <div class="">
+                    <span><b>Marilyn Saris</b> ha comenzado a seguirte.</span>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-primary text-white bg-primary rounded-pill m-2"
+                  id="buttonperfil"
+                >
                   Seguir
                 </button>
               </div>
-             
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex gap-2">
+                  <div class="rounded-circle">
+                    <img
+                      src="assets/images/profile-mobile/noti1.png"
+                      width="48"
+                      height="48"
+                    />
+                  </div>
+                  <div class="">
+                    <span
+                      ><b>Spa California</b> y otros <b>41</b> han reaccionado a
+                      tu publicacion.</span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="btn btn-light bg-white text-black rounded-pill m-2 border-0"
+                  id="buttonperfil"
+                >
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex gap-2">
+                  <div class="rounded-circle">
+                    <img
+                      src="assets/images/profile-mobile/noti.png"
+                      width="48"
+                      height="48"
+                    />
+                  </div>
+                  <div class="">
+                    <span><b>Marilyn Saris</b> ha comenzado a seguirte.</span>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-primary text-white bg-primary rounded-pill m-2"
+                  id="buttonperfil"
+                >
+                  Seguir
+                </button>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex gap-2">
+                  <div class="rounded-circle">
+                    <img
+                      src="assets/images/profile-mobile/noti1.png"
+                      width="48"
+                      height="48"
+                    />
+                  </div>
+                  <div class="">
+                    <span
+                      ><b>Spa California</b> y otros <b>41</b> han reaccionado a
+                      tu publicacion.</span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="btn btn-light bg-white text-black rounded-pill m-2 border-0"
+                  id="buttonperfil"
+                >
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex gap-2">
+                  <div class="rounded-circle">
+                    <img
+                      src="assets/images/profile-mobile/noti.png"
+                      width="48"
+                      height="48"
+                    />
+                  </div>
+                  <div class="">
+                    <span><b>Marilyn Saris</b> ha comenzado a seguirte.</span>
+                  </div>
+                </div>
+
+                <button
+                  class="btn btn-primary text-white bg-primary rounded-pill m-2"
+                  id="buttonperfil"
+                >
+                  Seguir
+                </button>
+              </div>
+
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex gap-2">
+                  <div class="rounded-circle">
+                    <img
+                      src="assets/images/profile-mobile/noti1.png"
+                      width="48"
+                      height="48"
+                    />
+                  </div>
+                  <div class="">
+                    <span
+                      ><b>Spa California</b> y otros <b>41</b> han reaccionado a
+                      tu publicacion.</span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="btn btn-light bg-white text-black rounded-pill m-2 border-0"
+                  id="buttonperfil"
+                >
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
             </ul>
           </section>
+          <section class="profile-content" id="lugares">
+            <ul class="list-group list-group-flush my-3">
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex gap-2">
+                  <div class="rounded-circle">
+                    <img
+                      src="assets/images/profile-mobile/noti1.png"
+                      width="48"
+                      height="48"
+                    />
+                  </div>
+                  <div class="">
+                    <span
+                      ><b>Spa California</b> y otros <b>41</b> han reaccionado a
+                      tu publicacion.</span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="btn btn-light bg-white text-black rounded-pill m-2 border-0"
+                  id="buttonperfil"
+                >
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
 
-        
-        
-    </main>
+              <div class="d-flex justify-content-between my-3">
+                <div class="d-flex gap-2">
+                  <div class="rounded-circle">
+                    <img
+                      src="assets/images/profile-mobile/noti1.png"
+                      width="48"
+                      height="48"
+                    />
+                  </div>
+                  <div class="">
+                    <span
+                      ><b>Spa California</b> y otros <b>41</b> han reaccionado a
+                      tu publicacion.</span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="btn btn-light bg-white text-black rounded-pill m-2 border-0"
+                  id="buttonperfil"
+                >
+                  <i class="bi bi-three-dots-vertical"></i>
+                </button>
+              </div>
+            </ul>
+          </section>
+        </div>
 
-    <div class="d-flex d-md-none border-top fixed-navbar bg-white">
-      <a class="btn btn-link text-black text-decoration-none" id="activeperfil" href="home.html">
-        <img src="assets/images/profile-mobile/inicio.png">
-        Inicio
-      </a>
-      <a class="btn btn-link text-black text-decoration-none" href="#">
-        <img src="assets/images/profile-mobile/Descubre2.png">
-        Descubre
-      </a>
-      <a class="btn btn-link text-black text-decoration-none" href="#">
-        <img src="assets/images/sources.svg">
-        Recursos
-      </a>
-      <a class="btn btn-link text-black text-decoration-none" href="#">
-        <img src="assets/images/bookings.svg">
-        Reservas
-      </a>
-      <a class="btn btn-link text-black text-decoration-none" href="profile.html">
-        <img src="assets/images/profile-mobile/perfilnoactive.png">
-        Perfil
-      </a>
+        <section class="profile-content" id="stylists">
+          <ul class="list-group list-group-flush">
+            <div class="d-flex justify-content-between my-3">
+              <div class="d-flex gap-2">
+                <div class="rounded-circle">
+                  <img
+                    src="assets/images/profile-mobile/noti1.png"
+                    width="48"
+                    height="48"
+                  />
+                </div>
+                <div class="">
+                  <span
+                    ><b>Spa California</b> ha comentado tu publicación.</span
+                  >
+                </div>
+              </div>
+              <button
+                class="btn btn-light bg-white text-black rounded-pill m-2 border-0"
+                id="buttonperfil"
+              >
+                <i class="bi bi-three-dots-vertical"></i>
+              </button>
+            </div>
+
+          </ul>
+        </section>
+      </main>
+
+      <div class="d-flex d-md-none border-top fixed-navbar bg-white">
+        <a
+          class="btn btn-link text-black text-decoration-none"
+          id="activeperfil"
+          href="home.html"
+        >
+          <img src="assets/images/inicio.svg" />
+          Inicio
+        </a>
+        <a
+          class="btn btn-link text-black text-decoration-none"
+          href="reservas-descubre.html"
+        >
+          <img src="assets/images/descubre.svg" />
+          Descubre
+        </a>
+        <a
+          class="btn btn-link text-black text-decoration-none"
+          href="recursos.html"
+        >
+          <img src="assets/images/sources.svg" />
+          Recursos
+        </a>
+        <a
+          class="btn btn-link text-black text-decoration-none"
+          href="bookings-searchservice.html"
+        >
+          <img src="assets/images/bookings.svg" />
+          Reservas
+        </a>
+        <a class="btn btn-link text-decoration-none" href="profile.html">
+          <img src="assets/images/user-selected.svg" />
+          Perfil
+        </a>
+      </div>
     </div>
-    
-</div>
-  
-  <script type="module" src="js/profile.js"></script>
-</body>
 
+    <script type="module" src="js/profile.js"></script>
+  </body>
 </html>

@@ -675,6 +675,7 @@ progress {
   #inspiracion2{
    
    margin: 0;
+   display: flex;
   }
   #borderbottom{
     display: none;

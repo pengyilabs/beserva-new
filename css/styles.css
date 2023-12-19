@@ -11216,6 +11216,11 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   overflow-x: hidden;
 }
 
+.fixed-navbar {
+  position: fixed;
+  bottom: 0;
+}
+
 @media (max-width: 768px) {
 .f-22 {
   font-size: 1.375rem;

@@ -9,7 +9,7 @@
   <title>Beserva</title>
 </head>
 
-<body class="" >
+<body>
   <div class="container-fluid p-0">
     <header class="m-2">
       <nav class="navbar navbar-expand-lg">
@@ -17,7 +17,7 @@
 
 
           <img src="assets/images/brand.png" id="imglogo" alt="logo" />
-          <div class="d-flex">
+          <div class="d-flex d-md-none">
             <i class="bi bi-map m-2 " style="font-size: 1.3rem;"></i>
             <a href="notifications.html" class="text-black m-2"><i class="bi bi-bell" style="font-size: 1.3rem;">
               </i></a>
@@ -29,7 +29,7 @@
           </div>
           <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
               <a class="nav-link text-primary" href="#">Descubre</a>
               <a class="nav-link" href="#">Recursos</a>
               <a class="nav-link" href="#">Reservas</a>
@@ -43,7 +43,7 @@
               <i class="bi bi-bell" style="font-size: 1.3rem;"></i>
             </button>
             <div class="dropdown">
-              <button class="btn btn-link text-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              <button class="btn btn-link text-dark dropdown-toggle text-decoration-none" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 <img class="d-inline" src="assets/images/profile-img.jpg" width="40" height="40">
                 <span class="fw-bold">Alissa Gray</span>
@@ -74,19 +74,17 @@
       <div class="container">
         <section class="profile-content active " id="info">
 
-          <div class="m-5" id="calendarplus1">
-            <img src="assets/images/profile-mobile/calendar-plus.png" class="align-content-center my-2"
-              style="margin-left:100px;" alt="">
-            <p class="text-secondary" style="margin-left:20px;">Actualmente no tienes ninguna reserva, busca un servicio
+          <div class="m-5 text-center" id="calendarplus1">
+            <img src="assets/images/profile-mobile/calendar-plus.png" class="align-content-center my-2" alt="">
+            <p class="text-secondary">Actualmente no tienes ninguna reserva, busca un servicio
               hoy</p>
           </div>
-          <div class="m-5" id="calendarplus2">
-            <img src="assets/images/profile-mobile/calendar-plus.png" class="align-content-center my-2"
-              style="margin-left:390px;" alt="">
-            <p class="text-secondary" style="margin-left:220px;">Actualmente no tienes ninguna reserva, busca un
+          <div class="m-5 text-center" id="calendarplus2">
+            <img src="assets/images/profile-mobile/calendar-plus.png" class="align-content-center my-2" alt="">
+            <p class="text-secondary">Actualmente no tienes ninguna reserva, busca un
               servicio hoy</p>
           </div>
-          <div class="">
+          <div>
             <button class="btn bg-primary text-white rounded w-100 my-4" data-bs-toggle="modal"
               data-bs-target="#rightSidebarModal">Buscar servicio</button>
           </div>
@@ -417,8 +415,8 @@
 
     </main>
 
-    <div class="d-flex d-md-none border-top">
-      <a class="btn btn-link text-black text-decoration-none" id="activeperfil" href="#">
+    <div class="d-flex d-md-none border-top fixed-navbar bg-white">
+      <a class="btn btn-link text-black text-decoration-none" id="activeperfil" href="home.html">
         <img src="assets/images/profile-mobile/inicio.png">
         Inicio
       </a>

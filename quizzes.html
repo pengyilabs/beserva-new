@@ -14,13 +14,13 @@
 
 <body>
   <div class="container-fluid p-0">
-    <header class="m-2">
+    <header class="m-1">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
 
 
-          <a id="flecha1" class="text-decoration-none text-black fw-semibold my-4" href="recursos.html"><i class="bi bi-arrow-left fw-semibold m-1" style="color:black"></i>Diario de la gratitud</a>          
-          
+          <a id="flecha1" class="text-decoration-none text-black fw-semibold my-2" href="recursos.html"><i class="bi bi-arrow-left fw-semibold m-1" style="color:black"></i>Quizzes</a>          
+          <p class="text-secondary" id="info">Queremos que te conozcas mejor. Después de contestar una serie de preguntas, te recomendamos looks de inspiración, tratamientos y salones para agendar tus citas</p>
           <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
@@ -53,121 +53,121 @@
         </div>
       </nav>
     </header>
-    <main class="container-md my-4 h-100">
+    <main class="container-md my-2">
 
       <div class="d-flex border-bottom">
         <button class="btn btn-link text-gray active submenu-item  text-decoration-none" style="color: rgb(143, 132, 132);"
-          id="info">Nueva entrada</button>
+          id="info">Quizzes 1/4</button>
         <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: rgb(143, 132, 132);"
-          id="stylists">Progreso</button>
+          id="stylists">Quizzes 2/4</button>
         <button class="btn btn-link text-gray submenu-item text-decoration-none" style="color: rgb(143, 132, 132);"
-          id="posts">Recordatorio</button>
+          id="posts">Resultados</button>
         
       </div>
       <div class="container">
         <section class="profile-content active " id="info">
 
-          <div class="m-5 text-center" id="calendarplus1">
-            <img src="assets/images/profile/imagen.png" class="align-content-center my-2" alt="">
-            <p class="text-secondary">Agregar fotos</p>
+          <div class="d-flex justify-content-between my-3">
+            <p class="text-decoration-line-through text-secondary">¿Como identificar tu tipo de piel?</p>
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
           </div>
-          <div class="m-5 text-center" id="calendarplus2">
-            <img src="assets/images/profile/imagen.png" class="align-content-center my-2" alt="">
-            <p class="text-secondary">Agregar fotos</p>
+
+          <div class="d-flex justify-content-between my-3">
+            <p class="text-secondary fw-semibold">Reflexion: ¿Como te sientes hoy?</p>
+            <i class="bi bi-arrow-right fw-semibold"></i>
           </div>
-          <div class="mb-5">
-          <label for="exampleFormControlInput1" class="form-label text-secondary fw-semibold m-1">Notas
-          </label>
-            <input type="name" class="form-control border-light text-secondary" id="exampleFormControlInput1"
-              placeholder="Escribe tus notas aqui" />
-            </div>
-          
-
-          <div class="m-3">
-            <p class="fw-semibold" >Fecha</p>
-            <div class="d-flex">
-              
-              <select class="form-select border-light" aria-label="Default select example">
-                <option selected>Mes</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <select class="form-select border-light" aria-label="Default select example">
-                <option selected>Dia</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <select class="form-select border-light" aria-label="Default select example">
-                <option selected>Hora</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="my-3" style="padding-top: 150px;">
-            
-              <button class="btn btn-secondary bg-secondary text-white rounded-pill fw-semibold my-3 w-100">
-               Crear
-              </button>
-            </div>
+          <div class="d-flex justify-content-between my-3">
+            <p class="text-secondary fw-semibold">¿Como maquillarte segun tu personalidad?</p>
+            <i class="bi bi-arrow-right fw-semibold"></i>
+          </div>
+          <div class="d-flex justify-content-between my-3">
+            <p class="text-secondary fw-semibold">¿Que estilo de uñas va contigo?</p>
+            <i class="bi bi-arrow-right fw-semibold"></i>
           </div>
         </div>
-
         </section>
         
 
 
 
         <section class="profile-content" id="stylists">
-          <div class="col-12 col-lg-5 border-end my-3">
-            <div class="auto-jsCalendar"></div>
-          </div>
-          <div class="m-5">
           <div>
-            <p class="fw-semibold">Entradas</p>
-          </div>
+          <h1 class="my-3">¿Como definirias tu pelo?</h1>
+          <p class="text-secondary">Some context about the question goes here, as well instructions or hints for the user to answer.</p>
+        </div>
+      
+        <div class="card-group">
           <div class="d-flex">
-            <img src="assets/images/profile/Notepad.png" class="m-1" alt="">
-            <p class="text-secondary m-1">11-01-2011</p>
+          <div class="card m-2">
+            <img src="assets/images/profile/Liso.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-secondary">Liso</h5>
+      
+            </div>
           </div>
-          <div class="d-flex">
-            <img src="assets/images/profile/Notepad.png" class="m-1" alt="">
-            <p class="text-secondary m-1">11-01-2011</p>
+          <div class="card  m-2">
+            <img src="assets/images/profile/Ondulado.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-secondary">Ondulado</h5>
+             
+            </div>
           </div>
-          <div class="d-flex">
-            <img src="assets/images/profile/Notepad.png" class="m-1" alt="">
-            <p class="text-secondary m-1">11-01-2011</p>
+        </div>
+       
+        <div class="d-flex">
+          <div class="card  m-2">
+            <img src="assets/images/profile/Rizado.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-titles text-secondary">Risado</h5>
+              
+            </div>
           </div>
-          <div class="d-flex">
-            <img src="assets/images/profile/Notepad.png" class="m-1" alt="">
-            <p class="text-secondary m-1">11-01-2011</p>
+          <div class="card  m-2">
+            <img src="assets/images/profile/Answer.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-secondary">Answer</h5>
+              
+            </div>
           </div>
-          <div class="d-flex">
-            <img src="assets/images/profile/Notepad.png" class="m-1" alt="">
-            <p class="text-secondary m-1">11-01-2011</p>
+        
           </div>
+         
+      
+          
+        </div>
+        <div class="my-2">
+          <button class="btn btn-secondary bg-secondary text-white rounded-pill fw-semibold my-5 w-100">
+           Continuar
+        </button>
         </div>
         </section>
         <section class="profile-content m-4" id="posts">
-          <div>
-            <p class="fw-semibold">Skincare routine name</p>
-            <p class="text-secondary">From-  To-</p>
-            <p class="text-secondary">Lun, Juev, Vier</p>
+        <div class="d-flex"> 
+          <img src="assets/images/profile/Liso.png" class="m-1" alt="">
+          <div class="m-1">
+            <p class="text-secondary">Resultados:</p>
+            <p class="text-primary fw-bold">Tu pelo es liso/lacio tipo 1A</p>
+            <p class="text-secondary">Tienes el pelo fino y con poco volumen. Tiene tendencia a ser más grasoso</p>
           </div>
-          <div>
-            <p class="fw-semibold">Skincare routine name</p>
-            <p class="text-secondary">From-  To-</p>
-            <p class="text-secondary">Lun, Juev, Vier</p>
-          </div>
-          <div class="my-3" style="padding-top: 150px;">
-            
-            <button class="btn btn-secondary bg-secondary text-white rounded-pill fw-semibold my-3 w-100" data-bs-toggle="modal"
-            data-bs-target="#rightSidebarModal">
-             Crear recordatorio
+        </div>
+
+        <div class=" m-2">
+          <p class="text-secondary fw-bold">Recomendaciones de cuidado:</p>
+          <p class="text-secondary">Lávate el pelo casi a diario con un champú ligero.</p>
+        </div>
+
+        <div class=" m-2">
+          <p class="text-secondary fw-bold">Peinados recomendados:</p>
+          <p class="text-secondary">Cortes asimétricos, recogidos, trenzas, y peinados que fomenten movimiento y volumen.</p>
+        </div>
+          <div class="my-1">
+            <button class="btn btn-secondary bg-secondary text-white rounded-pill fw-semibold w-100 my-1 ">
+              Compartir
+             </button>
+            <button class="btn btn-secondary bg-secondary text-white rounded-pill fw-semibold w-100 my-1">
+             Finalizar
             </button>
+            
           </div>
   
         </section>

@@ -129,7 +129,8 @@
           <div>
             <p class="fw-semibold">Entradas</p>
           </div>
-          <div class="d-flex">
+          <div class="d-flex"  data-bs-toggle="modal"
+          data-bs-target="#rightSidebarModal2">
             <img src="assets/images/profile/Notepad.png" class="m-1" alt="">
             <p class="text-secondary m-1">11-01-2011</p>
           </div>
@@ -202,7 +203,7 @@
   <!-- Right Sidebar Modal -->
   <div class="modal right fade" id="rightSidebarModal" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-xs modal-dialog-scrollable" ;>
+    <div class="modal-dialog modal-xs modal-dialog-scrollable" style="padding-top: 450px;" ;>
       <div class="modal-content">
        
         <div class="modal-body">
@@ -214,7 +215,7 @@
             <p class="text-secondary">Lun, Juev, Vier</p>
           </div>
           <button class="btn btn-primary bg-light text-primary rounded-pill fw-semibold my-3 w-100" data-bs-toggle="modal"
-          data-bs-target="#rightSidebarModal">
+          data-bs-target="#rightSidebarModal4">
            Eliminar recordatorio
           </button>
           <button class="btn btn-primary bg-primary text-white rounded-pill fw-semibold my-3 w-100" data-bs-toggle="modal"
@@ -233,6 +234,96 @@
     </div>
   </div>
 
+
+   <!-- Right Sidebar Modal 2 -->
+   <div class="modal right fade" id="rightSidebarModal2" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog modal-xs modal-dialog-scrollable" style="padding-top: 450px;" ;>
+     <div class="modal-content">
+      
+       <div class="modal-body">
+         <div>
+           <p class="text-black fw-semibold">18-11-11</p>
+           <p clas="text-secondary">This is the space where the users are gonna add info about their skin, journal about how they are feeling too.
+
+            This is the space where the users are gonna add info about their skin, journal about how they are feeling too.</p>
+
+           <div class="d-flex">
+<img src="assets/images/profile-mobile/modal1.png" class="m-1" alt="">
+<img src="assets/images/profile-mobile/modal2.png"  class="m-1" alt="">
+           </div>
+           
+         </div>
+        
+         <button class="btn btn-primary bg-white text-primary rounded-pill fw-semibold my-3 w-100" data-bs-toggle="modal"
+           data-bs-target="#rightSidebarModal3">
+         Borrar
+           </button>
+
+       </div>
+
+
+
+
+
+     </div>
+     
+   </div>
+ </div>
+
+  <!-- Right Sidebar Modal Borrar Entrada -->
+  <div class="modal right fade" id="rightSidebarModal3" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-body modal-dialog-scrollable"style="padding-top: 610px;">
+      <div class="modal-content">
+      
+        <div class="modal-body">
+          <h1 class="m-4">¿Borrar esta entrada?</h1>
+          
+          <button class="btn btn-primary bg-primary text-white rounded-pill fw-semibold my-2 w-100">
+           Si, borrar esta entrada
+           </button>
+           <button class="btn btn-primary bg-light fw-semibold rounded-pill fw-semibold my-2 w-100" style="color: gray;">
+          No, cancelar
+            </button>
+
+        </div>
+
+
+
+
+
+      </div>
+      
+    </div>
+  </div>
+
+   <!-- Right Sidebar Modal Borrar Recordatorio -->
+   <div class="modal right fade" id="rightSidebarModal4" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
+   aria-hidden="true">
+   <div class="modal-dialog modal-body modal-dialog-scrollable"style="padding-top: 610px;">
+     <div class="modal-content">
+     
+       <div class="modal-body">
+         <h1 class="m-4">¿Borrar este recordatorio?</h1>
+         
+         <button class="btn btn-primary bg-primary text-white rounded-pill fw-semibold my-2 w-100">
+          Si, borrar esta entrada
+          </button>
+          <button class="btn btn-primary bg-light fw-semibold rounded-pill fw-semibold my-2 w-100" style="color: gray;">
+         No, cancelar
+           </button>
+
+       </div>
+
+
+
+
+
+     </div>
+     
+   </div>
+ </div>
 
   <script type="module" src="js/profile.js"></script>
   <!-- Bootstrap core JS-->

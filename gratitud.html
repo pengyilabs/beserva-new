@@ -78,7 +78,7 @@
           <div class="mb-5">
           <label for="exampleFormControlInput1" class="form-label text-secondary fw-semibold m-2">Notas
           </label>
-            <input type="name" class="form-control border-light text-secondary"style="height: 100px;" id="exampleFormControlInput1"
+            <input type="name" class="form-control border-light text-secondary" style="height: 100px;" id="exampleFormControlInput1"
               placeholder="Escribe tus notas aqui" />
             </div>
           
@@ -129,7 +129,8 @@
           <div>
             <p class="fw-semibold">Entradas</p>
           </div>
-          <div class="d-flex">
+          <div class="d-flex" data-bs-toggle="modal"
+          data-bs-target="#rightSidebarModal">
             <img src="assets/images/profile/Notepad.png" class="m-1" alt="">
             <p class="text-secondary m-1">11-01-2011</p>
           </div>
@@ -202,101 +203,45 @@
   <!-- Right Sidebar Modal -->
   <div class="modal right fade" id="rightSidebarModal" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-xs modal-dialog-scrollable" ;>
+    <div class="modal-dialog modal-body modal-dialog-scrollable"style="padding-top: 550px;">
       <div class="modal-content">
-        <div class="modal-header">
-          <div class="d-flex">
-            <i class="bi bi-arrow-left m-2 " data-bs-dismiss="modal" aria-label="Close" style="color:black"></i>
-            <p class="text-black m-2" id="rightSidebarModalLabel">Reservas</p>
-          </div>
-          <span type="button" class="text-primary">Limpiar todo</span>
-        </div>
+      
         <div class="modal-body">
-          <div class="col">
-            <div class="col-12 ">
-              <div class="my-3">
-
-                <div>
-                  <p class="fw-semibold">¿Que servicios buscas? <b class="btn btn-primary rounded-5">3</b></p>
-                  <input type="search" class="form-control bg-white my-3 border-light" placeholder="Busca un servicio">
-                  <div class="d-flex mb-3">
-                    <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
-                      Corte
-                    </button>
-                    <button class="btn btn-primary text-black bg-white rounded-pill border-0 m-2">
-                      Tintura
-                    </button>
-                    <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
-                      Alisado
-                    </button>
-                    <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
-                      Styling
-                    </button>
-                    <button class="btn btn-primary text-black bg-white rounded-pill border-0 m-2">
-                      Maquillaje
-                    </button>
-                  </div>
-                  <div>
-                    <p class="fw-semibold">¿Que salón buscas?</p>
-                    <input type="search" class="form-control bg-white my-3 border-light" placeholder="Busca salón">
-                  </div>
-                  <div>
-                    <p class="fw-semibold">¿Cuando deseas agendar?</p>
-                    <div class="d-flex mb-3">
-                      <select class="form-select border-light" aria-label="Default select example">
-                        <option selected>Mes</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      <select class="form-select border-light" aria-label="Default select example">
-                        <option selected>Dia</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      <select class="form-select border-light" aria-label="Default select example">
-                        <option selected>Hora</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div>
-                    <p class="fw-semibold">¿Donde deseas agendar?</p>
-                    <div class="d-flex">
-                      <i class="bi bi-compass my-3 opacity-50"></i>
-                      <input type="search" class="form-control bg-white  border-light" placeholder="Ubicacion">
-
-                    </div>
-                  </div>
-                </div>
+          <p class="fw-semibold"> "I accept myself in the way I am, with my flaws and strenghts"</p>
+          <p class="text-secondary">"I feel super happy to be able to work in things I love everyday"</p>
+          <p class="text-secondary">Maria Roman - 6 Jun 2023</p>
+          <button class="btn btn-primary bg-white text-primary rounded-pill fw-semibold my-3 w-100" data-bs-toggle="modal"
+          data-bs-target="#rightSidebarModal1">
+           Borrar
+           </button>
 
 
-              </div>
-
-              <div class="d-flex justify-content-between">
-                <p class="fw-semibold">Servicio a domicilio</p>
-                <div class=" form-check form-switch">
-
-
-                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
-                    style="transform: scale(1.4)" />
-
-                </div>
-              </div>
+        </div>
 
 
 
 
 
+      </div>
+      
+    </div>
+  </div>
 
-            </div>
-
-          </div>
-
-
+  <!-- Right Sidebar Modal Borrar -->
+  <div class="modal right fade" id="rightSidebarModal1" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-body modal-dialog-scrollable"style="padding-top: 610px;">
+      <div class="modal-content">
+      
+        <div class="modal-body">
+          <h1 class="m-4">¿Borrar esta entrada?</h1>
+          
+          <button class="btn btn-primary bg-primary text-white rounded-pill fw-semibold my-2 w-100">
+           Si, borrar esta entrada
+           </button>
+           <button class="btn btn-primary bg-light fw-semibold rounded-pill fw-semibold my-2 w-100" style="color: gray;">
+          No, cancelar
+            </button>
 
         </div>
 

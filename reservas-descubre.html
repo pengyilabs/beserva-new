@@ -18,20 +18,16 @@
           <div class="container">
             <img src="assets/images/brand.png" id="imglogo" alt="logo" />
 
-            <button
-              class="navbar-toggler border-light"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="bi bi-map" style="font-size: 1.3rem"></i>
-              <a href="notifications.html" class="text-black"
-                ><i class="bi bi-bell" style="font-size: 1.3rem"> </i></a
-              ><span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex d-md-none">
+              <i class="bi bi-map m-2 fs-5"></i>
+              <i class="bi bi-bell m-2 fs-5">
+                </i>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-black"></span>
+              </button>
+            </div>
             <div
               class="collapse navbar-collapse justify-content-center fw-bold"
               id="navbarNavAltMarkup"
@@ -203,7 +199,7 @@
           id="activeperfil"
           href="#"
         >
-          <img src="assets/images/inicio.svg" />
+          <img src="assets/images/profile-mobile/inicioactive.png" />
           Inicio
         </a>
         <a
@@ -227,8 +223,8 @@
           <img src="assets/images/bookings.svg" />
           Reservas
         </a>
-        <a class="btn btn-link text-decoration-none" href="profile.html">
-          <img src="assets/images/user-selected.svg" />
+        <a class="btn btn-link text-black text-decoration-none" href="profile.html">
+          <img src="assets/images/profile-mobile/perfilnoactive.png" />
           Perfil
         </a>
       </div>

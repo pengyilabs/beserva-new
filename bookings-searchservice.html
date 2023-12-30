@@ -14,43 +14,68 @@
     <header class="m-2">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-
-
           <img src="assets/images/brand.png" id="imglogo" alt="logo" />
           <div class="d-flex d-md-none">
-            <i class="bi bi-map m-2 fs-5"></i>
-            <a href="notifications.html" class="text-black m-2"><i class="bi bi-bell fs-5">
-              </i></a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-              aria-label="Toggle navigation">
+            <i class="bi bi-map m-2" style="font-size: 1.3rem"></i>
+            <a href="notifications.html" class="text-black m-2"
+              ><i class="bi bi-bell" style="font-size: 1.3rem"> </i
+            ></a>
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon text-black"></span>
             </button>
           </div>
-          <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNavAltMarkup">
+          <div
+            class="collapse navbar-collapse justify-content-center fw-bold"
+            id="navbarNavAltMarkup"
+          >
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
+              <a class="nav-link" aria-current="page" href="home.html"
+                >Inicio</a
+              >
               <a class="nav-link" href="reservas-descubre.html">Descubre</a>
               <a class="nav-link" href="recursos.html">Recursos</a>
-              <a class="nav-link" href="bookings-searchservice.html">Reservas</a>
+              <a class="nav-link" href="bookings-searchservice.html"
+                >Reservas</a
+              >
             </div>
           </div>
           <div class="position-relative align-items-center d-none d-lg-flex">
             <button class="btn btn-link text-dark">
-              <i class="bi bi-map fs-5"></i>
+              <i class="bi bi-map" style="font-size: 1.3rem"></i>
             </button>
-            <button class="btn btn-link text-dark">
-              <i class="bi bi-bell fs-5"></i>
-            </button>
+            <a href="notifications.html" class="btn btn-link text-dark">
+              <i class="bi bi-bell" style="font-size: 1.3rem"></i>
+            </a>
             <div class="dropdown">
-              <button class="btn btn-link text-dark dropdown-toggle text-decoration-none" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img class="d-inline" src="assets/images/profile-img.jpg" width="40" height="40">
+              <button
+                class="btn btn-link text-dark dropdown-toggle text-decoration-none"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="d-inline"
+                  src="assets/images/profile-img.jpg"
+                  width="40"
+                  height="40"
+                />
                 <span class="fw-bold">Alissa Gray</span>
                 <!-- <span class="fs-7">alissargray@gmail.com</span> -->
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" type="button" href="profile.html">Perfil</a></li>
+                <li>
+                  <a class="dropdown-item" type="button" href="profile.html"
+                    >Perfil</a
+                  >
+                </li>
                 <li><a class="dropdown-item" type="button">Opcion 2</a></li>
                 <li><a class="dropdown-item" type="button">Opcion 3</a></li>
               </ul>
@@ -59,7 +84,7 @@
         </div>
       </nav>
     </header>
-    <main class="container-md mt-4" style="margin-bottom: 100px;">
+    <main class="container-md mt-4 mb-100">
 
       <div class="d-flex border-bottom">
         <button class="btn btn-link text-gray submenu-item  text-decoration-none" style="color:rgb(219, 206, 206);"
@@ -443,7 +468,7 @@
   <div class="modal right fade" id="rightSidebarModal" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-xs modal-dialog-scrollable modal-fullscreen-md-down" ;>
-      <div class="modal-content">
+      <div class="modal-content h-100">
         <div class="modal-header">
           <div class="d-flex">
             <i class="bi bi-arrow-left m-2 " data-bs-dismiss="modal" aria-label="Close"></i>
@@ -457,33 +482,41 @@
               <div class="my-3">
 
                 <div>
-                  <p class="fw-semibold">¿Que servicios buscas? <b class="btn btn-primary rounded-5">3</b></p>
-                  <input type="search" class="form-control bg-white my-3 border-light" placeholder="Busca un servicio">
-                  <div class="d-flex mb-3">
-                    <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
-                      Corte
-                    </button>
-                    
-                    <button class="btn btn-primary text-black bg-white rounded-pill border-0 m-2">
-                      Tintura
-                    </button>
-                    <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
-                      Alisado
-                    </button>
-                    <button class="btn btn-primary text-primary bg-white rounded-pill m-2">
-                      Styling
-                    </button>
-                    <button class="btn btn-primary text-black bg-white rounded-pill border-0 m-2">
-                      Maquillaje
-                    </button>
+                  <p class="fw-semibold">¿Qué servicios buscas? <button class="btn btn-sm btn-primary rounded-5">3</button></p>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-search opacity-50"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Busca un servicio" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="btn-group d-flex gap-3 mb-3 overflow-y-auto" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check " id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary px-2 rounded-10" for="btncheck1">Corte</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary px-2 rounded-10" for="btncheck2">Tintura</label>
+                  
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-primary px-2 rounded-10" for="btncheck3">Alisado</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="btn btn-outline-primary px-2 rounded-10" for="btncheck4">Styling</label>
+
+                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                    <label class="btn btn-outline-primary px-2 rounded-10" for="btncheck5">Maquillaje</label>
                   </div>
                   <div>
-                    <p class="fw-semibold">¿Que salón buscas?</p>
-                    <input type="search" class="form-control bg-white my-3 border-light" placeholder="Busca salón">
+                    <p class="fw-semibold">¿Qué salón buscas?</p>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">
+                        <i class="bi bi-search opacity-50"></i>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Busca un salón" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
                   </div>
                   <div>
                     <p class="fw-semibold">¿Cuándo deseas agendar?</p>
-                    <div class="d-flex gap-2 mb-3">
+                    <div class="d-flex gap-3 mb-3">
                       <select class="form-select border-light" aria-label="Default select example">
                         <option selected>Mes</option>
                         <option value="1">One</option>
@@ -505,11 +538,12 @@
                     </div>
                   </div>
                   <div>
-                    <p class="fw-semibold">¿Donde deseas agendar?</p>
-                    <div class="d-flex">
-                      <i class="bi bi-compass my-3 opacity-50"></i>
-                      <input type="search" class="form-control bg-white  border-light" placeholder="Ubicacion">
-
+                    <p class="fw-semibold">¿Dónde deseas agendar?</p>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1">
+                        <i class="bi bi-compass opacity-50"></i>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Ubicación" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                   </div>
                 </div>

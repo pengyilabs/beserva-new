@@ -1,46 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <title>Beserva</title>
   </head>
   <body>
     <div class="container-fluid p-0">
-      <header>
+      <header class="m-2">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
-            <a class="navbar-brand" href="home.html">
-              <img src="assets/images/brand.png" alt="logo"/>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNavAltMarkup">
+            <img src="assets/images/brand.png" id="imglogo" alt="logo" />
+            <div class="d-flex d-md-none">
+              <i class="bi bi-map m-2" style="font-size: 1.3rem"></i>
+              <a href="notifications.html" class="text-black m-2"
+                ><i class="bi bi-bell" style="font-size: 1.3rem"> </i
+              ></a>
+              <button
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon text-black"></span>
+              </button>
+            </div>
+            <div
+              class="collapse navbar-collapse justify-content-center fw-bold"
+              id="navbarNavAltMarkup"
+            >
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="home.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="home.html"
+                  >Inicio</a
+                >
                 <a class="nav-link" href="reservas-descubre.html">Descubre</a>
                 <a class="nav-link" href="recursos.html">Recursos</a>
-                <a class="nav-link" href="bookings-searchservice.html">Reservas</a>
+                <a class="nav-link" href="bookings-searchservice.html"
+                  >Reservas</a
+                >
               </div>
             </div>
             <div class="position-relative align-items-center d-none d-lg-flex">
               <button class="btn btn-link text-dark">
-                <i class="bi bi-map fs-5"></i>
+                <i class="bi bi-map" style="font-size: 1.3rem"></i>
               </button>
-              <button class="btn btn-link text-dark">
-                <i class="bi bi-bell fs-5"></i>
-              </button>
+              <a href="notifications.html" class="btn btn-link text-dark">
+                <i class="bi bi-bell" style="font-size: 1.3rem"></i>
+              </a>
               <div class="dropdown">
-                <button class="btn btn-link text-dark dropdown-toggle text-decoration-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img class="d-inline" src="assets/images/profile-img.jpg" width="40" height="40">
+                <button
+                  class="btn btn-link text-dark dropdown-toggle text-decoration-none"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="d-inline"
+                    src="assets/images/profile-img.jpg"
+                    width="40"
+                    height="40"
+                  />
                   <span class="fw-bold">Alissa Gray</span>
                   <!-- <span class="fs-7">alissargray@gmail.com</span> -->
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" type="button" href="profile.html">Perfil</a></li>
+                  <li>
+                    <a class="dropdown-item" type="button" href="profile.html"
+                      >Perfil</a
+                    >
+                  </li>
                   <li><a class="dropdown-item" type="button">Opcion 2</a></li>
                   <li><a class="dropdown-item" type="button">Opcion 3</a></li>
                 </ul>
@@ -51,23 +87,40 @@
       </header>
       <main class="container-md">
         <div class="mb-3 mb-lg-4">
-          <input type="search" class="form-control" id="home-search" placeholder="Busca, servicios, productos y más...">
+          <input
+            type="search"
+            class="form-control"
+            id="home-search"
+            placeholder="Busca, servicios, productos y más..."
+          />
         </div>
-        <div class="w-100 rounded mb-3 mb-lg-4" style="height: 150px; background-position: center; background-size: cover; background-image: url('assets/images/home/banner.jpg')">
+        <div
+          class="w-100 rounded mb-3 mb-lg-4"
+          style="
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+            background-image: url('assets/images/home/banner.jpg');
+          "
+        >
           <div class="fs-5 text-end p-2">
             <span class="d-block text-light">Tips de belleza</span>
-        
           </div>
         </div>
         <section>
           <div class="d-flex justify-content-between mt-3 mb-2">
             <h5 class="fw-bold">Inspiración para ti</h5>
-            <button class="btn btn-link fw-semibold text-primary">Ver todo</button>
+            <button class="btn btn-link fw-semibold text-primary">
+              Ver todo
+            </button>
           </div>
           <div class="d-flex w-100 py-3 overflow-auto">
             <div class="">
               <button class="btn btn-link text-gray">
-                <div class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto active" style="width: 50px; height: 50px;">
+                <div
+                  class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto active"
+                  style="width: 50px; height: 50px"
+                >
                   <i class="bi bi-water text-secondary"></i>
                 </div>
                 Peinados
@@ -75,24 +128,33 @@
             </div>
             <div class="">
               <button class="btn btn-link text-gray">
-                <div class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto" style="width: 50px; height: 50px;">
-                  <img src="assets/images/home/makeup.png" width="30">
+                <div
+                  class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto"
+                  style="width: 50px; height: 50px"
+                >
+                  <img src="assets/images/home/makeup.png" width="30" />
                 </div>
                 Maquillaje
               </button>
             </div>
             <div class="">
               <button class="btn btn-link text-gray">
-                <div class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto" style="width: 50px; height: 50px;">
-                  <img src="assets/images/home/eye.png" width="30">
+                <div
+                  class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto"
+                  style="width: 50px; height: 50px"
+                >
+                  <img src="assets/images/home/eye.png" width="30" />
                 </div>
                 Peinados
               </button>
             </div>
             <div>
               <button class="btn btn-link text-gray">
-                <div class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto" style="width: 50px; height: 50px;">
-                  <img src="assets/images/home/handSoap.png" width="30">
+                <div
+                  class="rounded-4 mb-3 d-flex justify-content-center align-items-center m-auto"
+                  style="width: 50px; height: 50px"
+                >
+                  <img src="assets/images/home/handSoap.png" width="30" />
                 </div>
                 Uñas
               </button>
@@ -101,56 +163,92 @@
           <div class="d-flex py-3 mw-100 overflow-auto custom-scrollbar">
             <div class="mx-2" style="min-width: 157px">
               <div class="rounded border-secondary">
-                <img src="assets/images/home/hairstyle1.jpg" alt="peinado" class="w-100">
+                <img
+                  src="assets/images/home/hairstyle1.jpg"
+                  alt="peinado"
+                  class="w-100"
+                />
               </div>
               <div class="py-2">
                 <h6 class="fw-bold">Nombre del peinado</h6>
-                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+                <span class="fs-7 text-gray"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
               </div>
             </div>
             <div class="mx-2" style="min-width: 157px">
               <div class="rounded border-secondary">
-                <img src="assets/images/home/hairstyle2.jpg" alt="peinado" class="w-100">
+                <img
+                  src="assets/images/home/hairstyle2.jpg"
+                  alt="peinado"
+                  class="w-100"
+                />
               </div>
               <div class="py-2">
                 <h6 class="fw-bold">Nombre del peinado</h6>
-                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+                <span class="fs-7 text-gray"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
               </div>
             </div>
             <div class="mx-2" style="min-width: 157px">
               <div class="rounded border-secondary">
-                <img src="assets/images/home/hairstyle3.jpg" alt="peinado" class="w-100">
+                <img
+                  src="assets/images/home/hairstyle3.jpg"
+                  alt="peinado"
+                  class="w-100"
+                />
               </div>
               <div class="py-2">
                 <h6 class="fw-bold">Nombre del peinado</h6>
-                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+                <span class="fs-7 text-gray"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
               </div>
             </div>
             <div class="mx-2" style="min-width: 157px">
               <div class="rounded border-secondary">
-                <img src="assets/images/home/hairstyle4.jpg" alt="peinado" class="w-100">
+                <img
+                  src="assets/images/home/hairstyle4.jpg"
+                  alt="peinado"
+                  class="w-100"
+                />
               </div>
               <div class="py-2">
                 <h6 class="fw-bold">Nombre del peinado</h6>
-                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+                <span class="fs-7 text-gray"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
               </div>
             </div>
             <div class="mx-2" style="min-width: 157px">
               <div class="rounded border-secondary">
-                <img src="assets/images/home/hairstyle5.jpg" alt="peinado" class="w-100">
+                <img
+                  src="assets/images/home/hairstyle5.jpg"
+                  alt="peinado"
+                  class="w-100"
+                />
               </div>
               <div class="py-2">
                 <h6 class="fw-bold">Nombre del peinado</h6>
-                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+                <span class="fs-7 text-gray"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
               </div>
             </div>
             <div class="" style="min-width: 157px">
               <div class="rounded border-secondary">
-                <img src="assets/images/home/hairstyle6.jpg" alt="peinado" class="w-100">
+                <img
+                  src="assets/images/home/hairstyle6.jpg"
+                  alt="peinado"
+                  class="w-100"
+                />
               </div>
               <div class="py-2">
                 <h6 class="fw-bold">Nombre del peinado</h6>
-                <span class="fs-7 text-gray">Lorem ipsum dolor sit amet consectetur.</span>
+                <span class="fs-7 text-gray"
+                  >Lorem ipsum dolor sit amet consectetur.</span
+                >
               </div>
             </div>
           </div>
@@ -158,72 +256,101 @@
         <section>
           <div class="d-flex justify-content-between mt-3 mb-2">
             <h5 class="fw-bold">Blogs de belleza y salud</h5>
-            <button class="btn btn-link fw-semibold text-primary">Ver todo</button>
+            <button class="btn btn-link fw-semibold text-primary">
+              Ver todo
+            </button>
           </div>
           <div class="row py-3">
             <div class="col d-flex mb-2">
               <div class="rounded">
-                <img src="assets/images/home/blog-image.jpg">
+                <img src="assets/images/home/blog-image.jpg" />
               </div>
               <div class="p-3">
-                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>losimpresindibles de este verano</span>
+                <span class="d-block fs-7 fw-bold"
+                  >Protectores solares:<br />losimpresindibles de este
+                  verano</span
+                >
                 <span class="fs-7 fw-bold text-primary">Bianca</span>
               </div>
             </div>
             <div class="col d-flex mb-2">
               <div class="rounded">
-                <img src="assets/images/home/blog-image.jpg">
+                <img src="assets/images/home/blog-image.jpg" />
               </div>
               <div class="p-3">
-                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>losimpresindibles de este verano</span>
+                <span class="d-block fs-7 fw-bold"
+                  >Protectores solares:<br />losimpresindibles de este
+                  verano</span
+                >
                 <span class="fs-7 fw-bold text-primary">Bianca</span>
               </div>
             </div>
             <div class="col d-flex mb-2">
               <div class="rounded">
-                <img src="assets/images/home/blog-image.jpg">
+                <img src="assets/images/home/blog-image.jpg" />
               </div>
               <div class="p-3">
-                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>losimpresindibles de este verano</span>
+                <span class="d-block fs-7 fw-bold"
+                  >Protectores solares:<br />losimpresindibles de este
+                  verano</span
+                >
                 <span class="fs-7 fw-bold text-primary">Bianca</span>
               </div>
             </div>
             <div class="col d-flex mb-2">
               <div class="rounded">
-                <img src="assets/images/home/blog-image.jpg">
+                <img src="assets/images/home/blog-image.jpg" />
               </div>
               <div class="p-3">
-                <span class="d-block fs-7 fw-bold">Protectores solares:<br/>losimpresindibles de este verano</span>
+                <span class="d-block fs-7 fw-bold"
+                  >Protectores solares:<br />losimpresindibles de este
+                  verano</span
+                >
                 <span class="fs-7 fw-bold text-primary">Bianca</span>
               </div>
             </div>
           </div>
         </section>
         <div class="d-flex d-md-none border-top fixed-navbar bg-white">
-          <a class="btn btn-link active text-black text-decoration-none" id="activeperfil" href="home.html">
-            <img src="assets/images/inicio.svg">
+          <a
+            class="btn btn-link active text-black text-decoration-none"
+            id="activeperfil"
+            href="home.html"
+          >
+            <img src="assets/images/inicio.svg" />
             Inicio
           </a>
-          <a class="btn btn-link text-black text-decoration-none" href="reservas-descubre.html">
-            <img src="assets/images/descubre.svg">
+          <a
+            class="btn btn-link text-black text-decoration-none"
+            href="reservas-descubre.html"
+          >
+            <img src="assets/images/descubre.svg" />
             Descubre
           </a>
-          <a class="btn btn-link text-black text-decoration-none" href="recursos.html">
-            <img src="assets/images/sources.svg">
+          <a
+            class="btn btn-link text-black text-decoration-none"
+            href="recursos.html"
+          >
+            <img src="assets/images/sources.svg" />
             Recursos
           </a>
-          <a class="btn btn-link text-black text-decoration-none" href="bookings-searchservice.html">
-            <img src="assets/images/bookings.svg">
+          <a
+            class="btn btn-link text-black text-decoration-none"
+            href="bookings-searchservice.html"
+          >
+            <img src="assets/images/bookings.svg" />
             Reservas
           </a>
-          <a class="btn btn-link text-black text-decoration-none" href="profile.html">
-            <img src="assets/images/user.svg">
+          <a
+            class="btn btn-link text-black text-decoration-none"
+            href="profile.html"
+          >
+            <img src="assets/images/user.svg" />
             Perfil
           </a>
         </div>
       </main>
     </div>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

@@ -17,34 +17,68 @@
     <header class="m-2">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-
-
-          <a id="flecha1" class="text-decoration-none text-black fw-semibold my-4" href="recursos.html"><i class="bi bi-arrow-left fw-semibold m-1" style="color:black"></i>Productos de skincare</a>          
-          
-          <div class="collapse navbar-collapse justify-content-center fw-bold" id="navbarNavAltMarkup">
+          <img src="assets/images/brand.png" id="imglogo" alt="logo" />
+          <div class="d-flex d-md-none">
+            <i class="bi bi-map m-2" style="font-size: 1.3rem"></i>
+            <a href="notifications.html" class="text-black m-2"
+              ><i class="bi bi-bell" style="font-size: 1.3rem"> </i
+            ></a>
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon text-black"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-center fw-bold"
+            id="navbarNavAltMarkup"
+          >
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
+              <a class="nav-link" aria-current="page" href="home.html"
+                >Inicio</a
+              >
               <a class="nav-link" href="reservas-descubre.html">Descubre</a>
               <a class="nav-link" href="recursos.html">Recursos</a>
-              <a class="nav-link" href="bookings-searchservice.html">Reservas</a>
+              <a class="nav-link" href="bookings-searchservice.html"
+                >Reservas</a
+              >
             </div>
           </div>
           <div class="position-relative align-items-center d-none d-lg-flex">
             <button class="btn btn-link text-dark">
-              <i class="bi bi-map" style="font-size: 1.3rem;"></i>
+              <i class="bi bi-map" style="font-size: 1.3rem"></i>
             </button>
-            <button class="btn btn-link text-dark">
-              <i class="bi bi-bell" style="font-size: 1.3rem;"></i>
-            </button>
+            <a href="notifications.html" class="btn btn-link text-dark">
+              <i class="bi bi-bell" style="font-size: 1.3rem"></i>
+            </a>
             <div class="dropdown">
-              <button class="btn btn-link text-dark dropdown-toggle text-decoration-none" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <img class="d-inline" src="assets/images/profile-img.jpg" width="40" height="40">
+              <button
+                class="btn btn-link text-dark dropdown-toggle text-decoration-none"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="d-inline"
+                  src="assets/images/profile-img.jpg"
+                  width="40"
+                  height="40"
+                />
                 <span class="fw-bold">Alissa Gray</span>
                 <!-- <span class="fs-7">alissargray@gmail.com</span> -->
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" type="button" href="profile.html">Perfil</a></li>
+                <li>
+                  <a class="dropdown-item" type="button" href="profile.html"
+                    >Perfil</a
+                  >
+                </li>
                 <li><a class="dropdown-item" type="button">Opcion 2</a></li>
                 <li><a class="dropdown-item" type="button">Opcion 3</a></li>
               </ul>
@@ -53,7 +87,7 @@
         </div>
       </nav>
     </header>
-    <main class="container-md my-4 h-100">
+    <main class="container-md mt-4 mb-100">
 
       <div class="d-flex border-bottom">
         <button class="btn btn-link text-gray active submenu-item  text-decoration-none" style="color: rgb(143, 132, 132);"
@@ -80,8 +114,8 @@
             <input type="name" class="form-control  text-secondary" style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)" id="exampleFormControlInput1"
               placeholder="Nombre" />
             </div>
-            <div class="d-flex justify-content-between" id="calendarplus1">
-            <div class="" id="calendarplus1"> 
+            <div class="d-flex gap-3" id="calendarplus1">
+            <div class="w-100" id="calendarplus1"> 
             <label for="exampleFormControlInput1" class="form-label text-secondary fw-semibold m-1">Marca
             </label>
             <select class="form-select text-secondary " style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)" aria-label="Default select example">
@@ -91,7 +125,7 @@
               <option value="3">Three</option>
             </select>
           </div>
-          <div id="calendarplus1">
+          <div class="w-100" id="calendarplus1">
             <label for="exampleFormControlInput1" class="form-label text-secondary fw-semibold m-1">Categoria
             </label>
             <select class="form-select  text-secondary" style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)" aria-label="Default select example">
@@ -102,8 +136,8 @@
             </select>
           </div>
         </div>
-        <div class="d-flex" id="calendarplus2">
-          <div class="" id="calendarplus2"> 
+        <div class="d-flex gap-3" id="calendarplus2">
+          <div class="w-100" id="calendarplus2"> 
           <label for="exampleFormControlInput1" class="form-label text-secondary fw-semibold m-1">Marca
           </label>
           <select class="form-select text-secondary "  style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)"aria-label="Default select example">
@@ -113,7 +147,7 @@
             <option value="3">Three</option>
           </select>
         </div>
-        <div style="margin-left: 60px;" id="calendarplus2">
+        <div class="w-100" id="calendarplus2">
           <label for="exampleFormControlInput1" class="form-label text-secondary fw-semibold m-1">Categoria
           </label>
           <select class="form-select  text-secondary" style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)" aria-label="Default select example">
@@ -126,15 +160,15 @@
       </div>
           <div class=" m-1 my-4">
             <p class="text-secondary fw-semibold" >Fecha apertura</p>
-            <div class="d-flex">
+            <div class="d-flex gap-3">
               
-              <select class="form-select  text-secondary" style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)" aria-label="Default select example">
+              <select class="form-select text-secondary" style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)" aria-label="Default select example">
                 <option selected>Mes</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
-              <select class="form-select  text-secondary" style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)" aria-label="Default select example">
+              <select class="form-select text-secondary" style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)" aria-label="Default select example">
                 <option selected>Dia</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -149,7 +183,7 @@
             </div>
                 <div class="my-3">
             <p class="text-secondary fw-semibold" >Fecha expiracion</p>
-            <div class="d-flex">
+            <div class="d-flex gap-3">
               
               <select class="form-select  text-secondary" style="font-size: 16px;  border: 1px solid rgb(241, 228, 228)" aria-label="Default select example">
                 <option selected>Mes</option>

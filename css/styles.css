@@ -7356,6 +7356,10 @@ textarea.form-control-lg {
   height: 100% !important;
 }
 
+.h-80 {
+  height: 80%;
+}
+
 .h-auto {
   height: auto !important;
 }
@@ -11091,6 +11095,12 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .cursor:hover {
   cursor: pointer;
+}
+
+.bg-video {
+  background-image: url(../assets/images/slide-1.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .fw-500 {

@@ -11227,6 +11227,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 }
 
+.w-80px {
+  width: 80px;
+}
+
 .rounded-20 {
   border-radius: 20px;
 }

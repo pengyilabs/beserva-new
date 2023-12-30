@@ -112,8 +112,9 @@
             </button>
           </div>
           <div>
-            <button class="btn btn-primary text-primary bg-white rounded-pill m-1">
-              Siguiendo
+            <button class="btn btn-primary text-primary bg-white rounded-pill m-1"  data-bs-toggle="modal"
+            data-bs-target="#rightSidebarModal">
+              Editar Salón
             </button>
           </div>
           <div>
@@ -461,125 +462,382 @@
   </div>
 
   <!-- Right Sidebar Modal -->
-<div class="modal right fade" id="rightSidebarModal" tabindex="-1" aria-labelledby="rightSidebarModalLabel"
-aria-hidden="true">
-<div class="modal-dialog modal-xs modal-dialog-scrollable";>
-  <div class="modal-content">
-    <div class="modal-header">
-      <div class="d-flex">
-      <i class="bi bi-arrow-left m-2 " data-bs-dismiss="modal" aria-label="Close" style="color:black"></i>
-      <p class="text-black m-2" id="rightSidebarModalLabel">Editar perfil</p>
-    </div>
-      
-    </div>
-    <div class="modal-body">
-      <div class="col">
-        <div class="col-12 ">
-          <div class="my-3">
-
-            <div>
-              <div class="d-flex ">
-             <img src="assets/images/profile-mobile/california3.png" alt="">
-             <button class="btn btn-primary bg-white border-0 text-primary rounded-pill ">
-              Cambiar foto de perfil
-            </button>
-            </div>
-             
-            <div class="d-flex ">
-              <img class="h-50 m-2" src="assets/images/profile-mobile/inicioactive.png" alt="">
-              <button class="btn btn-primary bg-white border-0 text-primary rounded-pill ">
-               Cambiar foto de portada
-             </button>
-             </div>
-             <div class="m-2">
-              <p class="fw-semibold">Dias de Atencion</p>
-              <div class="d-flex mb-3">
-                
-                <select class="form-select border-light" aria-label="Default select example">
-                  <option selected>Lunes</option>
-                  <option value="1">Martes</option>
-                  <option value="2">Miercoles</option>
-                  <option value="3">Jueves</option>
-                  <option value="3">Viernes</option>
-                  <option value="3">Sabado</option>
-                  <option value="3">Domingo</option>
-                </select>
-                <p class="m-2">a</p>
-                <select class="form-select border-light" aria-label="Default select example">
-                  <option value="3">Lunes</option>
-                  <option value="1">Martes</option>
-                  <option value="2">Miercoles</option>
-                  <option value="3">Jueves</option>
-                  <option value="3">Viernes</option>
-                  <option selected>Sabado</option>
-                  <option value="3">Domingo</option>
-                </select>
-              </div>
-             </div>
-             <div class="m-2">
-              <p class="fw-semibold">Horarios de atencion</p>
-              <div class="d-flex mb-3">
-                
-                <select class="form-select border-light" aria-label="Default select example">
-                  <option selected>8 a.m</option>
-                  <option value="1">9 a.m</option>
-                  <option value="2">10 a.m</option>
-                  <option value="3">11 a.m</option>
-                  <option value="3">12 a.m</option>
-                  <option value="3">13 p.m</option>
-                  <option value="3">14 p.m</option>
-                </select>
-                <p class="m-2">a</p>
-                <select class="form-select border-light" aria-label="Default select example">
-                  <option value="2">7 p.m</option>
-                  <option value="1">8 p.m</option>
-                  <option selected>9 p.m</option>
-                  <option value="3">10 p.m</option>
-                  <option value="3">11 p.m</option>
-                  <option value="3">12 p.m</option>
-                  
-                </select>
-              </div>
-             </div>
-
-             <div>
-              <p class="fw-semibold">Direccion</p>
-              <input type="search" class="form-control bg-white  border-light" 
-              placeholder="Calle">
-              <input type="search" class="form-control bg-white  border-light" 
-              placeholder="Numero">
-              <div class="d-flex">
-                <i class="bi bi-compass my-3 opacity-50"></i>
-                <input type="search" class="form-control bg-white  border-light" 
-              placeholder="Mapa">
-
-              </div>
-             </div>
-            </div>
-          
-
-          </div>
-
-          
-
-
-
-
-
-
-        </div>
-
+  <div
+  class="modal right fade"
+  id="rightSidebarModal"
+  tabindex="-1"
+  aria-labelledby="rightSidebarModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rightSidebarModalLabel">
+          Editar perfil de salón
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
-      
-     
-    
-    </div>
-    <button type="button" class="btn btn-primary text-white rounded-pill  mb-5 m-2">
-      Guardar cambios
-    </button>
-     
-       
-      
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12">
+            <div>
+            <p class="border-bottom">Tus imágenes</p>
+            <div class="mb-3 d-flex justify-content-between">
+              <div>
+                <img src="./assets/images/logo-pink.png" class="m-auto d-block mb-3" alt="">
+                <button class="btn btn-sm btn-outline-primary d-flex m-auto gap-1 align-items-center">
+                  <i class="bi bi-camera"></i>
+                  <p class="mb-0">Cambiar imagen</p>
+                </button>
+              </div>
+              <div>
+                <img src="./assets/images/Frame 369.png" class="m-auto d-block mb-3" alt="">
+                <button class="btn btn-sm btn-outline-primary d-flex m-auto gap-1 align-items-center">
+                  <i class="bi bi-camera"></i>
+                  <p class="mb-0">Agregar portada</p>
+                </button>
+              </div>
+            </div>
+            </div>
+            <p class="border-bottom">Perfil público</p>
+            <div class="my-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Nombre del centro</label
+              >
+              <input
+                type="text"
+                class="form-control border-light"
+                id="exampleFormControlInput1"
+                placeholder="Nombre del centro"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Descripción</label
+              >
+              <textarea
+                class="form-control border-light"
+                placeholder="Describa el centro"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <p class="border-bottom">Tu centro</p>
+            <div class="my-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Buscar negocio</label
+              >
+              <input
+                type="text"
+                class="form-control border-light"
+                id="exampleFormControlInput1"
+                placeholder="Ingresa dirección o nombre del negocio"
+              />
+            </div>
+            <div class="my-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Calle</label
+              >
+              <input
+                type="text"
+                class="form-control border-light"
+                id="exampleFormControlInput1"
+                placeholder="Calle"
+              />
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="my-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Número exterior</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control border-light"
+                    id="exampleFormControlInput1"
+                    placeholder="6677"
+                  />
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="my-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Número interior</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control border-light"
+                    id="exampleFormControlInput1"
+                    placeholder="6677"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="my-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Colonia</label
+              >
+              <input
+                type="text"
+                class="form-control border-light"
+                id="exampleFormControlInput1"
+                placeholder="Ingrese colonia"
+              />
+            </div>
+            <div class="my-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Ciudad</label
+              >
+              <input
+                type="text"
+                class="form-control border-light"
+                id="exampleFormControlInput1"
+                placeholder="Ingrese ciudad"
+              />
+            </div>
+            <div class="my-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Estado</label
+              >
+              <input
+                type="text"
+                class="form-control border-light"
+                id="exampleFormControlInput1"
+                placeholder="Ingrese estado"
+              />
+            </div>
+            <div class="my-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Código postal</label
+              >
+              <input
+                type="number"
+                class="form-control border-light"
+                id="exampleFormControlInput1"
+                placeholder="Ingrese código postal"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="basic-url" class="form-label mb-3">Horario</label>
+            <div>
+              <div>
+              <div class="form-check form-switch mb-2">
+                <input
+                  class="form-check-input"  
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                  style="transform: scale(1.4)"
+                />
+                <label class="ms-1 form-check-label" for="flexSwitchCheckDefault"
+                  >Lunes</label
+                >
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="timeInput" class="form-label">Apertura:</label>
+                    <input type="time" id="timeInput" class="form-control">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="timeInput" class="form-label">Cierre:</label>
+                    <input type="time" id="timeInput" class="form-control">
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div>
+                <div class="form-check form-switch mb-2">
+                  <input
+                    class="form-check-input"  
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckDefault"
+                    style="transform: scale(1.4)"
+                  />
+                  <label class="ms-1 form-check-label" for="flexSwitchCheckDefault"
+                    >Martes</label
+                  >
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <label for="timeInput" class="form-label">Apertura:</label>
+                      <input type="time" id="timeInput" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <label for="timeInput" class="form-label">Cierre:</label>
+                      <input type="time" id="timeInput" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div>
+                  <div class="form-check form-switch mb-2">
+                    <input
+                      class="form-check-input"  
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckDefault"
+                      style="transform: scale(1.4)"
+                    />
+                    <label class="ms-1 form-check-label" for="flexSwitchCheckDefault"
+                      >Miércoles</label
+                    >
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="timeInput" class="form-label">Apertura:</label>
+                        <input type="time" id="timeInput" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="mb-3">
+                        <label for="timeInput" class="form-label">Cierre:</label>
+                        <input type="time" id="timeInput" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div>
+                    <div class="form-check form-switch mb-2">
+                      <input
+                        class="form-check-input"  
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckDefault"
+                        style="transform: scale(1.4)"
+                      />
+                      <label class="ms-1 form-check-label" for="flexSwitchCheckDefault"
+                        >Jueves</label
+                      >
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label for="timeInput" class="form-label">Apertura:</label>
+                          <input type="time" id="timeInput" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="mb-3">
+                          <label for="timeInput" class="form-label">Cierre:</label>
+                          <input type="time" id="timeInput" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div>
+                      <div class="form-check form-switch mb-2">
+                        <input
+                          class="form-check-input"  
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckDefault"
+                          style="transform: scale(1.4)"
+                        />
+                        <label class="ms-1 form-check-label" for="flexSwitchCheckDefault"
+                          >Viernes</label
+                        >
+                      </div>
+                      <div class="row">
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="timeInput" class="form-label">Apertura:</label>
+                            <input type="time" id="timeInput" class="form-control">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="mb-3">
+                            <label for="timeInput" class="form-label">Cierre:</label>
+                            <input type="time" id="timeInput" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div>
+                        <div class="form-check form-switch mb-2">
+                          <input
+                            class="form-check-input"  
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                            style="transform: scale(1.4)"
+                          />
+                          <label class="ms-1 form-check-label" for="flexSwitchCheckDefault"
+                            >Sábado</label
+                          >
+                        </div>
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <label for="timeInput" class="form-label">Apertura:</label>
+                              <input type="time" id="timeInput" class="form-control">
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="mb-3">
+                              <label for="timeInput" class="form-label">Cierre:</label>
+                              <input type="time" id="timeInput" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div>
+                          <div class="form-check form-switch mb-2">
+                            <input
+                              class="form-check-input"  
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckDefault"
+                              style="transform: scale(1.4)"
+                            />
+                            <label class="ms-1 form-check-label" for="flexSwitchCheckDefault"
+                              >Domingo</label
+                            >
+                          </div>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label for="timeInput" class="form-label">Apertura:</label>
+                                <input type="time" id="timeInput" class="form-control">
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="mb-3">
+                                <label for="timeInput" class="form-label">Cierre:</label>
+                                <input type="time" id="timeInput" class="form-control">
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="d-flex justify-content-center my-3 align-items-center">
+          <div>
+            <button
+              type="button"
+              class="btn btn-primary text-light rounded-pill h-75 m-1"
+            >
+              Guardar cambios
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

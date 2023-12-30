@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <title>Beserva</title>
+  </head>
+
+  <body>
+    <div class="container-fluid p-0">
+      <header class="m-2">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <img src="assets/images/brand.png" id="imglogo" alt="logo" />
+            <div class="d-flex d-md-none">
+              <i class="bi bi-map m-2" style="font-size: 1.3rem"></i>
+              <a href="notifications.html" class="text-black m-2"
+                ><i class="bi bi-bell" style="font-size: 1.3rem"> </i
+              ></a>
+              <button
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon text-black"></span>
+              </button>
+            </div>
+            <div
+              class="collapse navbar-collapse justify-content-center fw-bold"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a class="nav-link" aria-current="page" href="home.html"
+                  >Inicio</a
+                >
+                <a class="nav-link" href="reservas-descubre.html">Descubre</a>
+                <a class="nav-link" href="recursos.html">Recursos</a>
+                <a class="nav-link" href="bookings-searchservice.html"
+                  >Reservas</a
+                >
+              </div>
+            </div>
+            <div class="position-relative align-items-center d-none d-lg-flex">
+              <button class="btn btn-link text-dark">
+                <i class="bi bi-map" style="font-size: 1.3rem"></i>
+              </button>
+              <a href="notifications.html" class="btn btn-link text-dark">
+                <i class="bi bi-bell" style="font-size: 1.3rem"></i>
+              </a>
+              <div class="dropdown">
+                <button
+                  class="btn btn-link text-dark dropdown-toggle text-decoration-none"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="d-inline"
+                    src="assets/images/profile-img.jpg"
+                    width="40"
+                    height="40"
+                  />
+                  <span class="fw-bold">Alissa Gray</span>
+                  <!-- <span class="fs-7">alissargray@gmail.com</span> -->
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" type="button" href="profile.html"
+                      >Perfil</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" type="button">Opcion 2</a></li>
+                  <li><a class="dropdown-item" type="button">Opcion 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="container-md mt-4 mb-100">
+        <div class="row my-2">
+          <div class="col">
+            <div class="d-flex align-items-center mb-3">
+              <img src="assets/images/profile/profile.svg" class="img-fluid" />
+              <div class="mx-2">
+                <h5 class="fw-semibold mb-0">Dona Habrams</h5>
+                <span class="fs-7 text-gray"
+                  >Maquillaje, Uñas, Styling, etc...</span
+                >
+              </div>
+            </div>
+          </div>
+          <button
+            class="btn btn-primary btn-sm p-1 text-primary bg-white rounded-pill m-2 h-25 w-25"
+            id="buttonperfil"
+          >
+            Ver perfil
+          </button>
+        </div>
+        <section class="profile-content active border-bottom mb-3" id="info">
+          <div class="m-2">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <ol class="carousel-indicators">
+                <button
+                  type="button"
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="0"
+                  class="btn btn-secondary p-2 mx-1 active rounded-pill"
+                ></button>
+                <button
+                  type="button"
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="1"
+                  class="btn btn-secondary p-2 mx-1 rounded-pill"
+                ></button>
+                <button
+                  type="button"
+                  data-target="#carouselExampleIndicators"
+                  data-slide-to="2"
+                  class="btn btn-secondary p-2 mx-1 rounded-pill"
+                ></button>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active h-auto justify-content-center">
+                  <div class="slider-item">
+                    <div class="overlay"></div>
+                    <div class="slider-content">
+                      <img
+                        src="assets/images/profile/stylist-profile-photo-2.png"
+                        class="card-img-top d-block m-auto rounded img-fluid"
+                        style="max-width: 500px"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item h-auto justify-content-center">
+                    <div class="slider-item">
+                      <div class="overlay"></div>
+                      <div class="slider-content">
+                        <img
+                          src="assets/images/profile/stylist-profile-photo-2.png"
+                          class="card-img-top d-block m-auto rounded img-fluid"
+                          style="max-width: 500px"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item h-auto justify-content-center">
+                    <div class="slider-item">
+                      <div class="overlay"></div>
+                      <div class="slider-content">
+                        <img
+                          src="assets/images/profile/stylist-profile-photo-2.png"
+                          class="card-img-top d-block m-auto rounded img-fluid"
+                          style="max-width: 500px"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                <!-- Add more carousel items for additional slides -->
+              </div>
+            </div>
+          </div>
+          <div class="card-body my-4 d-flex gap-3">
+            <div class="bg-light rounded-pill py-2 px-3">
+              <p class="text-secondary mb-0">#belleza</p>
+            </div>
+            <div class="bg-light rounded-pill py-2 px-3">
+              <p class="text-secondary mb-0">#belleza</p>
+            </div>
+            <div class="bg-light rounded-pill py-2 px-3">
+              <p class="text-secondary mb-0">#belleza</p>
+            </div>
+            <div class="bg-light rounded-pill py-2 px-3">
+              <p class="text-secondary mb-0">#belleza</p>
+            </div>
+          </div>
+        </section>
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="btn d-flex gap-2 align-items-center">
+            <i class="bi bi-heart f-12"></i>
+            <p class="mb-0">5</p>
+          </button>
+          <button
+            class="btn d-flex gap-2 align-items-center"
+            data-bs-toggle="modal"
+            data-bs-target="#rightSidebarModal"
+          >
+            <i class="bi bi-bookmark f-12"></i>
+            <p class="mb-0">Guardar</p>
+          </button>
+        </div>
+      </main>
+
+      <div class="d-flex d-md-none border-top fixed-navbar bg-white">
+        <a
+          class="btn btn-link text-black text-decoration-none"
+          id="activeperfil"
+          href="home.html"
+        >
+          <img src="assets/images/inicio.svg" />
+          Inicio
+        </a>
+        <a
+          class="btn btn-link text-black text-decoration-none"
+          href="reservas-descubre.html"
+        >
+          <img src="assets/images/descubre.svg" />
+          Descubre
+        </a>
+        <a
+          class="btn btn-link text-black text-decoration-none"
+          href="recursos.html"
+        >
+          <img src="assets/images/sources.svg" />
+          Recursos
+        </a>
+        <a
+          class="btn btn-link text-black text-decoration-none"
+          href="bookings-searchservice.html"
+        >
+          <img src="assets/images/bookings.svg" />
+          Reservas
+        </a>
+        <a class="btn btn-link text-decoration-none" href="profile.html">
+          <img src="assets/images/user-selected.svg" />
+          Perfil
+        </a>
+      </div>
+    </div>
+    <!-- Right Sidebar Modal -->
+    <div
+      class="modal right fade"
+      id="rightSidebarModal"
+      tabindex="-1"
+      aria-labelledby="rightSidebarModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xs modal-dialog-scrollable modal-fullscreen-md-down"
+        ;
+      >
+        <div class="modal-content h-100">
+          <div class="modal-header">
+            <div class="d-flex">
+              <i
+                class="bi bi-arrow-left m-2"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></i>
+              <p class="text-black m-2" id="rightSidebarModalLabel">
+                Guardar en tus favoritos
+              </p>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="col">
+              <div class="col-12">
+                <div class="my-3">
+                  <div>
+                    <select
+                      class="form-select border-light"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Maquillaje</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary rounded-pill mb-5 m-2">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/profile.js"></script>
+  </body>
+</html>

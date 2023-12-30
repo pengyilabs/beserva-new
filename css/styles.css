@@ -11261,6 +11261,17 @@ background: #FFF;
   border-radius: 10px !important;
 }
 
+.bg-title-blog {
+  background-image: url('../assets/images/profile/title-blog.png');
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.text-light-black {
+  color: var(--Grayscale-Light-Black, #555);
+}
+
 @media (max-width: 768px) {
 .f-22 {
   font-size: 1.375rem;

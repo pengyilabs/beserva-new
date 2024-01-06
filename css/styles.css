@@ -10895,6 +10895,21 @@ textarea.form-control-lg {
   overflow-x: scroll;
 }
 
+.img-videos {
+  position: absolute;
+  top: 2%;
+  left: 4%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.btn-absolute {
+  position: absolute;
+  z-index: 1004;
+  top: 2%;
+  right: 2%;
+}
+
 .body-overflow {
   overflow: hidden;
 }
@@ -11252,7 +11267,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .modal-content {
